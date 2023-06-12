@@ -1,0 +1,3 @@
+User-Agent: *
+
+Sitemap: https://www.digital.go.jp/sitemap.xml
