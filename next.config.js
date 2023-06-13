@@ -4,14 +4,6 @@ const nextConfig = {
   assetPrefix: '/experimental',
   trailingSlash: true,
   output: 'export',
-  async rewrites() {
-    return [
-      {
-        source: '/_next/data/:query*',
-        destination: '/experimental/_next/data/:query*',
-      },
-    ];
-  },
 };
 
 module.exports = nextConfig;
