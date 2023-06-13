@@ -35,7 +35,7 @@ export default function App({ Component, pageProps }: AppProps) {
           'デジタル庁 実証トップページ',
           'デジタル庁トップページの実証版です。',
           '/experimental/',
-          '/ogp.png',
+          '/experimental/ogp.png',
           'website',
         )}
       </Head>
