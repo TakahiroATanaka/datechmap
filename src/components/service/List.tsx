@@ -10,7 +10,7 @@ export const List = () => {
       />
       <Card alt="e-govのウェブサイトを見る" imageUrl="/services/e-gov.png" url="https://www.e-gov.go.jp/" />
       <Card
-        alt="VRSのウェブサイトを見る"
+        alt="ワクチン接種記録システム (VRS)のウェブサイトを見る"
         imageUrl="/services/vrs.png"
         url="https://info.vrs.digital.go.jp/dashboard/"
       />
