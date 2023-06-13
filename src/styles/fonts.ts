@@ -6,5 +6,4 @@ export const notoSansJp = Noto_Sans_JP({
   subsets: ['latin'],
   weight: 'variable',
   display: 'swap',
-  preload: true,
 });
