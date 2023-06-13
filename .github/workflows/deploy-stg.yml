@@ -41,9 +41,6 @@ jobs:
         run: |
           aws s3 sync --delete out s3://${{ secrets.BUCKET_NAME_STG }}/experimental/
           aws s3 sync --delete out/_next s3://${{ secrets.BUCKET_NAME_STG }}/experimental/experimental/
-          aws s3 sync --delete out/services s3://${{ secrets.BUCKET_NAME_STG }}/experimental/experimental/
-          aws s3 sync --delete out/*.svg s3://${{ secrets.BUCKET_NAME_STG }}/experimental/experimental/
-          aws s3 sync --delete out/*.png s3://${{ secrets.BUCKET_NAME_STG }}/experimental/experimental/
       - name: invalidate cache
         run: |
           aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_DIST_ID_STG }} --paths "/experimental/*"
