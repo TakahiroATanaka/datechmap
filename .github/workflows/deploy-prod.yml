@@ -40,3 +40,6 @@ jobs:
       - name: copy files to s3 bucket
         run: |
           aws s3 sync --delete out s3://${{ secrets.BUCKET_NAME_PROD }}/experimental
+      - name: invalidate cache
+        run: |
+          aws cloudfront create-invalidation --distribution-id ${{ secrets.CF_DIST_ID_PROD }} --paths "/experimental/*"
