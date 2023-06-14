@@ -13,6 +13,7 @@ export const Anchor = (props: Props) => {
 
   return (
     <Link
+      aria-label={rest['aria-label'] ?? undefined}
       className={`outline-offset-2 outline-border-focused focus:outline focus:outline-2 ${style} ${className ?? ''}`}
       href={href ?? '#'}
       id={id}

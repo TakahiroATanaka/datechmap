@@ -5,7 +5,10 @@ import { List } from './List';
 export const ServiceSection = () => {
   return (
     <section className="flex flex-col gap-12">
-      <SectionHeader link={{ title: '一覧を見る', path: '/service/' }} title="サービス" />
+      <SectionHeader
+        link={{ ariaLabel: 'サービス一覧を見る', title: '一覧を見る', path: '/service/' }}
+        title="サービス"
+      />
       <List />
 
       {/* SP用 */}
@@ -14,7 +17,7 @@ export const ServiceSection = () => {
         href="/service/"
         unstyle={true}
       >
-        サービスの一覧を見る
+        サービス一覧を見る
       </Anchor>
     </section>
   );

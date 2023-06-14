@@ -10,7 +10,10 @@ type Props = {
 export const NewsSection = (props: Props) => {
   return (
     <section className="flex flex-col gap-12">
-      <SectionHeader link={{ title: '一覧を見る', path: '/news/' }} title="新着・更新情報" />
+      <SectionHeader
+        link={{ ariaLabel: '最新のお知らせ一覧を見る', title: '一覧を見る', path: '/news/' }}
+        title="最新のお知らせ"
+      />
       <List news={props.news} />
 
       {/* SP用 */}
@@ -19,7 +22,7 @@ export const NewsSection = (props: Props) => {
         href="/news/"
         unstyle={true}
       >
-        新着・更新情報の一覧を見る
+        最新のお知らせ一覧を見る
       </Anchor>
     </section>
   );

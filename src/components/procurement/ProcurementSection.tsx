@@ -11,7 +11,10 @@ type Props = {
 export const ProcurementSection = (props: Props) => {
   return (
     <section className="flex flex-col gap-12">
-      <SectionHeader link={{ title: '一覧を見る', path: '/procurement/' }} title="調達情報" />
+      <SectionHeader
+        link={{ ariaLabel: '調達情報一覧を見る', title: '一覧を見る', path: '/procurement/' }}
+        title="調達情報"
+      />
       <Nav />
       <List procurements={props.procurements} />
 
@@ -21,7 +24,7 @@ export const ProcurementSection = (props: Props) => {
         href="/procurement/"
         unstyle={true}
       >
-        調達情報の一覧を見る
+        調達情報一覧を見る
       </Anchor>
     </section>
   );
