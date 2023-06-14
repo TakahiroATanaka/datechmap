@@ -1,3 +1,4 @@
+import { AttentionSection } from '@/components/attention/AttentionSection';
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { NewsSection } from '@/components/news/NewsSection';
 import { PolicySection } from '@/components/policy/PolicySection';
@@ -18,6 +19,7 @@ const Page = (props: Props) => {
   return (
     <BaseLayout>
       <main className="col-span-full flex flex-col gap-22" id="main">
+        <AttentionSection />
         <TopicsSection />
         <NewsSection news={props.news} />
         <RecruitSection />
