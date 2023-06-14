@@ -13,7 +13,11 @@ export const Nav = () => {
     <nav className="flex w-full items-center justify-end gap-6 text-body">
       <ul className="hidden items-center gap-3 text-label-lg lg:flex">
         <li>
-          <Anchor className="rounded-full bg-wood-50 px-[10px] py-1" href="/experimental/" unstyle={true}>
+          <Anchor
+            className="rounded-full bg-wood-50 px-[10px] py-1 !font-extrabold"
+            href="/experimental/"
+            unstyle={true}
+          >
             ホーム
           </Anchor>
         </li>
