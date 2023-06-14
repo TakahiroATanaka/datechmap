@@ -2,7 +2,7 @@ import { Logo } from '../Logo';
 
 export const Info = () => {
   return (
-    <div className="flex flex-col items-center gap-4 text-body">
+    <div className="col-span-full flex flex-col items-center gap-2 text-center text-body md:col-span-6 md:col-start-7 md:items-start md:text-start">
       <Logo style={{ width: '131px', height: '24px' }} />
       <p className="text-body-md">（法人番号：8000012010038）</p>
       <address className="text-body-md not-italic">

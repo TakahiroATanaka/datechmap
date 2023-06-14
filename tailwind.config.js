@@ -73,6 +73,14 @@ module.exports = {
             letterSpacing: '0.04em',
           },
         ],
+        'service-card-title': [
+          '0.875rem',
+          {
+            fontWeight: '500',
+            lineHeight: '200%',
+            letterSpacing: '0.04em',
+          },
+        ],
         'card-title': [
           '1rem',
           {

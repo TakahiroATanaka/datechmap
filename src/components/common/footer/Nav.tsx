@@ -2,11 +2,16 @@ import { Anchor } from '../../ui/Anchor';
 
 export const Nav = () => {
   return (
-    <nav>
-      <ul className="flex flex-col items-center gap-8 text-body xl:flex-row">
+    <nav className="col-span-full md:col-span-6 md:col-start-1">
+      <ul className="grid grid-cols-1 gap-8 text-center text-body md:grid-cols-2 md:text-start">
         <li>
           <Anchor href="/site-policy/" unstyle={true}>
             サイトポリシー
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href="/copyright-policy/" unstyle={true}>
+            コピーライトポリシー
           </Anchor>
         </li>
         <li>
@@ -15,23 +20,13 @@ export const Nav = () => {
           </Anchor>
         </li>
         <li>
-          <Anchor href="/accessibility-statement/" unstyle={true}>
-            ウェブアクセシビリティ
-          </Anchor>
-        </li>
-        <li>
-          <Anchor href="/copyright-policy/" unstyle={true}>
-            コピーライト
-          </Anchor>
-        </li>
-        <li className={`after:pointer-events-none after:whitespace-pre xl:after:ml-8 xl:after:content-["|"]`}>
           <Anchor href="/sitemap/" unstyle={true}>
             サイトマップ
           </Anchor>
         </li>
         <li>
-          <Anchor href="/social-media-policy/" unstyle={true}>
-            SNS
+          <Anchor href="/accessibility-statement/" unstyle={true}>
+            ウェブアクセシビリティ
           </Anchor>
         </li>
         <li>

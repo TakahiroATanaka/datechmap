@@ -17,7 +17,7 @@ type Props = {
 const Page = (props: Props) => {
   return (
     <BaseLayout>
-      <main className="grid grid-cols-1 gap-22" id="main" style={{ gridColumn: '1 / -1' }}>
+      <main className="col-span-full flex flex-col gap-22" id="main">
         <TopicsSection />
         <NewsSection news={props.news} />
         <RecruitSection />

@@ -1,21 +1,26 @@
 import { Anchor } from '../ui/Anchor';
+import { ExternalLinkIcon } from '../ui/icons/ExternalLinkIcon';
 
 type Props = {
   url: string;
   imageUrl: string;
+  title: string;
   alt: string;
 };
 
 export const Card = (props: Props) => {
-  const { url, imageUrl, alt } = props;
-
   return (
     <Anchor
-      className="flex items-center rounded-2xl border border-divider transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-      href={url}
+      className="flex flex-col justify-between overflow-hidden rounded-3xl border border-divider"
+      href={props.url}
       target="_blank"
+      unstyle={true}
     >
-      <img alt={alt} className="h-auto w-full p-4" src={imageUrl} />
+      <img alt={props.alt} className="h-auto w-full object-cover" src={props.imageUrl} />
+      <div className="flex items-center justify-between bg-sumi-100 px-6 py-4">
+        <h3 className="line-clamp-1 text-service-card-title text-body">{props.title}</h3>
+        <ExternalLinkIcon className="min-w-[14px]" />
+      </div>
     </Anchor>
   );
 };

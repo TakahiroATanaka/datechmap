@@ -1,6 +1,8 @@
 import { News, Procurement, Topic } from '@/types';
 import { chromium } from 'playwright-core';
 
+const ITEM_MAX = 8;
+
 export const fetchTopics = async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
@@ -43,8 +45,9 @@ export const fetchNews = async () => {
 
   const cards = page.locator('.main .card');
   const count = await cards.count();
+  const max = count > ITEM_MAX ? ITEM_MAX : count;
   const news: News[] = [];
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < max; i++) {
     const card = await cards.nth(i);
 
     const title = await card.locator('.card__title').innerText();
@@ -72,8 +75,9 @@ export const fetchProcurements = async () => {
 
   const cards = page.locator('.main .card');
   const count = await cards.count();
+  const max = count > ITEM_MAX ? ITEM_MAX : count;
   const procurements: Procurement[] = [];
-  for (let i = 0; i < count; i++) {
+  for (let i = 0; i < max; i++) {
     const card = await cards.nth(i);
 
     const title = await card.locator('.card__title').innerText();
