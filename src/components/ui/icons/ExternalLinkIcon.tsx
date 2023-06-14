@@ -4,7 +4,15 @@ type Props = ComponentProps<'svg'>;
 
 export const ExternalLinkIcon = (props: Props) => {
   return (
-    <svg fill="none" height="16" viewBox="0 0 16 16" width="16" xmlns="http://www.w3.org/2000/svg" {...props}>
+    <svg
+      aria-label="外部リンクを開きます"
+      fill="none"
+      height="16"
+      viewBox="0 0 16 16"
+      width="16"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
       <g clipPath="url(#clip0_2836_15208)">
         <rect fill="white" height="16" width="16" />
         <g clipPath="url(#clip1_2836_15208)">
