@@ -1,5 +1,6 @@
 import { Anchor } from '@/components/ui/Anchor';
 import { P } from '@/components/ui/P';
+import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 import { ExternalLinkIcon } from '@/components/ui/icons/ExternalLinkIcon';
 import { prefix } from '@/utils';
 
@@ -22,14 +23,13 @@ export const Culture = () => {
         </P>
 
         {/* SP用 */}
-        <Anchor
+        <UnstyledAnchor
           className="rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-body-lg font-medium leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover md:hidden"
           href="https://digital-gov.note.jp/"
           target="_blank"
-          unstyle={true}
         >
           noteの記事を見る <ExternalLinkIcon className="mx-1 inline pb-1" />
-        </Anchor>
+        </UnstyledAnchor>
       </div>
     </section>
   );

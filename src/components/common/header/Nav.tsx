@@ -1,7 +1,7 @@
-import { Anchor } from '../../ui/Anchor';
 import { Button } from '../../ui/Button';
 import { HamburgerMenuIcon } from '../../ui/icons/HamburgerMenuIcon';
 import { SearchIcon } from '../../ui/icons/SearchIcon';
+import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 import { CrossIcon } from '@/components/ui/icons/CrossIcon';
 import { MenuContext } from '@/features/context';
 import { useContext } from 'react';
@@ -13,42 +13,38 @@ export const Nav = () => {
     <nav className="flex w-full items-center justify-end gap-6 text-body">
       <ul className="hidden items-center gap-3 text-label-lg lg:flex">
         <li>
-          <Anchor
-            className="rounded-full bg-wood-50 px-[10px] py-1 !font-extrabold"
-            href="/experimental/"
-            unstyle={true}
-          >
+          <UnstyledAnchor className="rounded-full bg-wood-50 px-[10px] py-1 !font-extrabold" href="/experimental/">
             ホーム
-          </Anchor>
+          </UnstyledAnchor>
         </li>
         <li>
-          <Anchor className="px-[10px] py-1" href="/individual/" unstyle={true}>
+          <UnstyledAnchor className="px-[10px] py-1" href="/individual/">
             一般
-          </Anchor>
+          </UnstyledAnchor>
         </li>
         <li>
-          <Anchor className="px-[10px] py-1" href="/business/" unstyle={true}>
+          <UnstyledAnchor className="px-[10px] py-1" href="/business/">
             行政・事業者
-          </Anchor>
+          </UnstyledAnchor>
         </li>
         <li className={`xl:after:ml-6 xl:after:content-["|"]`}>
-          <Anchor className="px-[10px] py-1" href="/press/" unstyle={true}>
+          <UnstyledAnchor className="px-[10px] py-1" href="/press/">
             報道関係者
-          </Anchor>
+          </UnstyledAnchor>
         </li>
       </ul>
 
       <ul className="flex items-center gap-2 text-label-lg md:gap-3">
         <li>
-          <Anchor className="flex items-center gap-2 px-[10px] py-1" href="/search/" unstyle={true}>
+          <UnstyledAnchor className="flex items-center gap-2 px-[10px] py-1" href="/search/">
             <SearchIcon />
             検索
-          </Anchor>
+          </UnstyledAnchor>
         </li>
         <li className="hidden lg:list-item">
-          <Anchor className="flex items-center gap-2 px-[10px] py-1" href="/en/" unstyle={true}>
+          <UnstyledAnchor className="flex items-center gap-2 px-[10px] py-1" href="/en/">
             Global Site
-          </Anchor>
+          </UnstyledAnchor>
         </li>
         <li>
           <Button

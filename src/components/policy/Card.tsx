@@ -1,5 +1,5 @@
-import { Anchor } from '../ui/Anchor';
 import { P } from '../ui/P';
+import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 
 type Props = {
   title: string;
@@ -29,13 +29,12 @@ export const Card = (props: Props) => {
 
 export const Card = (props: Props) => {
   return (
-    <Anchor
+    <UnstyledAnchor
       className="flex flex-col content-between justify-between gap-6 rounded-2xl border border-divider p-6 transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
       href={props.path}
-      unstyle={true}
     >
       <p className="line-clamp-4 text-card-title text-body">{props.title}</p>
       <P className="line-clamp-4">{props.desc}</P>
-    </Anchor>
+    </UnstyledAnchor>
   );
 };

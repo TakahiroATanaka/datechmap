@@ -1,5 +1,5 @@
 export const userInsightTag = () => {
-  return ``;
+  return process.env.NEXT_PUBLIC_ENV === 'prod' ? `` : ``;
   /*
   return `
     var _uic = _uic ||{}; var _uih = _uih ||{};_uih['id'] = 55860;

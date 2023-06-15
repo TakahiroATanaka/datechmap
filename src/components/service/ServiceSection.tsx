@@ -1,5 +1,5 @@
 import { SectionHeader } from '../common/SectionHeader';
-import { Anchor } from '../ui/Anchor';
+import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { List } from './List';
 
 export const ServiceSection = () => {
@@ -12,13 +12,12 @@ export const ServiceSection = () => {
       <List />
 
       {/* SP用 */}
-      <Anchor
+      <UnstyledAnchor
         className="rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-body-lg font-medium leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover md:hidden"
         href="/service/"
-        unstyle={true}
       >
         サービス一覧を見る
-      </Anchor>
+      </UnstyledAnchor>
     </section>
   );
 };

@@ -3,7 +3,7 @@ import { prefix } from '@/utils';
 
 export const List = () => {
   return (
-    <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-3">
+    <div className="grid auto-rows-fr grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
       <Card
         alt="Visit Japan Webのウェブサイトを見る"
         imageUrl={`${prefix()}/services/vjw.png`}
@@ -19,7 +19,13 @@ export const List = () => {
       <Card
         alt="ワクチン接種記録システム (VRS)のウェブサイトを見る"
         imageUrl={`${prefix()}/services/vrs.png`}
-        title="新型コロナワクチン接種証明書アプリ"
+        title={
+          <>
+            新型コロナワクチン
+            <br />
+            接種証明書アプリ
+          </>
+        }
         url="https://info.vrs.digital.go.jp/dashboard/"
       />
       <Card

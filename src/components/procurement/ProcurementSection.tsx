@@ -1,5 +1,6 @@
 import { SectionHeader } from '../common/SectionHeader';
 import { Anchor } from '../ui/Anchor';
+import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { List } from './List';
 import { Nav } from './Nav';
 import { Procurement } from '@/types';
@@ -19,13 +20,12 @@ export const ProcurementSection = (props: Props) => {
       <List procurements={props.procurements} />
 
       {/* SP用 */}
-      <Anchor
+      <UnstyledAnchor
         className="rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-body-lg font-medium leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover md:hidden"
         href="/procurement/"
-        unstyle={true}
       >
         調達情報一覧を見る
-      </Anchor>
+      </UnstyledAnchor>
     </section>
   );
 };

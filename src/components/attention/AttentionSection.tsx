@@ -1,8 +1,11 @@
+import { SectionHeader } from '../common/SectionHeader';
 import { Card } from './Card';
 
 export const AttentionSection = () => {
   return (
     <section className="flex flex-col gap-12">
+      <SectionHeader title="重要なお知らせ" />
+
       <Card
         publishedAt={'2023年5月10日'}
         title={

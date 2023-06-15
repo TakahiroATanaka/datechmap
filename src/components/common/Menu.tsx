@@ -1,4 +1,4 @@
-import { Anchor } from '../ui/Anchor';
+import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { Header } from './header/Header';
 import { MenuContext } from '@/features/context';
 import { useContext, useEffect } from 'react';
@@ -66,120 +66,112 @@ export const Menu = () => {
           <nav className="flex flex-col gap-12 md:mx-auto md:flex-row md:gap-24">
             <ul className="flex flex-col gap-4 text-body">
               <li>
-                <Anchor href="/news/" id="menu-first-item" unstyle={true}>
+                <UnstyledAnchor href="/news/" id="menu-first-item">
                   新着・更新情報
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor href="/services/" unstyle={true}>
-                  サービス
-                </Anchor>
+                <UnstyledAnchor href="/services/">サービス</UnstyledAnchor>
               </li>
               <li>
-                <Anchor href="/policies/" unstyle={true}>
-                  政策
-                </Anchor>
+                <UnstyledAnchor href="/policies/">政策</UnstyledAnchor>
               </li>
               <li>
-                <Anchor href="/recruitment/" unstyle={true}>
-                  採用
-                </Anchor>
+                <UnstyledAnchor href="/recruitment/">採用</UnstyledAnchor>
               </li>
             </ul>
 
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">利用者別</li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/individual/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/individual/">
                   一般
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/business/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/business/">
                   行政・事業者
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/press/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/press/">
                   報道関係者
-                </Anchor>
+                </UnstyledAnchor>
               </li>
             </ul>
 
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">総合メニュー</li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/about/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/about/">
                   組織情報
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/councils/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/councils/">
                   会議等
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/laws/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/laws/">
                   法令
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/resources/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/resources/">
                   資料
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/applications/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/applications/">
                   申請・届出
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/procurement/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/procurement/">
                   調達情報
-                </Anchor>
+                </UnstyledAnchor>
               </li>
             </ul>
 
             <ul className="flex flex-col gap-4">
               <li>
-                <Anchor className="text-menu-link text-body" href="/en/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/en/">
                   Global Site
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/site-policy/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/site-policy/">
                   サイトポリシー
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/privacy-policy/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/privacy-policy/">
                   プライバシーポリシー
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/accessibility-statement/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/accessibility-statement/">
                   ウェブアクセシビリティ
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/copyright-policy/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/copyright-policy/">
                   コピーライトポリシー
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor className="text-menu-link text-body" href="/social-media-policy/" unstyle={true}>
+                <UnstyledAnchor className="text-menu-link text-body" href="/social-media-policy/">
                   SNS
-                </Anchor>
+                </UnstyledAnchor>
               </li>
               <li>
-                <Anchor href="/contact/" unstyle={true}>
-                  ご意見・ご要望
-                </Anchor>
+                <UnstyledAnchor href="/contact/">ご意見・ご要望</UnstyledAnchor>
               </li>
               <li>
-                <Anchor href="/sitemap/" id="menu-last-item" unstyle={true}>
+                <UnstyledAnchor href="/sitemap/" id="menu-last-item">
                   サイトマップ
-                </Anchor>
+                </UnstyledAnchor>
               </li>
             </ul>
           </nav>
