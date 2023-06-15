@@ -1,3 +1,4 @@
+import { ToTopButton } from './ToTopButton';
 import { Gradient } from '@/components/common/Gradient';
 import { Menu } from '@/components/common/Menu';
 import { Footer } from '@/components/common/footer/Footer';
@@ -10,7 +11,7 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
   const { isOpen } = useContext(MenuContext);
 
   return (
-    <div className={`${notoSansJp.variable} bg-primary ${isOpen ? 'h-screen overflow-y-hidden' : ''}`}>
+    <div className={`${notoSansJp.variable} bg-primary ${isOpen ? 'h-screen overflow-y-hidden' : ''}`} id="top">
       <a className="sr-only" href="#main">
         本文へ移動
       </a>
@@ -30,6 +31,10 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
       <Footer />
 
       <Gradient />
+
+      <div className="fixed bottom-8 right-8">
+        <ToTopButton />
+      </div>
     </div>
   );
 };

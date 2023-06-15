@@ -115,7 +115,16 @@ module.exports = {
         ],
       },
       fontFamily: {
-        noto: ['var(--font-noto-sans-jp)'],
+        noto: [
+          'var(--font-noto-sans-jp)',
+          '-apple-system',
+          'blinkmacsystemfont',
+          'Segoe UI',
+          'Hiragino Kaku Gothic ProN',
+          'BIZ UDPGothic',
+          'meiryo',
+          'sans-serif',
+        ],
       },
       maxWidth: {
         '8xl': '1440px',

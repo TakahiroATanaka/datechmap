@@ -9,7 +9,10 @@ export const AttentionSection = () => {
           <>
             マイナンバーカード関連サービスの誤登録等の事案について、ご自身での確認方法やご質問・ご不安にお答えします。マイナンバー総合フリーダイヤル
             （☎
-            <a className="ml-1 underline" href="tel:0120950178">
+            <a
+              className="ml-1 underline outline-offset-2 outline-border-focused focus:outline focus:outline-2 "
+              href="tel:0120950178"
+            >
               0120-95-0178
             </a>
             ） でも受け付けております
