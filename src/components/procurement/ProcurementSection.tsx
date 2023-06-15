@@ -1,5 +1,4 @@
 import { SectionHeader } from '../common/SectionHeader';
-import { Anchor } from '../ui/Anchor';
 import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { List } from './List';
 import { Nav } from './Nav';
