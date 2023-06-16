@@ -64,37 +64,43 @@ export const Menu = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <nav className="flex flex-col gap-12 md:mx-auto md:flex-row md:gap-24">
-            <ul className="flex flex-col gap-4 text-body">
+            <ul className="flex flex-col gap-4">
               <li>
-                <UnstyledAnchor href="/news/" id="menu-first-item">
+                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/news/" id="menu-first-item">
                   新着・更新情報
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor href="/services/">サービス</UnstyledAnchor>
+                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/services/">
+                  サービス
+                </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor href="/policies/">政策</UnstyledAnchor>
+                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/policies/">
+                  政策
+                </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor href="/recruitment/">採用</UnstyledAnchor>
+                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/recruitment/">
+                  採用
+                </UnstyledAnchor>
               </li>
             </ul>
 
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">利用者別</li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/individual/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/individual/">
                   一般
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/business/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/business/">
                   行政・事業者
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/press/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/press/">
                   報道関係者
                 </UnstyledAnchor>
               </li>
@@ -103,32 +109,32 @@ export const Menu = () => {
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">総合メニュー</li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/about/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/about/">
                   組織情報
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/councils/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/councils/">
                   会議等
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/laws/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/laws/">
                   法令
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/resources/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/resources/">
                   資料
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/applications/">
+                <UnstyledAnchor className="text-menu-link  hover:underline" href="/applications/">
                   申請・届出
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/procurement/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/procurement/">
                   調達情報
                 </UnstyledAnchor>
               </li>
@@ -136,40 +142,42 @@ export const Menu = () => {
 
             <ul className="flex flex-col gap-4">
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/en/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/en/">
                   Global Site
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/site-policy/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/site-policy/">
                   サイトポリシー
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/privacy-policy/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/privacy-policy/">
                   プライバシーポリシー
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/accessibility-statement/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/accessibility-statement/">
                   ウェブアクセシビリティ
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/copyright-policy/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/copyright-policy/">
                   コピーライトポリシー
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link text-body" href="/social-media-policy/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/social-media-policy/">
                   SNS
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor href="/contact/">ご意見・ご要望</UnstyledAnchor>
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/contact/">
+                  ご意見・ご要望
+                </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor href="/sitemap/" id="menu-last-item">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/sitemap/" id="menu-last-item">
                   サイトマップ
                 </UnstyledAnchor>
               </li>

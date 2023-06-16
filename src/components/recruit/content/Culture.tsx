@@ -1,5 +1,4 @@
 import { Anchor } from '@/components/ui/Anchor';
-import { P } from '@/components/ui/P';
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 import { ExternalLinkIcon } from '@/components/ui/icons/ExternalLinkIcon';
 import { prefix } from '@/utils';
@@ -12,15 +11,15 @@ export const Culture = () => {
       <div className="flex flex-col gap-4">
         <img alt="" className="h-auto w-full rounded-3xl" src={`${prefix()}/recruit-culture-image.png`} />
 
-        <P className="font-medium leading-8">
+        <p className="text-body-lg font-medium leading-8 text-body">
           デジタル庁ではnoteを活用して、政策や組織文化、職員紹介など各種情報発信を行っています。当庁の業務に興味がある方は、是非、以下のリンクよりご覧ください。
-        </P>
+        </p>
 
-        <P className="hidden place-self-end md:block">
+        <p className="hidden place-self-end text-body-lg text-body md:block">
           <Anchor href="https://digital-gov.note.jp/" target="_blank">
             noteの記事を見る <ExternalLinkIcon className="mx-1 mb-1 inline" />
           </Anchor>
-        </P>
+        </p>
 
         {/* SP用 */}
         <UnstyledAnchor

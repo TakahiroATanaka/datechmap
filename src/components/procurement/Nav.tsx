@@ -1,4 +1,3 @@
-import { P } from '../ui/P';
 import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { ExternalLinkIcon } from '../ui/icons/ExternalLinkIcon';
 
@@ -32,7 +31,7 @@ export const Nav = () => {
         </UnstyledAnchor>
       </div>
 
-      <P>
+      <p className="text-body-lg text-body">
         最新の情報は、
         <UnstyledAnchor
           className="underline"
@@ -42,7 +41,7 @@ export const Nav = () => {
           調達ポータル 調達情報の検索 <ExternalLinkIcon className="mx-1 inline pb-1" />
         </UnstyledAnchor>
         より「調達案件番号」で検索してご確認ください。
-      </P>
+      </p>
     </div>
   );
 };

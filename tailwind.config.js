@@ -57,6 +57,14 @@ module.exports = {
             letterSpacing: '0.04em',
           },
         ],
+        'menu-strong-link': [
+          '1.25rem',
+          {
+            fontWeight: '500',
+            lineHeight: '160%',
+            letterSpacing: '0.04em',
+          },
+        ],
         'menu-link': [
           '0.875rem',
           {

@@ -10,25 +10,28 @@ export const Nav = () => {
   const { isOpen, setIsOpen } = useContext(MenuContext);
 
   return (
-    <nav className="flex w-full items-center justify-end gap-6 text-body">
-      <ul className="hidden items-center gap-3 text-label-lg lg:flex">
+    <nav className="flex w-full items-center justify-end gap-6">
+      <ul className="hidden items-center gap-8 text-label-lg lg:flex">
         <li>
-          <UnstyledAnchor className="rounded-full bg-wood-50 px-[10px] py-1 !font-extrabold" href="/experimental/">
+          <UnstyledAnchor
+            className="rounded-full bg-wood-50 px-[10px] py-1 !font-extrabold hover:underline"
+            href="/experimental/"
+          >
             ホーム
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="px-[10px] py-1" href="/individual/">
+          <UnstyledAnchor className="px-[10px] hover:underline" href="/individual/">
             一般
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="px-[10px] py-1" href="/business/">
+          <UnstyledAnchor className="px-[10px] hover:underline" href="/business/">
             行政・事業者
           </UnstyledAnchor>
         </li>
         <li className={`xl:after:ml-6 xl:after:content-["|"]`}>
-          <UnstyledAnchor className="px-[10px] py-1" href="/press/">
+          <UnstyledAnchor className="px-[10px] hover:underline" href="/press/">
             報道関係者
           </UnstyledAnchor>
         </li>
@@ -36,20 +39,20 @@ export const Nav = () => {
 
       <ul className="flex items-center gap-2 text-label-lg md:gap-3">
         <li>
-          <UnstyledAnchor className="flex items-center gap-2 px-[10px] py-1" href="/search/">
+          <UnstyledAnchor className="flex items-center gap-2 px-[10px] hover:underline" href="/search/">
             <SearchIcon />
             検索
           </UnstyledAnchor>
         </li>
         <li className="hidden lg:list-item">
-          <UnstyledAnchor className="flex items-center gap-2 px-[10px] py-1" href="/en/">
+          <UnstyledAnchor className="flex items-center gap-2 px-[10px] hover:underline" href="/en/">
             Global Site
           </UnstyledAnchor>
         </li>
         <li>
           <Button
             aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
-            className="flex items-center gap-2 px-[10px] py-1"
+            className="flex items-center gap-2 px-[10px] text-body hover:underline"
             id="btn-menu"
             onClick={() => setIsOpen(!isOpen)}
           >
