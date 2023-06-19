@@ -3,7 +3,7 @@ import { prefix } from '@/utils';
 
 export const List = () => {
   return (
-    <div className="grid auto-rows-fr grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+    <div className="grid auto-rows-fr grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
       <Card
         alt="Visit Japan Webのウェブサイトを見る"
         imageUrl={`${prefix()}/services/vjw.png`}
