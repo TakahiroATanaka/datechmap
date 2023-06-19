@@ -30,7 +30,9 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
         </div>
       </div>
 
-      <Footer />
+      <div className="w-full px-6">
+        <Footer />
+      </div>
 
       <Gradient />
 
