@@ -8,7 +8,7 @@ export const Header = () => {
       <div className={`mx-auto flex w-full max-w-8xl items-center justify-between bg-white p-4 xl:px-10`}>
         <h1 className="flex items-center">
           <UnstyledAnchor href="/experimental/">
-            <Logo className="h-[18px] w-[98.36px] xl:h-[24px] xl:w-[131px]" />
+            <Logo className="h-[20px] w-[109.15px]" />
             <span className="sr-only">デジタル庁</span>
           </UnstyledAnchor>
         </h1>

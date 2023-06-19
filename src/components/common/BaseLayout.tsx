@@ -1,4 +1,3 @@
-import { ToTopButton } from './ToTopButton';
 import { Gradient } from '@/components/common/Gradient';
 import { Menu } from '@/components/common/Menu';
 import { Footer } from '@/components/common/footer/Footer';
@@ -20,25 +19,15 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
 
       {isOpen && <Menu />}
 
-      <div className="w-full px-6">
-        <div
-          className={`mx-auto mb-36  ${
-            isOpen ? 'mt-[120px]' : 'mt-14'
-          } grid w-full max-w-container grid-flow-row grid-cols-1 gap-8 sm:grid-cols-12`}
-        >
+      <div className={`mb-36 w-full px-6 ${isOpen ? 'mt-[120px]' : 'mt-14'}`}>
+        <div className={`mx-auto grid w-full max-w-container grid-flow-row grid-cols-1 gap-8 sm:grid-cols-12`}>
           {children}
         </div>
       </div>
 
-      <div className="w-full px-6">
-        <Footer />
-      </div>
+      <Footer />
 
       <Gradient />
-
-      <div className="fixed bottom-6 right-6 md:bottom-10 md:right-10">
-        <ToTopButton />
-      </div>
     </div>
   );
 };

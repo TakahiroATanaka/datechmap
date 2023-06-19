@@ -65,32 +65,9 @@ export const Menu = () => {
         >
           <nav className="flex flex-col gap-12 md:mx-auto md:flex-row md:gap-24">
             <ul className="flex flex-col gap-4">
-              <li>
-                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/news/" id="menu-first-item">
-                  新着・更新情報
-                </UnstyledAnchor>
-              </li>
-              <li>
-                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/services/">
-                  サービス
-                </UnstyledAnchor>
-              </li>
-              <li>
-                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/policies/">
-                  政策
-                </UnstyledAnchor>
-              </li>
-              <li>
-                <UnstyledAnchor className="text-menu-strong-link hover:underline" href="/recruitment/">
-                  採用
-                </UnstyledAnchor>
-              </li>
-            </ul>
-
-            <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">利用者別</li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="/individual/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/individual/" id="menu-first-item">
                   一般
                 </UnstyledAnchor>
               </li>
@@ -108,6 +85,29 @@ export const Menu = () => {
 
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">総合メニュー</li>
+              <li>
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/news/">
+                  新着・更新情報
+                </UnstyledAnchor>
+              </li>
+              <li>
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/services/">
+                  サービス
+                </UnstyledAnchor>
+              </li>
+              <li>
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/policies/">
+                  政策
+                </UnstyledAnchor>
+              </li>
+              <li>
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/recruitment/">
+                  採用
+                </UnstyledAnchor>
+              </li>
+            </ul>
+
+            <ul className="flex flex-col gap-4">
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/about/">
                   組織情報
