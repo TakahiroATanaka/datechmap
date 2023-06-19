@@ -5,7 +5,7 @@ import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 export const Header = () => {
   return (
     <header className={`sticky top-0 z-50 w-full bg-white md:relative`}>
-      <div className={`mx-auto flex w-full max-w-8xl items-center justify-between bg-white p-4 xl:px-10`}>
+      <div className={`mx-auto flex max-w-8xl items-center justify-between p-4 xl:px-10`}>
         <h1 className="flex items-center">
           <UnstyledAnchor href="/experimental/">
             <Logo className="h-[20px] w-[109.15px]" />
