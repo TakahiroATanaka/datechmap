@@ -19,14 +19,8 @@ export const List = () => {
       <Card
         alt="ワクチン接種記録システム (VRS)のウェブサイトを見る"
         imageUrl={`${prefix()}/services/vrs.png`}
-        title={
-          <>
-            新型コロナワクチン
-            <br />
-            接種証明書アプリ
-          </>
-        }
-        url="https://info.vrs.digital.go.jp/dashboard/"
+        title="新型コロナワクチン接種証明書アプリ"
+        url="https://www.digital.go.jp/policies/vaccinecert/"
       />
       <Card
         alt="マイナポータルのウェブサイトを見る"

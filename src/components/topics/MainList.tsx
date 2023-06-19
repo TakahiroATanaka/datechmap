@@ -9,7 +9,7 @@ export const MainList = () => {
           '2023年6月9日「デジタル社会の実現に向けた重点計画」が閣議決定されました。閣議決定された重点計画の資料をご覧ください。'
         }
         imageUrl={`${prefix()}/topics/001.png`}
-        path={'/#'}
+        path={'/policies/priority-policy-program/'}
       />
 
       <Card

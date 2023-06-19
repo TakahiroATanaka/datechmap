@@ -73,6 +73,14 @@ module.exports = {
             letterSpacing: '0.04em',
           },
         ],
+        'attention-card-title': [
+          '1rem',
+          {
+            fontWeight: '500',
+            lineHeight: '200%',
+            letterSpacing: '0.04em',
+          },
+        ],
         'topics-card-title': [
           '1rem',
           {
@@ -151,6 +159,9 @@ module.exports = {
       },
       screens: {
         desktop: '1120px',
+      },
+      lineHeight: {
+        xl: '200%',
       },
     },
   },
