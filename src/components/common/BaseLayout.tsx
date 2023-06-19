@@ -19,7 +19,7 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
 
       {isOpen && <Menu />}
 
-      <div className={`mb-36 w-full px-6 ${isOpen ? 'mt-[120px]' : 'mt-14'}`}>
+      <div className={`mb-36 w-full px-6 ${isOpen ? 'mt-[112px]' : 'mt-14'}`}>
         <div className={`mx-auto grid w-full max-w-container grid-flow-row grid-cols-1 gap-8 sm:grid-cols-12`}>
           {children}
         </div>
