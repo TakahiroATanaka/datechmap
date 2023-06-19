@@ -38,7 +38,7 @@ export const Nav = () => {
           href="https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101"
           target="_blank"
         >
-          調達ポータル 調達情報の検索 <ExternalLinkIcon className="mx-1 inline pb-1" />
+          調達ポータル 調達情報の検索 <ExternalLinkIcon className="mx-1 mb-1 inline" />
         </UnstyledAnchor>
         より「調達案件番号」で検索してご確認ください。
       </p>
