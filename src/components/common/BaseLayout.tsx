@@ -20,12 +20,14 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
 
       {isOpen && <Menu />}
 
-      <div
-        className={`mx-auto mb-36 ${
-          isOpen ? 'mt-[120px]' : 'mt-14'
-        } grid w-full max-w-container grid-flow-row grid-cols-1 gap-8 sm:grid-cols-12`}
-      >
-        {children}
+      <div className="w-full px-6">
+        <div
+          className={`mx-auto mb-36  ${
+            isOpen ? 'mt-[120px]' : 'mt-14'
+          } grid w-full max-w-container grid-flow-row grid-cols-1 gap-8 sm:grid-cols-12`}
+        >
+          {children}
+        </div>
       </div>
 
       <Footer />
