@@ -31,10 +31,10 @@ export const Nav = () => {
         </UnstyledAnchor>
       </div>
 
-      <p className="text-body-lg">
+      <p className="text-pc-r">
         最新の情報は、
         <UnstyledAnchor
-          className="text-link underline"
+          className="text-pc-r-link text-anchor underline"
           href="https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101"
           target="_blank"
         >
