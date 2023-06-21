@@ -12,7 +12,7 @@ type Props = {
 export const SectionHeader = (props: Props) => {
   return (
     <header className="flex items-center gap-4">
-      <h2 className="text-web-md text-body">{props.title}</h2>
+      <h2 className="text-web-md">{props.title}</h2>
       {props.link && (
         <UnstyledAnchor
           aria-label={props.link.ariaLabel}

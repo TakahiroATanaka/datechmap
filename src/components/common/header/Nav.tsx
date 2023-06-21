@@ -52,7 +52,7 @@ export const Nav = () => {
         <li>
           <Button
             aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
-            className="flex items-center gap-2 px-2 text-body hover:underline md:px-4"
+            className="flex items-center gap-2 px-2 hover:underline md:px-4"
             id="btn-menu"
             onClick={() => setIsOpen(!isOpen)}
           >

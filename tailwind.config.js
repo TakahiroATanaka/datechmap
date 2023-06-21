@@ -48,6 +48,14 @@ module.exports = {
             letterSpacing: '0.04em',
           },
         ],
+        'pc-s': [
+          '0.8125rem',
+          {
+            fontWeight: '400',
+            lineHeight: '185%',
+            letterSpacing: '0.01em',
+          },
+        ],
         link: [
           '0.875rem',
           {
@@ -144,11 +152,6 @@ module.exports = {
       maxWidth: {
         '8xl': '1440px',
         container: '1120px',
-      },
-      aspectRatio: {
-        '4/3': '4 / 3',
-        '16/9': '16 / 9',
-        '16/10': '16 / 10',
       },
       gap: {
         22: '5.5rem',

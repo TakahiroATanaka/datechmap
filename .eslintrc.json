@@ -1,18 +1,18 @@
 {
-    "root": true,
-    "extends": [
-        "next/core-web-vitals",
-        "plugin:@typescript-eslint/recommended",
-        "prettier",
-        "plugin:tailwindcss/recommended"
-    ],
-    "plugins": ["import", "unused-imports", "@typescript-eslint", "tailwindcss"],
-    "rules": {
-        "@next/next/no-img-element": "off",
-        "no-unused-vars": "off",
-        "react/jsx-sort-props": "warn",
-        "unused-imports/no-unused-imports": "error",
-        "@typescript-eslint/no-unused-vars": "error",
-        "@typescript-esjlint/no-var-requires": "off"
-    }
+  "root": true,
+  "extends": [
+    "next/core-web-vitals",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "plugin:tailwindcss/recommended"
+  ],
+  "plugins": ["import", "unused-imports", "@typescript-eslint", "tailwindcss"],
+  "rules": {
+    "@next/next/no-img-element": "off",
+    "no-unused-vars": "off",
+    "react/jsx-sort-props": "warn",
+    "unused-imports/no-unused-imports": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-esjlint/no-var-requires": "off"
+  }
 }

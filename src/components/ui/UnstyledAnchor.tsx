@@ -11,7 +11,7 @@ export const UnstyledAnchor = (props: Props) => {
   return (
     <Link
       aria-label={rest['aria-label'] ?? undefined}
-      className={`text-body outline-offset-2 outline-border-focused focus:outline focus:outline-2 ${className ?? ''}`}
+      className={`outline-offset-2 outline-border-focused focus:outline focus:outline-2 ${className ?? ''}`}
       href={href ?? '#'}
       id={id}
       rel={rel}
