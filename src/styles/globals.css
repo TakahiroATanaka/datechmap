@@ -2,7 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply font-noto;
-  @apply text-body;
+@layer base {
+  * {
+    @apply font-noto;
+    @apply text-body;
+  }
 }
