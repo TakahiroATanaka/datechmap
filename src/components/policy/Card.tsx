@@ -12,8 +12,8 @@ export const Card = (props: Props) => {
     <UnstyledAnchor className="flex flex-col gap-4 rounded-3xl !outline-offset-[12px]" href={props.path}>
       <img alt="" className="object-cover" src={props.imageUrl} />
       <div className="">
-        <h3 className="text-body-lg font-extrabold leading-xl">{props.title}</h3>
-        <p className="text-body-lg leading-xl">{props.desc}</p>
+        <h3 className="text-pc-r !font-bold">{props.title}</h3>
+        <p className="text-pc-r">{props.desc}</p>
       </div>
     </UnstyledAnchor>
   );

@@ -5,32 +5,32 @@ export const Nav = () => {
     <nav className="col-span-full md:col-span-6 md:col-start-4">
       <ul className="grid grid-cols-1 gap-8 text-center md:grid-cols-2 md:text-start">
         <li>
-          <UnstyledAnchor className="hover:underline" href="/site-policy/">
+          <UnstyledAnchor className="text-pc-s-link underline" href="/site-policy/">
             サイトポリシー
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="hover:underline" href="/copyright-policy/">
+          <UnstyledAnchor className="text-pc-s-link underline" href="/copyright-policy/">
             コピーライトポリシー
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="hover:underline" href="/privacy-policy/">
+          <UnstyledAnchor className="text-pc-s-link underline" href="/privacy-policy/">
             プライバシーポリシー
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="hover:underline" href="/sitemap/">
+          <UnstyledAnchor className="text-pc-s-link underline" href="/sitemap/">
             サイトマップ
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="hover:underline" href="/accessibility-statement/">
+          <UnstyledAnchor className="text-pc-s-link underline" href="/accessibility-statement/">
             ウェブアクセシビリティ
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor className="hover:underline" href="/contact/">
+          <UnstyledAnchor className="text-pc-s-link underline" href="/contact/">
             ご意見・ご要望
           </UnstyledAnchor>
         </li>

@@ -6,25 +6,25 @@ export const Nav = () => {
     <div className="flex flex-col gap-12">
       <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
         <UnstyledAnchor
-          className="rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
+          className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
           href="/procurement/#"
         >
           入札公告等
         </UnstyledAnchor>
         <UnstyledAnchor
-          className="rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
+          className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
           href="/procurement/#"
         >
           企画競争
         </UnstyledAnchor>
         <UnstyledAnchor
-          className="rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
+          className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
           href="/procurement/#"
         >
           公募
         </UnstyledAnchor>
         <UnstyledAnchor
-          className="rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
+          className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
           href="/procurement/#"
         >
           意見招請

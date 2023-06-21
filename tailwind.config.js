@@ -7,48 +7,67 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        anchor: '#0017C1',
+      },
       fontSize: {
-        'web-xl': [
-          '2.75rem',
-          {
-            fontWeight: '600',
-            lineHeight: '64px',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'web-lg': [
-          '2rem',
-          {
-            fontWeight: '700',
-            lineHeight: '48px',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'web-md': [
+        'pc-xl': [
           '1.625rem',
           {
             fontWeight: '700',
-            lineHeight: '48px',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'web-sm': [
-          '1.375rem',
-          {
-            fontWeight: '700',
             lineHeight: '40px',
-            letterSpacing: '0.04em',
+            letterSpacing: '0.01em',
           },
         ],
-        'web-xs': [
-          '1.0625rem',
+        'pc-r': [
+          '1rem',
           {
-            fontWeight: '700',
+            fontWeight: '500',
+            lineHeight: '200%',
+            letterSpacing: '0.01em',
+          },
+        ],
+        'pc-r-link': [
+          '1rem',
+          {
+            fontWeight: '500',
+            lineHeight: '200%',
+            letterSpacing: '0.01em',
+          },
+        ],
+        'pc-m': [
+          '1.0625',
+          {
+            fontWeight: '800',
             lineHeight: '32px',
             letterSpacing: '0.04em',
           },
         ],
         'pc-s': [
+          '0.8125rem',
+          {
+            fontWeight: '400',
+            lineHeight: '185%',
+            letterSpacing: '0.01em',
+          },
+        ],
+        'pc-nav-default': [
+          '0.875rem',
+          {
+            fontWeight: '500',
+            lineHeight: '100%',
+            letterSpacing: '0.04em',
+          },
+        ],
+        'pc-nav-current': [
+          '0.875rem',
+          {
+            fontWeight: '800',
+            lineHeight: '100%',
+            letterSpacing: '0.04em',
+          },
+        ],
+        'pc-s-link': [
           '0.8125rem',
           {
             fontWeight: '400',
@@ -64,14 +83,6 @@ module.exports = {
             letterSpacing: '0.04em',
           },
         ],
-        'menu-strong-link': [
-          '1.25rem',
-          {
-            fontWeight: '500',
-            lineHeight: '160%',
-            letterSpacing: '0.04em',
-          },
-        ],
         'menu-link': [
           '0.875rem',
           {
@@ -80,59 +91,11 @@ module.exports = {
             letterSpacing: '0.04em',
           },
         ],
-        'attention-card-title': [
-          '1rem',
-          {
-            fontWeight: '500',
-            lineHeight: '200%',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'topics-card-title': [
-          '1rem',
-          {
-            fontWeight: '500',
-            lineHeight: '200%',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'service-card-title': [
-          '0.875rem',
-          {
-            fontWeight: '500',
-            lineHeight: '200%',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'card-title': [
-          '1rem',
-          {
-            fontWeight: '500',
-            lineHeight: '170%',
-            letterSpacing: '0.04em',
-          },
-        ],
-        'card-category': [
-          '0.75rem',
-          {
-            fontWeight: '400',
-            lineHeight: '100%',
-            letterSpacing: '0.1em',
-          },
-        ],
-        'card-datetime': [
-          '0.75rem',
-          {
-            fontWeight: '400',
-            lineHeight: '100%',
-            letterSpacing: '0.04em',
-          },
-        ],
         button: [
           '1rem',
           {
             fontWeight: '500',
-            lineHeight: '170%',
+            lineHeight: '150%',
             letterSpacing: '0.04em',
           },
         ],

@@ -8,9 +8,9 @@ type Props = {
 export const Card = (props: Props) => {
   return (
     <div className="flex flex-col gap-4 border-2 border-sumi-900 px-8 py-6">
-      <p className="text-attention-card-title">{props.title}</p>
+      <p className="text-pc-r">{props.title}</p>
       <time
-        className="text-card-datetime text-sumi-600"
+        className="text-pc-s text-description"
         dateTime={props.publishedAt.replace(/(年|月)/g, '-').replace('日', '')}
       >
         {props.publishedAt}
