@@ -3,7 +3,7 @@ import { prefix } from '@/utils';
 
 export const SubList = () => {
   return (
-    <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
+    <div className="grid auto-rows-fr grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       <Card
         desc={
           '安心して公金受取口座の登録を行っていただき、迅速かつ確実な給付が実現できるよう、信頼の確保に引き続き取り組んでまいります。'

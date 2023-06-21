@@ -13,7 +13,7 @@ export const Card = (props: Props) => {
       className="flex flex-col content-between justify-between gap-6 rounded-2xl border border-divider p-6 transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
       href={props.path}
     >
-      <p className="line-clamp-4 text-card-title">{props.title}</p>
+      <p className="text-card-title">{props.title}</p>
 
       <div className="flex justify-between">
         <span className="text-card-category">{props.category}</span>

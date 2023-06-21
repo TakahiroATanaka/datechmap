@@ -5,7 +5,6 @@ module.exports = {
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
-  darkMode: 'class',
   theme: {
     extend: {
       fontSize: {
@@ -163,11 +162,6 @@ module.exports = {
       lineHeight: {
         xl: '200%',
       },
-    },
-  },
-  variants: {
-    extend: {
-      invert: ['dark'],
     },
   },
   plugins: [require('@digital-go-jp/tailwind-theme-plugin')],
