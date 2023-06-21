@@ -13,9 +13,9 @@ export const Culture = () => {
           target="_blank"
         >
           <img alt="" className="object-cover" src={`${prefix()}/recruit-culture-image.png`} />
-          <h3 className="text-topics-card-title text-body">
+          <h4 className="text-topics-card-title text-body">
             {'デジタル庁ではnoteを活用して、働く職員を紹介しています'}
-          </h3>
+          </h4>
         </UnstyledAnchor>
       </div>
     </section>
