@@ -6,13 +6,13 @@ export const List = () => {
     <div className="grid grid-cols-1 content-stretch gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-4">
       <Card
         desc="浅沼デジタル監より、2023年1月から3月までの四半期の活動内容を報告いたしました。"
-        imageUrl={`${prefix()}/activities/myna.png`}
+        imageUrl={`${prefix()}/activities/report.jpg`}
         path="/policies/periodic-briefing/"
         title="デジタル庁の四半期活動報告を行いました"
       />
       <Card
         desc="マイナポータル実証アルファ版をリリースしました。スマートフォンにてぜひご体験ください。"
-        imageUrl={`${prefix()}/activities/myna-alpha.png`}
+        imageUrl={`${prefix()}/activities/myna.jpg`}
         path="/policies/myna_portal/validation/"
         title="新しいマイナポータルを体験できます"
       />
