@@ -7,25 +7,25 @@ export const List = () => {
       <Card
         desc="マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします。"
         imageUrl={`${prefix()}/activities/myna.png`}
-        path="#"
+        path="/policies/mynumber/"
         title="マイナンバーカード"
       />
       <Card
         desc="データに基づいたオープンな政策立案・実施を目指す取り組みの一環として実施しています。"
         imageUrl={`${prefix()}/activities/dashboard.png`}
-        path="#"
+        path="/resources/govdashboard/"
         title="政策データダッシュボード"
       />
       <Card
         desc="マイナンバーカードなしで、様々なサービスの利用や申し込みができるようになります。"
         imageUrl={`${prefix()}/activities/sp-jpki.png`}
-        path="#"
+        path="/policies/mynumber/smartphone-certification/"
         title="スマホ用電子証明書搭載サービス"
       />
       <Card
         desc="既存のサイト設計や表現を見直した、実証中のウェブサイトです。ぜひご体験ください。"
         imageUrl={`${prefix()}/activities/myna-alpha.png`}
-        path="#"
+        path="/policies/myna_portal/validation/"
         title="マイナポータル実証アルファ版"
       />
     </div>
