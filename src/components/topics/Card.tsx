@@ -1,5 +1,4 @@
 import { UnstyledAnchor } from '../ui/UnstyledAnchor';
-import Image from 'next/image';
 
 type Props = {
   path: string;
@@ -14,12 +13,10 @@ type Props = {
 export const Card = (props: Props) => {
   return (
     <UnstyledAnchor className="flex flex-col gap-4 rounded-3xl !outline-offset-[12px]" href={props.path}>
-      <Image
+      <img
         alt=""
         className="w-full rounded-3xl object-cover"
-        decoding="auto"
         height={props.image.height}
-        loading="eager"
         src={props.image.path}
         width={props.image.width}
       />
