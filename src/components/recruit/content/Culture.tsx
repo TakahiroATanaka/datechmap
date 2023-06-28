@@ -12,7 +12,7 @@ export const Culture = () => {
           href={'https://digital-gov.note.jp/'}
           target="_blank"
         >
-          <img alt="" className="object-cover" src={`${prefix()}/recruit-culture-image.png`} />
+          <img alt="" className="object-cover" loading="lazy" src={`${prefix()}/recruit-culture-image.png`} />
           <h4 className="text-pc-r">{'デジタル庁ではnoteを活用して、働く職員を紹介しています'}</h4>
         </UnstyledAnchor>
       </div>
