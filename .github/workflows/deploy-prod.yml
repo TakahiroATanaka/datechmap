@@ -25,6 +25,7 @@ jobs:
       - name: Install packages
         run: |
           npm install
+          echo '\nNEXT_PUBLIC_ANALYTICS="on"' >> ./.env.production
       - name: Build
         run: |
           npm run build

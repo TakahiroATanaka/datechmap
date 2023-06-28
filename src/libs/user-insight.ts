@@ -1,7 +1,6 @@
 export const userInsightTag = () => {
-  return process.env.NEXT_PUBLIC_ENV === 'prod' ? `` : ``;
-  /*
-  return `
+  if (process.env.NEXT_PUBLIC_ENV === 'prod' && process.env.NEXT_PUBLIC_ANALYTICS === 'on') {
+    return `
     var _uic = _uic ||{}; var _uih = _uih ||{};_uih['id'] = 55860;
     _uih['lg_id'] = '';
     _uih['fb_id'] = '';
@@ -17,5 +16,7 @@ export const userInsightTag = () => {
     var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi, s);
     })();
   `;
-  */
+  } else {
+    return '';
+  }
 };

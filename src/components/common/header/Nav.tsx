@@ -48,7 +48,7 @@ export const Nav = () => {
           </UnstyledAnchor>
         </li>
         <li className="hidden lg:list-item">
-          <UnstyledAnchor className="flex items-center gap-2 px-4 text-pc-nav-default hover:underline" href="/en/">
+          <UnstyledAnchor className="flex items-center gap-2 px-4 py-1 text-pc-nav-default hover:underline" href="/en/">
             Global Site
           </UnstyledAnchor>
         </li>
