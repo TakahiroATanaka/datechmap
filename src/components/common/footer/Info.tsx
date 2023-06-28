@@ -5,7 +5,7 @@ import { YouTubeIcon } from '@/components/ui/icons/sns/YouTubeIcon';
 
 export const Info = () => {
   return (
-    <div className="col-span-full flex flex-col justify-between gap-2 md:col-span-3">
+    <div className="col-span-full flex flex-col justify-between gap-4 md:col-span-3">
       <div className="flex gap-4 self-center md:self-end">
         <UnstyledAnchor className="rounded-full" href="https://twitter.com/digital_jpn" target="_blank">
           <TwitterIcon />
