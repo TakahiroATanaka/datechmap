@@ -12,7 +12,7 @@ export const Card = (props: Props) => {
     <UnstyledAnchor className="flex flex-col gap-4 rounded-3xl !outline-offset-[12px]" href={props.path}>
       <img
         alt=""
-        className="rounded-lg border border-divider object-cover"
+        className="w-full rounded-lg border border-divider object-cover"
         height={161}
         loading="lazy"
         src={props.imageUrl}
