@@ -11,7 +11,9 @@ export const Footer = () => {
             <Logo className="mx-auto md:mx-0" style={{ width: '131px', height: '24px' }} />
 
             <address className="text-pc-s not-italic text-description">
-              〒102-0094 東京都千代田区紀尾井町1-3 東京ガーデンテラス紀尾井町 20階
+              〒102-0094 東京都千代田区紀尾井町1-3
+              <br />
+              東京ガーデンテラス紀尾井町 20階
             </address>
 
             <p className="text-pc-s text-description">法人番号: 8000012010038</p>

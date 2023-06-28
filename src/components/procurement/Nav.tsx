@@ -7,13 +7,13 @@ export const Nav = () => {
       <div className="grid grid-cols-2 gap-x-8 gap-y-10 lg:grid-cols-4">
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
-          href="/procurement/#tender_notice"
+          href="/procurement/#public_notice"
         >
           入札公告等
         </UnstyledAnchor>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
-          href="/procurement/#planning_competition"
+          href="/procurement/#proposal"
         >
           企画競争
         </UnstyledAnchor>
