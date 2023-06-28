@@ -7,8 +7,8 @@ export const MainList = () => {
       <Card
         image={{
           path: `${prefix()}/topics/my-number-card-dashboard.jpg`,
-          width: 1600,
-          height: 1100,
+          width: 544,
+          height: 374,
         }}
         path={'/policies/mynumber/'}
         title={'マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします'}
@@ -17,8 +17,8 @@ export const MainList = () => {
       <Card
         image={{
           path: `${prefix()}/topics/my-number-card-dashboard.jpg`,
-          width: 1600,
-          height: 1100,
+          width: 574,
+          height: 374,
         }}
         path={'/resources/govdashboard/'}
         title={'政策に関するデータを一元的に表示した「政策データダッシュボード（ベータ版）」を公開しています'}
