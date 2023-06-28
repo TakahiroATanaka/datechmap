@@ -25,15 +25,15 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <>
       <Head>
-        <title>デジタル庁 | 実証版</title>
+        <title>デジタル庁 | 試行版</title>
         <meta charSet="utf-8" />
         <meta content="デジタル庁" name="author" />
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="デジタル庁トップページの実証版です。" name="description" />
         <link href="/favicon.png" rel="icon" type="image/png" />
         {ogp(
-          'デジタル庁 実証トップページ',
-          'デジタル庁トップページの実証版です。',
+          'デジタル庁 | 試行版',
+          'デジタル庁の試行版のトップページ',
           '/experimental/',
           '/experimental/ogp.png',
           'website',

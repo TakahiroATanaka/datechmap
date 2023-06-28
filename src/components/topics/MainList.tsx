@@ -5,15 +5,15 @@ export const MainList = () => {
   return (
     <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2">
       <Card
-        imageUrl={`${prefix()}/topics/001.png`}
-        path={'/policies/priority-policy-program/'}
-        title={'「デジタル社会の実現に向けた重点計画」が閣議決定されました'}
+        imageUrl={`${prefix()}/topics/dummy.png`}
+        path={'/policies/mynumber/'}
+        title={'マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします'}
       />
 
       <Card
-        imageUrl={`${prefix()}/topics/002.png`}
-        path={'/#'}
-        title={'マイナポータルハッカソン実施レポートを公開しました'}
+        imageUrl={`${prefix()}/topics/my-number-card-dashboard.jpg`}
+        path={'/resources/govdashboard/'}
+        title={'政策に関するデータを一元的に表示した「政策データダッシュボード（ベータ版）」を公開しています'}
       />
     </div>
   );
