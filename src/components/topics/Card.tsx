@@ -18,6 +18,7 @@ export const Card = (props: Props) => {
         alt=""
         className="w-full rounded-3xl object-cover"
         height={props.image.height}
+        loading="eager"
         src={props.image.path}
         width={props.image.width}
       />
