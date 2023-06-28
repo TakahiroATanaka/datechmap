@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <link href="/favicon.png" rel="icon" type="image/png" />
         {ogp(
           'デジタル庁 | 試行版',
-          'デジタル庁の試行版のトップページ',
+          'デジタル庁トップページの試行版です。',
           '/experimental/',
           '/experimental/ogp.png',
           'website',
