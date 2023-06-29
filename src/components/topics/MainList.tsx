@@ -6,7 +6,7 @@ export const MainList = () => {
     <div className="grid grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2">
       <Card
         image={{
-          path: `${prefix()}/topics/my-number-card.webp`,
+          path: `${prefix()}/topics/my-number-card.png`, // png
           width: 544,
           height: 374,
         }}
@@ -16,7 +16,7 @@ export const MainList = () => {
 
       <Card
         image={{
-          path: `${prefix()}/topics/my-number-card-dashboard.webp`,
+          path: `${prefix()}/topics/my-number-card-dashboard.jpg`, // jpg
           width: 574,
           height: 374,
         }}

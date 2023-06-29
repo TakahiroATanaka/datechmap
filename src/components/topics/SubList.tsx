@@ -6,7 +6,7 @@ export const SubList = () => {
     <div className="grid auto-rows-fr grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       <Card
         image={{
-          path: `${prefix()}/topics/kouzatenken.webp`,
+          path: `${prefix()}/topics/kouzatenken.png`, // png
           width: 352,
           height: 256,
         }}
@@ -16,7 +16,7 @@ export const SubList = () => {
 
       <Card
         image={{
-          path: `${prefix()}/topics/my-number-card-info.webp`,
+          path: `${prefix()}/topics/my-number-card-info.png`, // png
           width: 352,
           height: 256,
         }}
@@ -26,7 +26,7 @@ export const SubList = () => {
 
       <Card
         image={{
-          path: `${prefix()}/topics/tousai.webp`,
+          path: `${prefix()}/topics/tousai.png`, // png
           width: 352,
           height: 256,
         }}
