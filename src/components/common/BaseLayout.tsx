@@ -10,7 +10,7 @@ export const BaseLayout = ({ children }: { readonly children: ReactNode }) => {
   const { isOpen } = useContext(MenuContext);
 
   return (
-    <div className={`${notoSansJp.variable} overflow-y-scroll bg-primary ${isOpen ? 'h-screen' : ''}`} id="top">
+    <div className={`${notoSansJp.variable} bg-primary ${isOpen ? 'h-screen overflow-y-hidden' : ''}`} id="top">
       <a className="sr-only" href="#main">
         本文へ移動
       </a>
