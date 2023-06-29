@@ -16,7 +16,7 @@ export const SubList = () => {
 
       <Card
         image={{
-          path: `${prefix()}/topics/kouzatenken.webp`,
+          path: `${prefix()}/topics/my-number-card-info.webp`,
           width: 352,
           height: 256,
         }}
