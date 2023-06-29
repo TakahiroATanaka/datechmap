@@ -11,7 +11,7 @@ export const Nav = () => {
 
   useEffect(() => {
     if (!isOpen) {
-      window.scrollTo({ top: scrollYPosition, left: 0, behavior: 'instant' });
+      window.scrollTo({ top: scrollYPosition, left: 0 });
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [isOpen]);
