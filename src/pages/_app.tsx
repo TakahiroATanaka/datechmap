@@ -33,8 +33,8 @@ export default function App({ Component, pageProps }: AppProps) {
         {ogp(
           'デジタル庁 | 試行版',
           'デジタル庁トップページの試行版です。',
-          '/experimental/',
-          '/experimental/ogp.png',
+          'httos://www/digital/go.jp/experimental/',
+          'https://www.digital.go.jp/assets/images/ogp.png',
           'website',
         )}
       </Head>
