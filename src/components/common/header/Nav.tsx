@@ -4,14 +4,12 @@ import { SearchIcon } from '../../ui/icons/SearchIcon';
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 import { CrossIcon } from '@/components/ui/icons/CrossIcon';
 import { MenuContext } from '@/features/context';
-import { useContext, useEffect, useState } from 'react';
+import { useContext, useEffect } from 'react';
 
 export const Nav = () => {
   const { isOpen, setIsOpen, scrollYPosition, setScrollYPosition } = useContext(MenuContext);
 
   useEffect(() => {
-    console.log(`current: ${scrollYPosition}, isOpen: ${isOpen}`);
-
     if (!isOpen) {
       window.scrollTo({ top: scrollYPosition, left: 0, behavior: 'instant' });
     }
@@ -68,7 +66,6 @@ export const Nav = () => {
             id="btn-menu"
             onClick={() => {
               if (!isOpen) {
-                console.log(window.scrollY);
                 setScrollYPosition(window.scrollY);
               }
               setIsOpen(!isOpen);
