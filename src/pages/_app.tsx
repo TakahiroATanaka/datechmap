@@ -1,5 +1,4 @@
 import { MenuContext } from '@/features/context';
-import { userInsightTag } from '@/libs/user-insight';
 import '@/styles/globals.css';
 import type { AppProps } from 'next/app';
 import Head from 'next/head';
@@ -39,8 +38,27 @@ export default function App({ Component, pageProps }: AppProps) {
           'website',
         )}
       </Head>
+      <Script
+        dangerouslySetInnerHTML={{
+          __html: `var _uic = _uic ||{}; var _uih = _uih ||{};_uih['id'] = ${
+            process.env.NEXT_PUBLIC_ENV === 'prod' ? 55860 : 55874
+          };
+            _uih['lg_id'] = '';
+            _uih['fb_id'] = '';
+            _uih['tw_id'] = '';
+            _uih['uigr_1'] = ''; _uih['uigr_2'] = ''; _uih['uigr_3'] = ''; _uih['uigr_4'] = ''; _uih['uigr_5'] = '';
+            _uih['uigr_6'] = ''; _uih['uigr_7'] = ''; _uih['uigr_8'] = ''; _uih['uigr_9'] = ''; _uih['uigr_10'] = '';
+            _uic['uls'] = 1;
+            _uic['security_type'] = -1;
 
-      <Script dangerouslySetInnerHTML={{ __html: userInsightTag() }} id="user-insight-tag" />
+            (function() {
+            var bi = document.createElement('script');bi.type = 'text/javascript'; bi.async = true;
+            bi.src = '//cs.nakanohito.jp/b3/bi.js';
+            var s = document.getElementsByTagName('script')[0];s.parentNode.insertBefore(bi, s);
+            })();`,
+        }}
+        id="user-insight"
+      />
 
       <MenuContext.Provider value={{ isOpen, setIsOpen }}>
         <Component {...pageProps} />
