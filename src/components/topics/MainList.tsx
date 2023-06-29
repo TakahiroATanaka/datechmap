@@ -10,7 +10,7 @@ export const MainList = () => {
           width: 544,
           height: 374,
         }}
-        path={'/policies/mynumber/'}
+        path={'https://www.digital.go.jp/policies/mynumber/'}
         title={'マイナンバー制度・マイナンバーカードのご質問・ご不安にお答えします'}
       />
 
@@ -20,7 +20,7 @@ export const MainList = () => {
           width: 574,
           height: 374,
         }}
-        path={'/resources/govdashboard/'}
+        path={'https://www.digital.go.jp/resources/govdashboard/'}
         title={'政策に関するデータを一元的に表示した「政策データダッシュボード（ベータ版）」を公開しています'}
       />
     </div>
