@@ -67,21 +67,17 @@ export const Menu = () => {
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">利用者別</li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/individual/"
-                  id="menu-first-item"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/individual/" id="menu-first-item">
                   一般
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/business/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/business/">
                   行政・事業者
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/press/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/press/">
                   報道関係者
                 </UnstyledAnchor>
               </li>
@@ -90,25 +86,22 @@ export const Menu = () => {
             <ul className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">総合メニュー</li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/news/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/news/">
                   新着・更新情報
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/services/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/services/">
                   サービス
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/policies/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/policies/">
                   政策
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/recruitment/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/recruitment/">
                   採用
                 </UnstyledAnchor>
               </li>
@@ -116,38 +109,32 @@ export const Menu = () => {
 
             <ul className="flex flex-col gap-4">
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/about/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/about/">
                   組織情報
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/councils/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/councils/">
                   会議等
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/laws/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/laws/">
                   法令
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/resources/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/resources/">
                   資料
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link  hover:underline"
-                  href="https://www.digital.go.jp/applications/"
-                >
+                <UnstyledAnchor className="text-menu-link  hover:underline" href="/applications/">
                   申請・届出
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/procurement/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/procurement/">
                   調達情報
                 </UnstyledAnchor>
               </li>
@@ -155,61 +142,42 @@ export const Menu = () => {
 
             <ul className="flex flex-col gap-4">
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/en/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/en/">
                   Global Site
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/site-policy/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/site-policy/">
                   サイトポリシー
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/privacy-policy/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/privacy-policy/">
                   プライバシーポリシー
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/accessibility-statement/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/accessibility-statement/">
                   ウェブアクセシビリティ
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/copyright-policy/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/copyright-policy/">
                   コピーライトポリシー
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/social-media-policy/"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/social-media-policy/">
                   SNS
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor className="text-menu-link hover:underline" href="https://www.digital.go.jp/contact/">
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/contact/">
                   ご意見・ご要望
                 </UnstyledAnchor>
               </li>
               <li>
-                <UnstyledAnchor
-                  className="text-menu-link hover:underline"
-                  href="https://www.digital.go.jp/sitemap/"
-                  id="menu-last-item"
-                >
+                <UnstyledAnchor className="text-menu-link hover:underline" href="/sitemap/" id="menu-last-item">
                   サイトマップ
                 </UnstyledAnchor>
               </li>

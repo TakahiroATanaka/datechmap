@@ -24,7 +24,7 @@ export const fetchNews = async () => {
       title,
       category,
       date,
-      path: `https://digital.go.jp${path}`,
+      path: `${path}`,
     });
   }
 
@@ -54,7 +54,7 @@ export const fetchProcurements = async () => {
       title,
       category,
       date,
-      path: `https://digital.go.jp${path}`,
+      path: `${path}`,
     });
   }
 

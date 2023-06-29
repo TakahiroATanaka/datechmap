@@ -15,24 +15,18 @@ export const Nav = () => {
         <li>
           <UnstyledAnchor
             className="rounded-full bg-wood-50 px-4 py-1 text-pc-nav-current hover:underline"
-            href="https://www.digital.go.jp/experimental/"
+            href="/experimental/"
           >
             ホーム
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor
-            className="px-4 text-pc-nav-default hover:underline"
-            href="https://www.digital.go.jp/individual/"
-          >
+          <UnstyledAnchor className="px-4 text-pc-nav-default hover:underline" href="/individual/">
             一般
           </UnstyledAnchor>
         </li>
         <li>
-          <UnstyledAnchor
-            className="px-4 text-pc-nav-default hover:underline"
-            href="https://www.digital.go.jp/business/"
-          >
+          <UnstyledAnchor className="px-4 text-pc-nav-default hover:underline" href="/business/">
             行政・事業者
           </UnstyledAnchor>
         </li>
@@ -47,17 +41,14 @@ export const Nav = () => {
         <li>
           <UnstyledAnchor
             className="flex items-center gap-2 px-2 text-pc-nav-default hover:underline md:px-4"
-            href="https://www.digital.go.jp/search/"
+            href="/search/"
           >
             <SearchIcon />
             検索
           </UnstyledAnchor>
         </li>
         <li className="hidden lg:list-item">
-          <UnstyledAnchor
-            className="flex items-center gap-2 px-4 py-1 text-pc-nav-default hover:underline"
-            href="https://www.digital.go.jp/en/"
-          >
+          <UnstyledAnchor className="flex items-center gap-2 px-4 py-1 text-pc-nav-default hover:underline" href="/en/">
             Global Site
           </UnstyledAnchor>
         </li>

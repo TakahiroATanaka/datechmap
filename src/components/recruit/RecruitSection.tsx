@@ -5,7 +5,7 @@ export const RecruitSection = () => {
   return (
     <section className="flex flex-col gap-12">
       <SectionHeader
-        link={{ ariaLabel: '採用情報一覧を見る', title: '一覧を見る', path: 'https://www.digital.go.jp/recruitment/' }}
+        link={{ ariaLabel: '採用情報一覧を見る', title: '一覧を見る', path: '/recruitment/' }}
         title="採用情報"
       />
       <Content />
