@@ -55,8 +55,8 @@ export const List = () => {
       <Card
         alt="デジタル推進委員会のウェブサイトを見る"
         imageUrl={`${prefix()}/services/digital-suishin.png`}
-        title="デジタル推進委員会"
-        url="https://www.digital.go.jp/policies/digital_promotion_staff/"
+        title="デジタル推進委員ポータル"
+        url="https://digital-ps.digital.go.jp/"
       />
     </div>
   );
