@@ -7,25 +7,25 @@ export const Nav = () => {
       <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-4">
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
-          href="/procurement/#public_notice"
+          href="https://digital.go.jp/procurement/#public_notice"
         >
           入札公告等
         </UnstyledAnchor>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
-          href="/procurement/#proposal"
+          href="https://digital.go.jp/procurement/#proposal"
         >
           企画競争情報
         </UnstyledAnchor>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
-          href="/procurement/#public_tender"
+          href="https://digital.go.jp/procurement/#public_tender"
         >
           公募情報
         </UnstyledAnchor>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover"
-          href="/procurement/#rfc_answer"
+          href="https://digital.go.jp/procurement/#rfc_answer"
         >
           意見招請情報
         </UnstyledAnchor>

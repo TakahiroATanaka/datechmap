@@ -10,7 +10,7 @@ export const Card = (props: Props) => {
   return (
     <UnstyledAnchor
       className="flex flex-col gap-4 border-2 border-sumi-900 px-8 py-6 outline-offset-2 outline-border-focused focus:outline focus:outline-2"
-      href="/policies/mynumber/related-services-issue/"
+      href="https://digital.go.jp/policies/mynumber/related-services-issue/"
     >
       <p className="text-pc-r">{props.title}</p>
       <time

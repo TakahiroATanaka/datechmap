@@ -7,7 +7,7 @@ export const Links = () => {
         <h3 className="text-pc-m">業務説明会・イベント</h3>
         <UnstyledAnchor
           className="rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/recruiting-session/"
+          href="https://www.digital.go.jp/recruitment/recruiting-session/"
         >
           開催情報
         </UnstyledAnchor>
@@ -17,7 +17,7 @@ export const Links = () => {
         <h3 className="text-pc-m">新卒採用</h3>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/newgraduates/"
+          href="https://www.digital.go.jp/recruitment/newgraduates/"
         >
           国家公務員採用試験
         </UnstyledAnchor>
@@ -27,19 +27,19 @@ export const Links = () => {
         <h3 className="text-pc-m">中途採用</h3>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/career/"
+          href="https://www.digital.go.jp/recruitment/career/"
         >
           中途採用
         </UnstyledAnchor>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/career-government-official/"
+          href="https://www.digital.go.jp/recruitment/career-government-official/"
         >
           国家公務員採用試験
         </UnstyledAnchor>
         <UnstyledAnchor
           className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/career-selection-chief/"
+          href="https://www.digital.go.jp/recruitment/career-selection-chief/"
         >
           選考採用試験（一般職係長級）
         </UnstyledAnchor>
@@ -48,7 +48,7 @@ export const Links = () => {
       {/* SP用 */}
       <UnstyledAnchor
         className="h-14 rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-button leading-[22px] text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover md:hidden"
-        href="/recruitment/"
+        href="https://www.digital.go.jp/recruitment/"
       >
         採用情報の一覧を見る
       </UnstyledAnchor>

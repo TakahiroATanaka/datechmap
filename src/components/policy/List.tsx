@@ -7,13 +7,13 @@ export const List = () => {
       <Card
         desc="浅沼デジタル監より、2023年1月から3月までの四半期の活動内容を報告いたしました。"
         imageUrl={`${prefix()}/activities/report.jpg`}
-        path="/policies/periodic-briefing/"
+        path="https://www.digital.go.jp/policies/periodic-briefing/"
         title="デジタル庁の四半期活動報告を行いました"
       />
       <Card
         desc="マイナポータル実証アルファ版をリリースしました。スマートフォンにてぜひご体験ください。"
         imageUrl={`${prefix()}/activities/myna.jpg`}
-        path="/policies/myna_portal/validation/"
+        path="https://www.digital.go.jp/policies/myna_portal/validation/"
         title="新しいマイナポータルを体験できます"
       />
     </div>
