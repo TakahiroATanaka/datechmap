@@ -4,10 +4,19 @@ import { SearchIcon } from '../../ui/icons/SearchIcon';
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 import { CrossIcon } from '@/components/ui/icons/CrossIcon';
 import { MenuContext } from '@/features/context';
-import { useContext } from 'react';
+import { useContext, useEffect, useState } from 'react';
 
 export const Nav = () => {
-  const { isOpen, setIsOpen } = useContext(MenuContext);
+  const { isOpen, setIsOpen, scrollYPosition, setScrollYPosition } = useContext(MenuContext);
+
+  useEffect(() => {
+    console.log(`current: ${scrollYPosition}, isOpen: ${isOpen}`);
+
+    if (!isOpen) {
+      window.scrollTo({ top: scrollYPosition, left: 0, behavior: 'instant' });
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isOpen]);
 
   return (
     <nav className="flex w-full items-center justify-end gap-6">
@@ -57,7 +66,13 @@ export const Nav = () => {
             aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
             className="flex items-center gap-2 px-2 text-pc-nav-default hover:underline md:px-4"
             id="btn-menu"
-            onClick={() => setIsOpen(!isOpen)}
+            onClick={() => {
+              if (!isOpen) {
+                console.log(window.scrollY);
+                setScrollYPosition(window.scrollY);
+              }
+              setIsOpen(!isOpen);
+            }}
           >
             {isOpen ? (
               <div className="flex h-6 w-6 items-center">
