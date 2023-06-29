@@ -11,9 +11,9 @@ export const List = () => {
         url="https://vjw-lp.digital.go.jp/ja/"
       />
       <Card
-        alt="e-govのウェブサイトを見る"
+        alt="e-Govポータルのウェブサイトを見る"
         imageUrl={`${prefix()}/services/e-gov.png`}
-        title="e-Gov"
+        title="e-Govポータル"
         url="https://www.e-gov.go.jp/"
       />
       <Card
@@ -41,9 +41,9 @@ export const List = () => {
         url="https://catalog.registries.digital.go.jp/rc/dataset/"
       />
       <Card
-        alt="gBizIDのウェブサイトを見る"
+        alt="GビズIDのウェブサイトを見る"
         imageUrl={`${prefix()}/services/gbizid.png`}
-        title="gBizID"
+        title="GビズID"
         url="https://gbiz-id.go.jp/top/"
       />
       <Card

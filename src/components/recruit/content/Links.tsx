@@ -9,7 +9,7 @@ export const Links = () => {
           className="rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
           href="/recruitment/recruiting-session/"
         >
-          人事院主催 本府省合同業務説明会
+          開催情報
         </UnstyledAnchor>
       </section>
 
