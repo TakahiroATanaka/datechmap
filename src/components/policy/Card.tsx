@@ -18,7 +18,7 @@ export const Card = (props: Props) => {
         src={props.imageUrl}
         width={256}
       />
-      <div className="">
+      <div>
         <h3 className="text-pc-r !font-bold">{props.title}</h3>
         <p className="text-pc-r">{props.desc}</p>
       </div>
