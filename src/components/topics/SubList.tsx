@@ -21,7 +21,7 @@ export const SubList = () => {
           height: 256,
         }}
         path={'/policies/mynumber/faq-insurance-card/'}
-        title={'マイナンバーカードの保健証情報の誤りに関する問合せ先についてQAに追加しました'}
+        title={'マイナンバーカードの保険証情報の誤りに関する問合せ先についてQAに追加しました'}
       />
 
       <Card
