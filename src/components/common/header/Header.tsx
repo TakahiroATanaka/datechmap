@@ -4,11 +4,11 @@ import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 
 export const Header = () => {
   return (
-    <header className={`sticky top-0 z-50 w-full bg-white md:relative`}>
+    <header className={`sticky top-0 z-50 w-full bg-primary md:relative`}>
       <div className={`mx-auto flex max-w-8xl items-center justify-between p-4 xl:px-10`}>
         <h1 className="flex items-center">
           <UnstyledAnchor href="/experimental/">
-            <Logo className="h-[20px] w-[109.15px]" />
+            <Logo className="h-[20px] w-[109px]" />
             <span className="sr-only">デジタル庁</span>
           </UnstyledAnchor>
         </h1>
