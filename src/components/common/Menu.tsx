@@ -60,7 +60,7 @@ export const Menu = () => {
         <Header />
 
         <div
-          className="flex w-full flex-col gap-10 bg-white/80 px-8 pb-28 pt-8 backdrop-blur-[20px] md:pb-8"
+          className="flex w-full flex-col gap-10 bg-primary/80 px-8 pb-28 pt-8 backdrop-blur-[20px] md:pb-8"
           onClick={(e) => e.stopPropagation()}
         >
           <nav className="flex flex-col gap-12 md:mx-auto md:flex-row md:gap-24">

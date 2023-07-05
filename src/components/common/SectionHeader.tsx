@@ -16,7 +16,7 @@ export const SectionHeader = (props: Props) => {
       {props.link && (
         <UnstyledAnchor
           aria-label={props.link.ariaLabel}
-          className="hidden h-8 rounded-md border border-button-secondary-normal px-3 py-1 text-pc-s text-button-secondary-normal transition-all duration-200 hover:bg-button-secondary-hover md:block"
+          className="hidden h-8 rounded-md border border-button-secondary-normal px-3 py-1 text-pc-s text-button-secondary-normal hover:bg-button-secondary-hover md:block"
           href={props.link.path}
         >
           {props.link.title}
