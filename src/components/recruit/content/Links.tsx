@@ -1,3 +1,4 @@
+import { LinkButton } from '../LinkButton';
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 
 export const Links = () => {
@@ -5,44 +6,19 @@ export const Links = () => {
     <div className="flex flex-col gap-8">
       <section className="flex flex-col gap-4">
         <h3 className="text-pc-m">業務説明会・イベント</h3>
-        <UnstyledAnchor
-          className="rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/recruiting-session/"
-        >
-          開催情報
-        </UnstyledAnchor>
+        <LinkButton path="/recruitment/recruiting-session/">開催情報</LinkButton>
       </section>
 
       <section className="flex flex-col gap-4">
         <h3 className="text-pc-m">新卒採用</h3>
-        <UnstyledAnchor
-          className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/newgraduates/"
-        >
-          国家公務員採用試験
-        </UnstyledAnchor>
+        <LinkButton path="/recruitment/newgraduates/">国家公務員採用試験</LinkButton>
       </section>
 
       <section className="flex flex-col gap-4">
         <h3 className="text-pc-m">中途採用</h3>
-        <UnstyledAnchor
-          className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/career/"
-        >
-          中途採用
-        </UnstyledAnchor>
-        <UnstyledAnchor
-          className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/career-government-official/"
-        >
-          国家公務員採用試験
-        </UnstyledAnchor>
-        <UnstyledAnchor
-          className="h-14 rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] transition-all duration-200 hover:bg-sumi-50 active:bg-sumi-50"
-          href="/recruitment/career-selection-chief/"
-        >
-          選考採用試験（一般職係長級）
-        </UnstyledAnchor>
+        <LinkButton path="/recruitment/career/">中途採用</LinkButton>
+        <LinkButton path="/recruitment/career-government-official/">国家公務員採用試験</LinkButton>
+        <LinkButton path="/recruitment/career-selection-chief/">選考採用試験（一般職係長級）</LinkButton>
       </section>
 
       {/* SP用 */}
