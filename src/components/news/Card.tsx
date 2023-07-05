@@ -1,4 +1,5 @@
 import { UnstyledAnchor } from '../ui/UnstyledAnchor';
+import { formatDate } from '@/utils';
 
 type Props = {
   path: string;
@@ -17,10 +18,7 @@ export const Card = (props: Props) => {
 
       <div className="flex justify-between">
         <span className="text-pc-s">{props.category}</span>
-        <time
-          className="text-pc-s text-description"
-          dateTime={props.publishedAt.replace(/(年|月)/g, '-').replace('日', '')}
-        >
+        <time className="text-pc-s text-description" dateTime={formatDate(props.publishedAt)}>
           {props.publishedAt}
         </time>
       </div>

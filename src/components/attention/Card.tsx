@@ -1,4 +1,5 @@
 import { UnstyledAnchor } from '../ui/UnstyledAnchor';
+import { formatDate } from '@/utils';
 import { ReactNode } from 'react';
 
 type Props = {
@@ -14,10 +15,7 @@ export const Card = (props: Props) => {
       href={props.url}
     >
       <p className="text-pc-r">{props.title}</p>
-      <time
-        className="text-pc-s text-description"
-        dateTime={props.publishedAt.replace(/(年|月)/g, '-').replace('日', '')}
-      >
+      <time className="text-pc-s text-description" dateTime={formatDate(props.publishedAt)}>
         {props.publishedAt}
       </time>
     </UnstyledAnchor>

@@ -17,7 +17,7 @@ export const fetchNews = async () => {
 
     const title = await card.locator('.card__title').innerText();
     const category = await card.locator('.card__category').innerText();
-    const date = (await card.locator('time').getAttribute('datetime')) ?? '';
+    const date = (await card.locator('time').innerText()) ?? '';
     const path = (await card.locator('a').getAttribute('href')) ?? '';
 
     news.push({
@@ -47,7 +47,7 @@ export const fetchProcurements = async () => {
 
     const title = await card.locator('.card__title').innerText();
     const category = await card.locator('.card__category').innerText();
-    const date = (await card.locator('time').getAttribute('datetime')) ?? '';
+    const date = (await card.locator('time').innerText()) ?? '';
     const path = (await card.locator('a').getAttribute('href')) ?? '';
 
     procurements.push({
