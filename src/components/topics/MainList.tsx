@@ -16,7 +16,7 @@ export const MainList = () => {
 
       <Card
         image={{
-          path: `${prefix()}/topics/my-number-card-dashboard.jpg`, // jpg
+          path: `${prefix()}/topics/my-number-card-dashboard.png`, // png
           width: 574,
           height: 374,
         }}
