@@ -17,7 +17,7 @@ export const AttentionSection = () => {
         title={
           <>
             マイナンバーカード関連サービスの誤登録等の事案について、ご自身での確認方法やご質問・ご不安にお答えします。マイナンバー総合フリーダイヤル
-            （☎ 0120-95-0178） でも受け付けております
+            （0120-95-0178） でも受け付けております
           </>
         }
         url={'https://digital.go.jp/policies/mynumber/related-services-issue/'}
