@@ -5,7 +5,7 @@ export const Links = () => {
   return (
     <div className="flex flex-col gap-8">
       <section className="flex flex-col gap-4">
-        <h3 className="text-pc-m">業務説明会・イベント</h3>
+        <h3 className="text-pc-m">業務説明会／イベント</h3>
         <LinkButton path="/recruitment/recruiting-session/">開催情報</LinkButton>
       </section>
 

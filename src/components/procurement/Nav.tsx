@@ -34,7 +34,7 @@ export const Nav = () => {
       <p className="text-pc-r">
         最新の情報は、
         <UnstyledAnchor
-          className="text-pc-r-link text-anchor underline"
+          className="text-pc-r-link text-link underline"
           href="https://www.p-portal.go.jp/pps-web-biz/UAA01/OAA0101"
           target="_blank"
         >

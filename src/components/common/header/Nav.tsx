@@ -29,17 +29,17 @@ export const Nav = () => {
         </li>
         <li>
           <UnstyledAnchor className="px-4 text-pc-nav-default hover:underline" href="/individual/">
-            一般
+            一般の方
           </UnstyledAnchor>
         </li>
         <li>
           <UnstyledAnchor className="px-4 text-pc-nav-default hover:underline" href="/business/">
-            行政・事業者
+            行政・事業者の方
           </UnstyledAnchor>
         </li>
         <li className={`xl:after:ml-6 xl:after:content-["|"]`}>
           <UnstyledAnchor className="px-4 text-pc-nav-default hover:underline" href="https://www.digital.go.jp/press/">
-            報道関係者
+            報道関係者の方
           </UnstyledAnchor>
         </li>
       </ul>

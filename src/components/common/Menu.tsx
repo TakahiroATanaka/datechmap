@@ -68,17 +68,17 @@ export const Menu = () => {
               <li className="text-label-lg text-placeholder">利用者別</li>
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/individual/" id="menu-first-item">
-                  一般
+                  一般の方
                 </UnstyledAnchor>
               </li>
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/business/">
-                  行政・事業者
+                  行政・事業者の方
                 </UnstyledAnchor>
               </li>
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/press/">
-                  報道関係者
+                  報道関係者の方
                 </UnstyledAnchor>
               </li>
             </ul>
