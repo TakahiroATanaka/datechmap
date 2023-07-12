@@ -7,9 +7,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors: {
-        anchor: '#0017C1',
-      },
       fontSize: {
         'pc-xl': [
           '1.625rem',
@@ -75,7 +72,7 @@ module.exports = {
             letterSpacing: '0.01em',
           },
         ],
-        link: [
+        anchor: [
           '0.875rem',
           {
             fontWeight: '400',

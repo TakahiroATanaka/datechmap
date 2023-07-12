@@ -1,5 +1,5 @@
+import { LinkButton as CommonLinkButton } from '../../common/LinkButton';
 import { LinkButton } from '../LinkButton';
-import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 
 export const Links = () => {
   return (
@@ -21,13 +21,9 @@ export const Links = () => {
         <LinkButton path="/recruitment/career-selection-chief/">選考採用試験（一般職係長級）</LinkButton>
       </section>
 
-      {/* SP用 */}
-      <UnstyledAnchor
-        className="h-14 rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-button leading-[22px] text-button-secondary-normal hover:bg-button-secondary-hover md:hidden"
-        href="/recruitment/"
-      >
+      <CommonLinkButton className="md:hidden" path="/recruitment/">
         採用情報の一覧を見る
-      </UnstyledAnchor>
+      </CommonLinkButton>
     </div>
   );
 };

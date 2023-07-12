@@ -1,5 +1,5 @@
+import { LinkButton } from '../common/LinkButton';
 import { SectionHeader } from '../common/SectionHeader';
-import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { List } from './List';
 import { Nav } from './Nav';
 import { Procurement } from '@/types';
@@ -18,13 +18,9 @@ export const ProcurementSection = (props: Props) => {
       <Nav />
       <List procurements={props.procurements} />
 
-      {/* SP用 */}
-      <UnstyledAnchor
-        className="h-14 rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-body-lg font-medium leading-[22px] text-button-secondary-normal hover:bg-button-secondary-hover md:hidden"
-        href="/procurement/"
-      >
+      <LinkButton className="md:hidden" path="/procurement/">
         調達情報一覧を見る
-      </UnstyledAnchor>
+      </LinkButton>
     </section>
   );
 };

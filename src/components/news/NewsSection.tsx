@@ -1,5 +1,5 @@
+import { LinkButton } from '../common/LinkButton';
 import { SectionHeader } from '../common/SectionHeader';
-import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { List } from './List';
 import { News } from '@/types';
 
@@ -16,13 +16,9 @@ export const NewsSection = (props: Props) => {
       />
       <List news={props.news} />
 
-      {/* SP用 */}
-      <UnstyledAnchor
-        className="h-14 rounded-2xl border border-button-secondary-normal px-10 py-4 text-center text-body-lg font-medium leading-[22px] text-button-secondary-normal hover:bg-button-secondary-hover md:hidden"
-        href="/news/"
-      >
+      <LinkButton className="md:hidden" path="/news/">
         最新のお知らせ一覧を見る
-      </UnstyledAnchor>
+      </LinkButton>
     </section>
   );
 };

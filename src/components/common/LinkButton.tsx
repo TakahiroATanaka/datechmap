@@ -4,12 +4,16 @@ import { ReactNode } from 'react';
 type Props = {
   children: ReactNode;
   path: string;
+  className?: string;
 };
 
 export const LinkButton = (props: Props) => {
   return (
     <UnstyledAnchor
-      className="rounded-2xl border border-divider px-6 py-4 text-pc-r leading-[22px] hover:bg-sumi-50 focus:border-transparent active:bg-sumi-50"
+      className={`
+        h-14 rounded-2xl border border-button-secondary-normal px-6 py-4 text-center text-button text-button-secondary-normal hover:bg-button-secondary-hover focus:border-transparent
+        ${props.className}
+      `}
       href={props.path}
     >
       {props.children}

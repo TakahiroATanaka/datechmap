@@ -2,7 +2,7 @@ export const LinkedInIcon = () => {
   return (
     <svg
       aria-label="LinkedIn"
-      enable-background="new 0 0 635 540"
+      enableBackground="new 0 0 635 540"
       height="32"
       id="LinkedIn_32px"
       version="2.1"

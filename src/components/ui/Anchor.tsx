@@ -11,7 +11,7 @@ export const Anchor = (props: Props) => {
   return (
     <Link
       aria-label={rest['aria-label'] ?? undefined}
-      className={`text-link underline outline-offset-2 outline-border-focused focus:outline focus:outline-2 ${
+      className={`text-anchor text-link underline outline-offset-2 outline-border-focused focus:outline focus:outline-2 ${
         className ?? ''
       }`}
       href={href ?? '#'}
