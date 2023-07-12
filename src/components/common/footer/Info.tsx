@@ -1,5 +1,5 @@
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
-import { LinkedInIcon } from '@/components/ui/icons/sns/LinkedinIcon';
+import { LinkedInIcon } from '@/components/ui/icons/sns/LinkedInIcon';
 import { NoteIcon } from '@/components/ui/icons/sns/NoteIcon';
 import { TwitterIcon } from '@/components/ui/icons/sns/TwitterIcon';
 import { YouTubeIcon } from '@/components/ui/icons/sns/YouTubeIcon';
