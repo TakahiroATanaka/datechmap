@@ -4,7 +4,7 @@ import { prefix } from '@/utils';
 export const Culture = () => {
   return (
     <section className="flex flex-col gap-4">
-      <h3 className="text-pc-m">デジタル庁の職員/チーム紹介</h3>
+      <h3 className="text-pc-m">デジタル庁の職／チーム紹介</h3>
 
       <div className="flex flex-col gap-4">
         <UnstyledAnchor
