@@ -4,7 +4,7 @@ import { MenuContext } from '@/features/context';
 import { useContext, useEffect } from 'react';
 
 export const Menu = () => {
-  const { isOpen, setIsOpen } = useContext(MenuContext);
+  const { isOpen, setIsOpen, shouldFocusVisible } = useContext(MenuContext);
 
   // TODO: Refactor...
   useEffect(() => {
@@ -33,7 +33,9 @@ export const Menu = () => {
     document.addEventListener('keyup', onKeyup);
 
     if (isOpen) {
-      document.getElementById('menu-first-item')?.focus();
+      if (shouldFocusVisible) {
+        document.getElementById('menu-first-item')?.focus();
+      }
       document.addEventListener('keydown', onKeydown);
       document.addEventListener('keyup', onKeyup);
     } else {

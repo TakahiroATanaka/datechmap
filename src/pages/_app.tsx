@@ -20,6 +20,7 @@ const ogp = (title: string, desc: string, url: string, imageUrl: string, type: s
 
 export default function App({ Component, pageProps }: AppProps) {
   const [isOpen, setIsOpen] = useState(false);
+  const [shouldFocusVisible, setShouldFocusVisible] = useState(false);
   const [scrollYPosition, setScrollYPosition] = useState(0);
 
   return (
@@ -61,7 +62,9 @@ export default function App({ Component, pageProps }: AppProps) {
         id="user-insight"
       />
 
-      <MenuContext.Provider value={{ isOpen, setIsOpen, scrollYPosition, setScrollYPosition }}>
+      <MenuContext.Provider
+        value={{ isOpen, setIsOpen, shouldFocusVisible, setShouldFocusVisible, scrollYPosition, setScrollYPosition }}
+      >
         <Component {...pageProps} />
       </MenuContext.Provider>
     </>

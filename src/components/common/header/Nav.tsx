@@ -7,7 +7,7 @@ import { MenuContext } from '@/features/context';
 import { useContext, useEffect } from 'react';
 
 export const Nav = () => {
-  const { isOpen, setIsOpen, scrollYPosition, setScrollYPosition } = useContext(MenuContext);
+  const { isOpen, setIsOpen, setShouldFocusVisible, scrollYPosition, setScrollYPosition } = useContext(MenuContext);
 
   useEffect(() => {
     if (!isOpen) {
@@ -64,10 +64,11 @@ export const Nav = () => {
             aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
             className="flex items-center gap-2 px-2 text-pc-nav-default hover:underline md:px-4"
             id="btn-menu"
-            onClick={() => {
+            onClick={(e) => {
               if (!isOpen) {
                 setScrollYPosition(window.scrollY);
               }
+              setShouldFocusVisible(e.detail === 0);
               setIsOpen(!isOpen);
             }}
           >
