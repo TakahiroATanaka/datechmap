@@ -14,7 +14,7 @@ export const Culture = () => {
         >
           <img
             alt=""
-            className="object-cover"
+            className="w-full object-cover"
             height={360}
             loading="lazy"
             src={`${prefix()}/recruit-culture-image.png`}
