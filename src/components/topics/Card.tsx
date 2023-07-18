@@ -16,7 +16,6 @@ export const Card = (props: Props) => {
       <img
         alt=""
         className="w-full rounded-3xl object-cover"
-        decoding="async"
         height={props.image.height}
         src={props.image.path}
         width={props.image.width}
