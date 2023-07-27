@@ -21,7 +21,7 @@ export const Nav = () => {
         >
           調達ポータル 調達情報の検索 <ExternalLinkIcon className="mx-1 mb-1 inline" />
         </UnstyledAnchor>
-        より「調達案件番号」で検索してご確認ください。
+        よりご確認ください。
       </p>
     </div>
   );
