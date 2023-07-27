@@ -1,4 +1,5 @@
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
+import { ExternalLinkIcon } from '@/components/ui/icons/ExternalLinkIcon';
 import { prefix } from '@/utils';
 
 export const Culture = () => {
@@ -20,7 +21,9 @@ export const Culture = () => {
             src={`${prefix()}/recruit-culture-image.png`}
             width={544}
           />
-          <h4 className="text-pc-r">{'デジタル庁ではnoteを活用して、働く職員を紹介しています'}</h4>
+          <h4 className="text-pc-r">
+            {'デジタル庁ではnoteを活用して、働く職員を紹介しています'} <ExternalLinkIcon className="mx-1 mb-1 inline" />
+          </h4>
         </UnstyledAnchor>
       </div>
     </section>
