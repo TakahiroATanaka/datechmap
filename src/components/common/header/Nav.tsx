@@ -21,6 +21,7 @@ export const Nav = () => {
       <ul className="hidden items-center gap-3 lg:flex">
         <li>
           <UnstyledAnchor
+            aria-current="page"
             className="rounded-full bg-wood-50 px-4 py-1 text-pc-nav-current hover:underline"
             href="/experimental/"
           >
