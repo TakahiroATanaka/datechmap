@@ -5,7 +5,7 @@ type Props = ComponentProps<'svg'>;
 export const ExternalLinkIcon = (props: Props) => {
   return (
     <svg
-      aria-label="外部リンクを開きます"
+      aria-label="外部リンクを新規タブで開きます"
       fill="none"
       height="14"
       viewBox="0 0 14 14"
