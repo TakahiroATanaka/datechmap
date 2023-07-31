@@ -14,7 +14,7 @@ export const Card = (props: Props) => {
       className="flex flex-col content-between justify-between gap-6 rounded-2xl border border-divider p-6 hover:bg-sumi-50 active:bg-sumi-50"
       href={props.path}
     >
-      <p className="text-pc-r">{props.title}</p>
+      <h3 className="text-pc-r">{props.title}</h3>
 
       <div className="flex justify-between">
         <span className="text-pc-s">{props.category}</span>
