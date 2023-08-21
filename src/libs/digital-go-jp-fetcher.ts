@@ -36,7 +36,7 @@ export const fetchNews = async () => {
 export const fetchProcurements = async () => {
   const browser = await chromium.launch();
   const page = await browser.newPage();
-  await page.goto('https://www.digital.go.jp/news/procurement/');
+  await page.goto('https://www.digital.go.jp/news?category=151');
 
   const cards = page.locator('.main .card');
   const count = await cards.count();
