@@ -1,7 +1,7 @@
+import { ActivitySection } from '@/components/activity/ActivitySection';
 import { AttentionSection } from '@/components/attention/AttentionSection';
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { NewsSection } from '@/components/news/NewsSection';
-import { PolicySection } from '@/components/policy/PolicySection';
 import { ProcurementSection } from '@/components/procurement/ProcurementSection';
 import { RecruitSection } from '@/components/recruit/RecruitSection';
 import { ServiceSection } from '@/components/service/ServiceSection';
@@ -24,7 +24,7 @@ const Page = (props: Props) => {
         <RecruitSection />
         <ServiceSection />
         <ProcurementSection procurements={props.procurements} />
-        <PolicySection />
+        <ActivitySection />
       </main>
     </BaseLayout>
   );
