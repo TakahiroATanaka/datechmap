@@ -11,7 +11,7 @@ export const List = () => {
         title="デジタル庁の四半期活動報告を行いました"
       />
       <Card
-        desc="マイナポータル実証アルファ版をリリースしました。スマートフォンにてぜひご体験ください。"
+        desc="マイナポータル実証ベータ版をリリースしました。スマートフォンにてぜひご体験ください。"
         imageUrl={`${prefix()}/activities/myna.jpg`}
         path="/policies/myna_portal/validation/"
         title="新しいマイナポータルを体験できます"
