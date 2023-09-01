@@ -6,7 +6,17 @@ export const SubList = () => {
     <div className="grid auto-rows-fr grid-cols-1 gap-x-8 gap-y-14 sm:grid-cols-2 lg:grid-cols-3">
       <Card
         image={{
-          path: `${prefix()}/topics/kouzatenken.png`, // png
+          path: `${prefix()}/topics/annual-2023.png`,
+          width: 352,
+          height: 256,
+        }}
+        path={'/policies/report-202209-202308/'}
+        title={'デジタル庁1年の活動を報告します'}
+      />
+
+      <Card
+        image={{
+          path: `${prefix()}/topics/kouzatenken.png`,
           width: 352,
           height: 256,
         }}
@@ -16,22 +26,12 @@ export const SubList = () => {
 
       <Card
         image={{
-          path: `${prefix()}/topics/my-number-card-info.png`, // png
+          path: `${prefix()}/topics/my-number-card-info.png`,
           width: 352,
           height: 256,
         }}
         path={'/policies/mynumber/faq-insurance-card/'}
         title={'マイナンバーカードの保険証情報の誤りに関する問合せ先についてQAに追加しました'}
-      />
-
-      <Card
-        image={{
-          path: `${prefix()}/topics/tousai.png`, // png
-          width: 352,
-          height: 256,
-        }}
-        path={'/policies/mynumber/smartphone-certification/'}
-        title={'スマホ用電子証明書搭載サービスを開始します'}
       />
     </div>
   );

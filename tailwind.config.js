@@ -125,6 +125,9 @@ module.exports = {
       lineHeight: {
         xl: '200%',
       },
+      aspectRatio: {
+        'topics-sub': '11 / 8',
+      },
     },
   },
   plugins: [require('@digital-go-jp/tailwind-theme-plugin')],
