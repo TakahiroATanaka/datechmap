@@ -21,7 +21,7 @@ export const MainList = () => {
           height: 374,
         }}
         path={'/resources/govdashboard/'}
-        title={'政策に関するデータを一元的に表示した「政策データダッシュボード（ベータ版）」を公開しています'}
+        title={'政策に関するデータを一元的に表示した「政策データダッシュボード」を公開しています'}
       />
     </div>
   );
