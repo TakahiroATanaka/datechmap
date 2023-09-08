@@ -17,7 +17,7 @@ export const MainList = () => {
       <Card
         image={{
           path: `${prefix()}/topics/my-number-card-dashboard.png`, // png
-          width: 574,
+          width: 544,
           height: 374,
         }}
         path={'/resources/govdashboard/'}
