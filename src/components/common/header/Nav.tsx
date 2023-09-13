@@ -62,6 +62,7 @@ export const Nav = () => {
         </li>
         <li>
           <Button
+            aria-expanded={isOpen}
             aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
             className="flex items-center gap-2 px-2 text-pc-nav-default hover:underline md:px-4"
             id="btn-menu"
