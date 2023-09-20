@@ -5,7 +5,6 @@ export const LinkedInIcon = () => {
       enableBackground="new 0 0 635 540"
       height="32"
       id="LinkedIn_32px"
-      version="2.1"
       viewBox="0 0 635 540"
       width="32"
       x="0px"
