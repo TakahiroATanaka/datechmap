@@ -33,7 +33,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <meta content="デジタル庁トップページの実証版です。" name="description" />
         <link href="/themes/custom/gov_theme_da/favicon.ico" rel="icon" type="image/png" />
         {ogp(
-          'デジタル庁 | 試行版',
+          'デジタル庁｜試行版',
           'デジタル庁トップページの試行版です。',
           'httos://www/digital/go.jp/experimental/',
           'https://www.digital.go.jp/assets/images/ogp.png',
