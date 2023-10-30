@@ -1,10 +1,5 @@
 name: Deploy
 
-on:
-  schedule:
-    - cron: '0 9 * * *'
-    - cron: '0 3 * * *'
-
 env:
   AWS_DEFAULT_REGION: ap-northeast-1
 
