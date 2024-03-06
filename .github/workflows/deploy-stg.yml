@@ -1,5 +1,7 @@
 name: Deploy
 
+on: [push]
+
 env:
   AWS_DEFAULT_REGION: ap-northeast-1
 
