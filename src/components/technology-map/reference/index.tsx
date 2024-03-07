@@ -30,7 +30,7 @@ export const TechnologyMapReference: React.FC = () => {
       <ul>
         <li>
           <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/176e6731/20230821_policies_digital-extraordinary-administrative-research-committee_outline_01.pdf">
-            テクノロジーベースの規制改革の検討経緯（2023年8月）（PDF／4,810KB）
+            テクノロジーベースの規制改革の検討経緯（2023年8月）（PDF/4,810KB）
           </Anchor>
         </li>
       </ul>
