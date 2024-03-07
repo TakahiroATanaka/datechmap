@@ -21,7 +21,7 @@ const ElementLink: React.FC<{ value: string; link: boolean; categoryId?: number;
 
   return (
     <>
-      <Anchor href={canonicalPath(`/search?category=${props.categoryId}`)} className={props.className}>
+      <Anchor href={canonicalPath(`/technology-map/search?category=${props.categoryId}`)} className={props.className}>
         {props.value}
       </Anchor>
     </>
@@ -119,7 +119,8 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   let className = element.value === '' ? '' : 'border text-center ';
                   let linkClassName = '';
                   if (element.type === 'data') {
-                    className += element.value === '' ? 'bg-sumi-50' : 'bg-white ';
+                    className += element.value === '' ? 'bg-sumi-50' : 'bg-white vertical-rl';
+                    linkClassName = 'no-underline';
                   }
                   if (element.type === 'yheader') {
                     className += 'font-bold ';
@@ -171,13 +172,25 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
 
       {table.xHeader.map((row, i) => {
         return row.map((element, j) => {
-          return <Tooltip key={element.categoryId} id={'tooltip-' + element.categoryId} />;
+          return (
+            <Tooltip
+              key={element.categoryId}
+              id={'tooltip-' + element.categoryId}
+              style={{ backgroundColor: 'rgb(0, 255, 30)', color: '#222' }}
+            />
+          );
         });
       })}
 
       {data.map((row, i) => {
         return row.map((element, j) => {
-          return <Tooltip key={element.categoryId} id={'tooltip-' + element.categoryId} />;
+          return (
+            <Tooltip
+              key={element.categoryId}
+              id={'tooltip-' + element.categoryId}
+              style={{ backgroundColor: '#e5e5e5', color: '#0f0f0f' }}
+            />
+          );
         });
       })}
     </>
