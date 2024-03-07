@@ -1,3 +1,4 @@
+import { NavUl } from '../ui/NavUl';
 import { UnstyledAnchor } from '../ui/UnstyledAnchor';
 import { Header } from './header/Header';
 import { MenuContext } from '@/features/context';
@@ -53,7 +54,7 @@ export const Menu = () => {
   return (
     <>
       <div
-        className="fixed top-0 z-50 h-full max-h-full w-full overflow-y-scroll bg-black/20"
+        className="fixed top-0 z-50 h-full max-h-full w-full overflow-y-scroll bg-white/20"
         onClick={(e) => {
           e.stopPropagation();
           setIsOpen(false);
@@ -66,7 +67,7 @@ export const Menu = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <nav className="flex flex-col gap-12 md:mx-auto md:flex-row md:gap-24">
-            <ul className="flex flex-col gap-4">
+            <NavUl className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">利用者別</li>
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/individual/" id="menu-first-item">
@@ -83,9 +84,9 @@ export const Menu = () => {
                   報道関係者の方
                 </UnstyledAnchor>
               </li>
-            </ul>
+            </NavUl>
 
-            <ul className="flex flex-col gap-4">
+            <NavUl className="flex flex-col gap-4">
               <li className="text-label-lg text-placeholder">総合メニュー</li>
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/news/">
@@ -107,9 +108,9 @@ export const Menu = () => {
                   採用
                 </UnstyledAnchor>
               </li>
-            </ul>
+            </NavUl>
 
-            <ul className="flex flex-col gap-4">
+            <NavUl className="flex flex-col gap-4">
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/about/">
                   組織情報
@@ -140,9 +141,9 @@ export const Menu = () => {
                   調達情報
                 </UnstyledAnchor>
               </li>
-            </ul>
+            </NavUl>
 
-            <ul className="flex flex-col gap-4">
+            <NavUl className="flex flex-col gap-4">
               <li>
                 <UnstyledAnchor className="text-menu-link hover:underline" href="/en/">
                   Global Site
@@ -183,7 +184,7 @@ export const Menu = () => {
                   サイトマップ
                 </UnstyledAnchor>
               </li>
-            </ul>
+            </NavUl>
           </nav>
         </div>
       </div>

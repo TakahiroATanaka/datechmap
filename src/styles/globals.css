@@ -9,11 +9,11 @@
   }
 
   h1 {
-    @apply text-std-45B-4 py-8;
+    @apply text-std-45B-4 py-6;
   }
 
   h2 {
-    @apply text-std-36B-4 py-8;
+    @apply text-std-36B-4 pt-6;
   }
 
   h3 {
@@ -40,11 +40,15 @@
     @apply text-std-17M-7 py-2;
   }
 
+  ul {
+    @apply text-std-17M-7 list-disc pb-2 pl-4 pt-1;
+  }
+
+  ul > li > ul {
+    @apply list-circle pl-10;
+  }
+
   label {
     @apply flex w-fit items-center gap-2 text-label-lg;
   }
-}
-
-technology-map.ul {
-  @apply list-disc py-2 pl-4 [&_&]:list-circle [&_&_&]:list-square;
 }
