@@ -19,10 +19,6 @@ const fetcher = async (endpoint: string): Promise<TechnologyMapDataProps> => {
 
 const Page = () => {
   const pattern = parseInt(useSearchParams().get('pattern') ?? '');
-  if (pattern < 1 || pattern > 2) {
-    return <></>;
-  }
-
   const { data: technologyMap } = useSWR(`../../../data/technology-map-${pattern}.json`, fetcher);
   const { data: technologyMapCategories } = useSWR(`../../../data/technology-map-categories.json`, fetcher);
 
