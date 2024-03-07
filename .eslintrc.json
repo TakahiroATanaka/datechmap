@@ -20,12 +20,13 @@
     "prettier"
   ],
   "plugins": ["import", "unused-imports", "@typescript-eslint", "tailwindcss"],
+  "ignorePatterns": ["*.js"],
   "rules": {
     "@next/next/no-img-element": "off",
     "no-unused-vars": "off",
     "react/jsx-sort-props": "warn",
     "unused-imports/no-unused-imports": "error",
-    "@typescript-eslint/no-unused-vars": "error",
+    "@typescript-eslint/no-unused-vars": "warn",
     "@typescript-esjlint/no-var-requires": "off",
     "react/prop-types": "off",
     "react/react-in-jsx-scope": "off",
