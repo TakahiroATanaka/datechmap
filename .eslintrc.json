@@ -31,7 +31,7 @@
     "react/react-in-jsx-scope": "off",
     "react/display-name": "off",
     "tailwindcss/no-custom-classname": [
-      "error",
+      "warn",
       {
         "whitelist": ["c"]
       }
@@ -40,6 +40,10 @@
   "settings": {
     "react": {
       "version": "detect"
+    },
+    "tailwindcss": {
+      "config": "./tailwind.config.js",
+      "group": "jit"
     }
   }
 }

@@ -35,7 +35,7 @@ export const AlertTos = () => {
   }, []);
 
   return (
-    <Modal style={styles} isOpen={showModal}>
+    <Modal isOpen={showModal} style={styles}>
       <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
         <h4>コンテンツ利用上の注意</h4>
         <div className="mt-2">

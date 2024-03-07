@@ -2,23 +2,22 @@ import { AlertTos } from '@/components/alert-tos';
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrumbs';
 
-type Props = {};
-
-const Page = (props: Props) => {
+const Page = () => {
   return (
     <BaseLayout>
       <main className="col-span-full flex flex-col gap-4" id="main">
         <Breadcrumbs
           items={[
-            <a className={breadcrumbsItemStyle} href="/">
+            <a className={breadcrumbsItemStyle} href="/" key="home">
               ホーム
             </a>,
-            <a className={breadcrumbsItemStyle} href="/policies">
+            <a className={breadcrumbsItemStyle} href="/policies" key="policies">
               政策
             </a>,
             <a
               className={breadcrumbsItemStyle}
               href="/policies/digital-extraordinary-administrative-research-committee"
+              key="digital-extraordinary-administrative-research-committee"
             >
               アナログ規制見直しの取組
             </a>,
