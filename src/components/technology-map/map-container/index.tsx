@@ -12,7 +12,7 @@ export const TechnologyMapContainer: React.FC = () => {
         <li>
           テクノロジーマップ パターン1（規制の判断・対応内容に着目）
           <br />
-          <Anchor href="technology-map/map-data/?pattern=1">
+          <Anchor href="technology-map/map-data?pattern=1">
             <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/fba7ede2/20240222_policies_regtechmap_01.png" />
           </Anchor>
         </li>
