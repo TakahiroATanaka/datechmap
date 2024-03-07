@@ -6,6 +6,7 @@ import { Footer } from '@/components/common/footer/Footer';
 import { Header } from '@/components/common/header/Header';
 import { TechnologyMap } from '@/components/technology-map/map';
 import { MenuContext } from '@/features/context';
+import { canonicalPath } from '@/libs/path';
 import { TechnologyMapDataProps } from '@/libs/technology-map';
 import { notoSansJp } from '@/styles/fonts';
 import { useSearchParams } from 'next/navigation';
@@ -19,8 +20,8 @@ const fetcher = async (endpoint: string): Promise<TechnologyMapDataProps> => {
 
 const Page = () => {
   const pattern = parseInt(useSearchParams().get('pattern') ?? '');
-  const { data: technologyMap } = useSWR(`../../../data/technology-map-${pattern}.json`, fetcher);
-  const { data: technologyMapCategories } = useSWR(`../../../data/technology-map-categories.json`, fetcher);
+  const { data: technologyMap } = useSWR(canonicalPath(`/data/technology-map-${pattern}.json`), fetcher);
+  const { data: technologyMapCategories } = useSWR(canonicalPath(`/data/technology-map-categories.json`), fetcher);
 
   const { isOpen } = useContext(MenuContext);
 

@@ -8,6 +8,9 @@ const nextConfig = {
   experimental: {
     scrollRestoration: true,
   },
+  publicRuntimeConfig: {
+    basePath: process.env.NEXT_PUBLIC_ENV === 'prod' ? '/experimental' : '',
+  },
 };
 
 module.exports = nextConfig;

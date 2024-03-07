@@ -1,4 +1,5 @@
 import { Anchor } from '@/components/ui/Anchor';
+import { canonicalPath } from '@/libs/path';
 import {
   parseData,
   parseCategories,
@@ -20,7 +21,7 @@ const ElementLink: React.FC<{ value: string; link: boolean; categoryId?: number;
 
   return (
     <>
-      <Anchor href={`/search?category=${props.categoryId}`} className={props.className}>
+      <Anchor href={canonicalPath(`/search?category=${props.categoryId}`)} className={props.className}>
         {props.value}
       </Anchor>
     </>
