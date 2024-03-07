@@ -5,9 +5,9 @@ import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
 export const Header = () => {
   return (
     <header className={`sticky top-0 z-50 w-full bg-primary md:relative`}>
-      <div className={`mx-auto flex max-w-8xl items-center justify-between p-4 xl:px-10`}>
+      <div className={`mx-auto flex max-w-container items-center justify-between p-6`}>
         <h1 className="flex items-center">
-          <UnstyledAnchor href="/experimental/">
+          <UnstyledAnchor href="/">
             <Logo className="h-[20px] w-[109px]" />
             <span className="sr-only">デジタル庁</span>
           </UnstyledAnchor>

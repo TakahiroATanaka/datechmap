@@ -1,4 +1,4 @@
-import { Button } from '../../ui/Button';
+import { NavButton } from '../../ui/NavButton';
 import { HamburgerMenuIcon } from '../../ui/icons/HamburgerMenuIcon';
 import { SearchIcon } from '../../ui/icons/SearchIcon';
 import { UnstyledAnchor } from '@/components/ui/UnstyledAnchor';
@@ -20,11 +20,7 @@ export const Nav = () => {
     <nav className="flex w-full items-center justify-end gap-6">
       <ul className="hidden items-center gap-3 lg:flex">
         <li>
-          <UnstyledAnchor
-            aria-current="page"
-            className="rounded-full bg-wood-50 px-4 py-1 text-pc-nav-current hover:underline"
-            href="/experimental/"
-          >
+          <UnstyledAnchor aria-current="page" className="rounded-full px-4 py-1 hover:underline" href="/">
             ホーム
           </UnstyledAnchor>
         </li>
@@ -61,7 +57,7 @@ export const Nav = () => {
           </UnstyledAnchor>
         </li>
         <li>
-          <Button
+          <NavButton
             aria-expanded={isOpen}
             aria-label={isOpen ? 'メニューを閉じる' : 'メニューを開く'}
             className="flex items-center gap-2 px-2 text-pc-nav-default hover:underline md:px-4"
@@ -82,7 +78,7 @@ export const Nav = () => {
               <HamburgerMenuIcon />
             )}{' '}
             メニュー
-          </Button>
+          </NavButton>
         </li>
       </ul>
     </nav>

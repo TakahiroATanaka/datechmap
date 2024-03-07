@@ -7,4 +7,44 @@
     @apply font-noto;
     @apply text-body;
   }
+
+  h1 {
+    @apply text-std-45B-4 py-8;
+  }
+
+  h2 {
+    @apply text-std-36B-4 py-8;
+  }
+
+  h3 {
+    @apply text-std-28B-5 py-4;
+  }
+
+  h4 {
+    @apply text-std-22B-5 py-4;
+  }
+
+  h5 {
+    @apply text-std-18B-6 py-4;
+  }
+
+  input {
+    @apply rounded-8 text-std-16N-7 h-14 w-full border border-field bg-white px-4 py-[14.5px] text-body focus:border-2 disabled:border-disabled;
+  }
+
+  ol {
+    @apply list-decimal py-2 pl-4 [&_&]:list-lower-latin;
+  }
+
+  p {
+    @apply text-std-17M-7 py-2;
+  }
+
+  label {
+    @apply flex w-fit items-center gap-2 text-label-lg;
+  }
+}
+
+technology-map.ul {
+  @apply list-disc py-2 pl-4 [&_&]:list-circle [&_&_&]:list-square;
 }
