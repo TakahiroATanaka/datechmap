@@ -4,6 +4,7 @@ import { Gradient } from '@/components/common/Gradient';
 import { Menu } from '@/components/common/Menu';
 import { Footer } from '@/components/common/footer/Footer';
 import { Header } from '@/components/common/header/Header';
+import { AlertTos } from '@/components/technology-map/alert-tos';
 import { TechnologyMap } from '@/components/technology-map/map';
 import { MenuContext } from '@/features/context';
 import { canonicalPath } from '@/libs/path';
@@ -41,6 +42,8 @@ const Page = () => {
           categories={technologyMapCategories === undefined ? [] : technologyMapCategories}
         />
       </div>
+
+      <AlertTos />
 
       <Footer />
 
