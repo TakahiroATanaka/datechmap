@@ -3,7 +3,7 @@ import React from 'react';
 
 export const TechnologyMapNews: React.FC = () => {
   return (
-    <section className="flex flex-col gap-2">
+    <section className="flex flex-col gap-4">
       <h2>お知らせ</h2>
 
       <ul>

@@ -2,11 +2,12 @@ import { BaseLayout } from '@/components/common/BaseLayout';
 import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrumbs';
 import { AlertTos } from '@/components/technology-map/alert-tos';
 import { TechnologyMapNews } from '@/components/technology-map/news';
+import { TechnologyMapReference } from '@/components/technology-map/reference';
 
 const Page = () => {
   return (
     <BaseLayout>
-      <main className="col-span-full flex flex-col gap-4" id="main">
+      <main className="col-span-full flex flex-col gap-6" id="main">
         <Breadcrumbs
           items={[
             <a className={breadcrumbsItemStyle} href="/" key="home">
@@ -34,6 +35,7 @@ const Page = () => {
         </p>
 
         <TechnologyMapNews />
+        <TechnologyMapReference />
       </main>
       <AlertTos />
     </BaseLayout>
