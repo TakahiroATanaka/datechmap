@@ -1,6 +1,7 @@
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrumbs';
 import { AlertTos } from '@/components/technology-map/alert-tos';
+import { TechnologyMapCatalog } from '@/components/technology-map/catalog';
 import { TechnologyMapNews } from '@/components/technology-map/news';
 import { TechnologyMapReference } from '@/components/technology-map/reference';
 
@@ -35,6 +36,7 @@ const Page = () => {
         </p>
 
         <TechnologyMapNews />
+        <TechnologyMapCatalog />
         <TechnologyMapReference />
       </main>
       <AlertTos />
