@@ -33,15 +33,15 @@ export const TechnologyMapCatalog: React.FC = () => {
         </Anchor>
         をご確認ください。
       </p>
-      <h2>技術解説記事</h2>
+      <h2 id="commentary">技術解説記事</h2>
       <p>
         デジタル庁では、アナログ規制の見直しを推進するため、アナログ規制に活用可能性のある技術に関する情報を幅広く提供しています。
       </p>
       <ul>
         <li>
           <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/01e284e9-5875-42e1-9dc3-8a5701bdb09c/b2561117/20230209_meeting_technology_based_regulatory_reform_outline_04.pdf">
-            デジタル技術解説記事のサンプル記事執筆結果について（オンライン受験システム（CBT）技術の検証と評価方法）（テクノロジーベースの規制改革推進委員会構成員　登
-            大遊氏）（PDF／2,175KB）
+            デジタル技術解説記事のサンプル記事執筆結果について（オンライン受験システム（CBT）技術の検証と評価方法）（テクノロジーベースの規制改革推進委員会構成員
+            登 大遊氏）（PDF/2,175KB）
           </Anchor>
         </li>
         <li>

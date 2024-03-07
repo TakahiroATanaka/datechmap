@@ -36,7 +36,7 @@ export const TechnologyMapNews: React.FC = () => {
           2023年12月5日
           <ul>
             <li>
-              <Anchor href="#commentary">技術解説記事</Anchor>を掲載しました
+              <Anchor href="technology-map#commentary">技術解説記事</Anchor>を掲載しました
             </li>
           </ul>
         </li>
