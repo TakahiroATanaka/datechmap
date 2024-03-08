@@ -2,6 +2,7 @@ export type TechnologyMapDataProps = string[][];
 export type TechnologyMapCategoriesProps = string[][];
 export type TechnologyMapProductProps = string[][];
 export type TechnologyMapRelationsProps = string[][];
+export type TechnologyMapNewsProps = string[][];
 
 type RelationProps = {
   categoryId: number;

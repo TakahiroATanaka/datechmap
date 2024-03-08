@@ -52,6 +52,9 @@ workbook.SheetNames.forEach((sheetName) => {
   sheetToJsonForEach(workbook.Sheets[sheetName], argv.output + '/technology-map-product-', 2);
 });
 
+// news
+sheetToJson(workbook.Sheets['news'], argv.output + '/technology-map-news.json');
+
 function sheetToJson(sheet, output) {
   const json = normalizeJson(xlsx.utils.sheet_to_json(sheet, { header: 1 }));
 

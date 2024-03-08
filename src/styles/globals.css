@@ -51,4 +51,8 @@
   label {
     @apply flex w-fit items-center gap-2 text-label-lg;
   }
+
+  a {
+    @apply text-link underline focus:outline focus:outline-2;
+  }
 }
