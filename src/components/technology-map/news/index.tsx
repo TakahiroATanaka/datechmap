@@ -1,4 +1,3 @@
-import { Anchor } from '@/components/ui/Anchor';
 import { canonicalPath } from '@/libs/path';
 import { TechnologyMapNewsProps } from '@/libs/technology-map';
 import React from 'react';

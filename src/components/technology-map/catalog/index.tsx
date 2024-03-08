@@ -1,4 +1,6 @@
+import { TechnologyMapCatalogList } from './list';
 import { Anchor } from '@/components/ui/Anchor';
+import { canonicalPath } from '@/libs/path';
 
 export const TechnologyMapCatalog: React.FC = () => {
   return (
@@ -8,29 +10,12 @@ export const TechnologyMapCatalog: React.FC = () => {
         アナログ規制の見直しに活用し得る製品・サービス情報を整理した技術カタログを提供しております。コンテンツ利用上の注意をご確認いただいた上で、ご活用をお願いします。
       </p>
       <p>現在整理している具体的な技術カタログは、以下のとおりです。</p>
-      <ul>
-        <li>
-          目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービス一覧（掲載準備中）
-        </li>
-        <li>侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービス一覧（掲載準備中）</li>
-        <li>広域な利用状況把握・被害等の把握のデジタル化を実現する製品・サービス一覧（掲載準備中）</li>
-        <li>事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービス一覧（掲載準備中）</li>
-        <li>
-          <Anchor href="https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechmap/visitbrowsing">
-            往訪閲覧・縦覧のデジタル化を実現する製品・サービス一覧
-          </Anchor>
-        </li>
-        <li>
-          <Anchor href="https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechmap/online-training">
-            講習・試験のデジタル化を実現する製品・サービス一覧
-          </Anchor>
-        </li>
-      </ul>
+
+      <TechnologyMapCatalogList />
+
       <p>
         また、今後も公募により、アナログ規制の見直しに活用可能性がある製品・サービス情報を整理した技術カタログを拡充していきます。技術カタログに関する公募・整備の状況については
-        <Anchor href="https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechmap/technology-catalog">
-          技術カタログの整備
-        </Anchor>
+        <Anchor href={canonicalPath('/technology-map/catalog')}>技術カタログの整備</Anchor>
         をご確認ください。
       </p>
       <h2 id="commentary">技術解説記事</h2>

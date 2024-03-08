@@ -26,6 +26,7 @@ export const TechnologyMapReference: React.FC = () => {
           </Anchor>
         </li>
       </ul>
+
       <h2>参考資料</h2>
       <ul>
         <li>
