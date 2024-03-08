@@ -46,6 +46,32 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
 
   return (
     <>
+      <style jsx>{`
+        /* chrome */
+        _:lang(x)::-internal-media-controls-overlay-cast-button,
+        .vertical-element {
+          writing-mode: vertical-rl;
+        }
+
+        /* edge */
+        _:lang(x)::-ms-,
+        .vertical-element {
+          writing-mode: vertical-rl;
+        }
+
+        /* firefox */
+        _:lang(x)::-moz-placeholder,
+        .vertical-element {
+          writing-mode: vertical-rl;
+        }
+
+        /* safari */
+        _::-webkit-full-page-media,
+        _:future,
+        :root .vertical-element {
+          writing-mode: horizontal-tb;
+        }
+      `}</style>
       <table className="text-dns-14N-2 border-separate border-spacing-1 bg-sumi-50">
         <tbody>
           <tr>
@@ -119,7 +145,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   let className = element.value === '' ? '' : 'border text-center ';
                   let linkClassName = '';
                   if (element.type === 'data') {
-                    className += element.value === '' ? 'bg-sumi-50' : 'bg-white vertical-rl';
+                    className += element.value === '' ? 'bg-sumi-50' : 'vertical-element bg-white';
                     linkClassName = 'no-underline';
                   }
                   if (element.type === 'yheader') {
