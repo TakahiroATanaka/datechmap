@@ -45,7 +45,6 @@ const Page = () => {
         <TechnologyMapCatalog />
         <TechnologyMapReference />
       </main>
-      <AlertTos />
     </BaseLayout>
   );
 };

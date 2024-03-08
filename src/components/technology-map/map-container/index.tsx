@@ -22,7 +22,9 @@ export const TechnologyMapContainer: React.FC = () => {
         <li>
           テクノロジーマップ パターン2（規制に基づき実施する業務内容に着目）
           <br />
-          <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/f0603fd6/20240222_policies_regtechmap_02.png" />
+          <Anchor href={canonicalPath('/technology-map/map-data?pattern=2')}>
+            <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/f0603fd6/20240222_policies_regtechmap_02.png" />
+          </Anchor>
         </li>
       </ul>
       <h3>テクノロジーマップ概要版</h3>
