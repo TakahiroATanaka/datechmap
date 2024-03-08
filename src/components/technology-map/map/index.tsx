@@ -46,7 +46,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
 
   return (
     <>
-      <style jsx>{`
+      <style>{`
         /* chrome */
         _:lang(x)::-internal-media-controls-overlay-cast-button,
         .vertical-element {

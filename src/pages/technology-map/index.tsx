@@ -2,7 +2,6 @@
 
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrumbs';
-import { AlertTos } from '@/components/technology-map/alert-tos';
 import { TechnologyMapCatalog } from '@/components/technology-map/catalog';
 import { TechnologyMapGuide } from '@/components/technology-map/guide';
 import { TechnologyMapContainer } from '@/components/technology-map/map-container';
