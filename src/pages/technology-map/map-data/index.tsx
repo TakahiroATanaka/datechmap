@@ -40,6 +40,7 @@ const Page = () => {
         <TechnologyMap
           data={technologyMap === undefined ? [] : technologyMap}
           categories={technologyMapCategories === undefined ? [] : technologyMapCategories}
+          id={pattern.toString()}
         />
       </div>
 

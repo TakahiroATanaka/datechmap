@@ -38,9 +38,9 @@ const Page = () => {
           デジタル庁では、規制所管省庁等が技術動向を踏まえて自律的にデジタル実装や規制の見直しを推進していけるよう、規制と技術の対応関係を整理・可視化したテクノロジーマップや、アナログ規制の見直しに活用できる製品・サービス情報を整理した技術カタログ等を整備していきます。技術の進展に応じて、随時更新していきます。
         </p>
 
+        <TechnologyMapNews />
         <TechnologyMapContainer />
         <TechnologyMapGuide />
-        <TechnologyMapNews />
         <TechnologyMapCatalog />
         <TechnologyMapReference />
       </main>

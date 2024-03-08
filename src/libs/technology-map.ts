@@ -36,7 +36,9 @@ export type CategoriesProps = {
 };
 type CategoriesByDescriptionProps = {
   // keys by description
-  [key: string]: CategoryProps;
+  [typeKey: string]: {
+    [descriptionKey: string]: CategoryProps;
+  };
 };
 
 type ElementProps = {
@@ -187,7 +189,10 @@ export const parseCategories = (
     };
 
     categories[category.id] = category;
-    categoriesByDescription[category.description] = category;
+    if (categoriesByDescription[category.type] === undefined) {
+      categoriesByDescription[category.type] = {};
+    }
+    categoriesByDescription[category.type][category.description] = category;
   }
 
   return { categories, categoriesByDescription };
@@ -197,6 +202,7 @@ export const parseCategories = (
 export const parseData = (
   data: TechnologyMapDataProps,
   categoriesByDescription: CategoriesByDescriptionProps,
+  id: string,
 ): DataProps | null => {
   if (data.length <= 0) {
     return null;
@@ -210,9 +216,9 @@ export const parseData = (
   table.body = parseBody(data, table);
 
   // set category id for each element
-  table.xHeader = applyCategoryId(table.xHeader, categoriesByDescription);
-  table.yHeader = applyCategoryId(table.yHeader, categoriesByDescription);
-  table.body = applyCategoryId(table.body, categoriesByDescription);
+  table.xHeader = applyCategoryId(table.xHeader, categoriesByDescription, 'x-header');
+  table.yHeader = applyCategoryId(table.yHeader, categoriesByDescription, `y-header-${id}`);
+  table.body = applyCategoryId(table.body, categoriesByDescription, 'product');
 
   return table;
 };
@@ -220,17 +226,21 @@ export const parseData = (
 const applyCategoryId = (
   elements: ElementsProps,
   categoriesByDescription: CategoriesByDescriptionProps,
+  typeKey: string,
 ): ElementsProps => {
   for (let i = 0; i < elements.length; i++) {
     for (let j = 0; j < elements[i].length; j++) {
       if (elements[i][j].value !== '') {
-        if (categoriesByDescription[elements[i][j].value] === undefined) {
+        if (
+          categoriesByDescription[typeKey] === undefined ||
+          categoriesByDescription[typeKey][elements[i][j].value] === undefined
+        ) {
           console.log(`Category ${elements[i][j].value} not found`);
           continue;
         }
-        elements[i][j].categoryId = categoriesByDescription[elements[i][j].value].id;
-        elements[i][j].categoryDescription = categoriesByDescription[elements[i][j].value].shortDescription;
-        elements[i][j].link = categoriesByDescription[elements[i][j].value].link;
+        elements[i][j].categoryId = categoriesByDescription[typeKey][elements[i][j].value].id;
+        elements[i][j].categoryDescription = categoriesByDescription[typeKey][elements[i][j].value].shortDescription;
+        elements[i][j].link = categoriesByDescription[typeKey][elements[i][j].value].link;
       }
     }
   }

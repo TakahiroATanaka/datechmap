@@ -1,4 +1,5 @@
 import { Anchor } from '@/components/ui/Anchor';
+import { nl2br } from '@/libs/nl2br';
 import { canonicalPath } from '@/libs/path';
 import {
   parseData,
@@ -12,11 +13,12 @@ import 'react-tooltip/dist/react-tooltip.css';
 type TechnologyMapProps = {
   data: TechnologyMapDataProps;
   categories: TechnologyMapCategoriesProps;
+  id: string;
 };
 
 const ElementLink: React.FC<{ value: string; link: boolean; categoryId?: number; className?: string }> = (props) => {
   if (props.link === false) {
-    return <>{props.value}</>;
+    return <span className={props.className}>{props.value}</span>;
   }
 
   return (
@@ -33,7 +35,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
     return <></>;
   }
   const { categories, categoriesByDescription } = parseCategories(props.categories);
-  const table = parseData(props.data, categoriesByDescription);
+  const table = parseData(props.data, categoriesByDescription, props.id);
   if (table === null) {
     return <></>;
   }
@@ -86,7 +88,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   className="border bg-blue-900 text-center font-bold text-white"
                 >
                   <span
-                    data-tooltip-html={element.categoryDescription}
+                    data-tooltip-html={nl2br(element.categoryDescription ?? '')}
                     data-tooltip-id={'tooltip-' + element.categoryId}
                   >
                     <ElementLink
@@ -121,7 +123,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   return (
                     <td colSpan={element.colspan} rowSpan={element.rowspan} key={j} className={className}>
                       <span
-                        data-tooltip-html={element.categoryDescription}
+                        data-tooltip-html={nl2br(element.categoryDescription ?? '')}
                         data-tooltip-id={'tooltip-' + element.categoryId}
                       >
                         <ElementLink
@@ -177,7 +179,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   return (
                     <td colSpan={element.colspan} rowSpan={element.rowspan} key={j} className={className}>
                       <span
-                        data-tooltip-html={element.categoryDescription}
+                        data-tooltip-html={nl2br(element.categoryDescription ?? '')}
                         data-tooltip-id={'tooltip-' + element.categoryId}
                       >
                         <ElementLink
