@@ -28,6 +28,9 @@ console.log(`Converting ${argv.input}... (output directory: ${argv.output})`);
 
 const workbook = xlsx.readFile(argv.input);
 
+// offers
+sheetToJson(workbook.Sheets['offers'], argv.output + '/technology-map-offers.json');
+
 // categories
 sheetToJson(workbook.Sheets['categories'], argv.output + '/technology-map-categories.json');
 

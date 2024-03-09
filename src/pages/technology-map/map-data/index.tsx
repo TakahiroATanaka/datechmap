@@ -9,21 +9,22 @@ import { TechnologyMap } from '@/components/technology-map/map';
 import { TosAlert } from '@/components/technology-map/tos/alert';
 import { MenuContext } from '@/features/context';
 import { canonicalPath } from '@/libs/path';
-import { TechnologyMapDataProps } from '@/libs/technology-map';
+import { technologyMapDataFetcher, technologyMapCategoriesFetcher } from '@/libs/technology-map-fetcher';
 import { notoSansJp } from '@/styles/fonts';
 import { useSearchParams } from 'next/navigation';
 import { useContext } from 'react';
 import useSWR from 'swr';
 
-const fetcher = async (endpoint: string): Promise<TechnologyMapDataProps> => {
-  const response = await fetch(endpoint);
-  return (await response.json()) as TechnologyMapDataProps;
-};
-
 const Page = () => {
   const pattern = parseInt(useSearchParams().get('pattern') ?? '');
-  const { data: technologyMap } = useSWR(canonicalPath(`/data/technology-map-${pattern}.json`), fetcher);
-  const { data: technologyMapCategories } = useSWR(canonicalPath(`/data/technology-map-categories.json`), fetcher);
+  const { data: technologyMap } = useSWR(
+    canonicalPath(`/data/technology-map-${pattern}.json`),
+    technologyMapDataFetcher,
+  );
+  const { data: technologyMapCategories } = useSWR(
+    canonicalPath(`/data/technology-map-categories.json`),
+    technologyMapCategoriesFetcher,
+  );
 
   const { isOpen } = useContext(MenuContext);
 

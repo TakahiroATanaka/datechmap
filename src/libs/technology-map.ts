@@ -3,6 +3,7 @@ export type TechnologyMapCategoriesProps = string[][];
 export type TechnologyMapProductProps = string[][];
 export type TechnologyMapRelationsProps = string[][];
 export type TechnologyMapNewsProps = string[][];
+export type TechnologyMapOffersProps = string[][];
 
 type RelationProps = {
   categoryId: number;
@@ -10,6 +11,18 @@ type RelationProps = {
   mainCategory: number;
   productName: string;
   productDescription: string;
+};
+
+type OffersProps = {
+  [key: number]: OfferProps;
+};
+
+type OfferProps = {
+  id: number;
+  closed: boolean;
+  title: string;
+  overview: string;
+  offer: string;
 };
 
 type RelationsProps = RelationProps[];
@@ -101,6 +114,25 @@ export const search = (data: RelationsProps, categoryId: number | null, freetext
   }
 
   return result;
+};
+
+export const parseOffers = (data: TechnologyMapOffersProps): OffersProps => {
+  const offers: OffersProps = {};
+
+  // i = 1: skip header
+  for (let i = 1; i < data.length; i++) {
+    const offer: OfferProps = {
+      id: parseInt(data[i][0]),
+      title: data[i][1],
+      closed: data[i][2] != '' ? true : false,
+      overview: data[i][3],
+      offer: data[i][4],
+    };
+
+    offers[offer.id] = offer;
+  }
+
+  return offers;
 };
 
 export const parseRelations = (data: TechnologyMapRelationsProps): RelationsProps => {

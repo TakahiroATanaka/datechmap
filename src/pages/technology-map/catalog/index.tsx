@@ -38,7 +38,12 @@ const Page = () => {
         <p>
           技術保有機関からの応募により、アナログ規制の見直しに活用可能性がある製品・サービス情報を整理した技術カタログを提供しています。
         </p>
+
         <TechnologyMapNews />
+
+        <h2>各製品・サービス一覧</h2>
+        <TechnologyMapCatalogList />
+
         <h2>公募情報</h2>
         <p>
           技術カタログに掲載いただく製品・サービスの公募を実施しています。なお、本事業に係る事務を株式会社三菱総合研究所へ委託しています。公募情報は、以下のリンク先をご確認ください。
@@ -222,8 +227,6 @@ const Page = () => {
             </Anchor>
           </li>
         </ul>
-        <h2>各製品・サービス一覧</h2>
-        <TechnologyMapCatalogList />
         <TechnologyMapReference />
       </main>
     </BaseLayout>

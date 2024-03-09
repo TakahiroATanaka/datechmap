@@ -30,8 +30,13 @@ export const TechnologyMapCatalog: React.FC = () => {
           </Anchor>
         </li>
         <li>
-          <Anchor href="https://digital-gov.note.jp/n/na55e821ad7e4">
+          <Anchor href="https://digital-gov.note.jp/n/na55e821ad7e4" target="_blank">
             技術検証事業に関する取り組み①: ドローン、3D点群データ等を活用した構造物等の検査の実証
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href="https://digital-gov.note.jp/n/nd01a99581b4a" target="_blank">
+            技術検証事業に関する取り組み②：カメラ・センサー技術によるDXと将来像
           </Anchor>
         </li>
       </ul>
