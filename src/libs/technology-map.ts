@@ -45,7 +45,7 @@ export type CategoryProps = {
   id: number;
   description: string;
   type: string;
-  link: boolean;
+  link: string;
   shortDescription: string;
 };
 export type CategoriesProps = {
@@ -67,7 +67,7 @@ type ElementProps = {
   level?: number;
   categoryId?: number;
   categoryDescription?: string;
-  link?: boolean;
+  link?: string;
 };
 type ElementsProps = ElementProps[][];
 type DataProps = {
@@ -239,7 +239,7 @@ export const parseCategories = (
       id: parseInt(data[i][0]),
       description: data[i][1],
       type: data[i][2],
-      link: data[i][3] !== '' ? true : false,
+      link: data[i][3],
       shortDescription: data[i][4],
     };
 

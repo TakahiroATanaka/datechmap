@@ -16,14 +16,14 @@ type TechnologyMapProps = {
   id: string;
 };
 
-const ElementLink: React.FC<{ value: string; link: boolean; categoryId?: number; className?: string }> = (props) => {
-  if (props.link === false) {
+const ElementLink: React.FC<{ value: string; link?: string; categoryId?: number; className?: string }> = (props) => {
+  if (props.link == '' || props.link === undefined) {
     return <span className={props.className}>{props.value}</span>;
   }
 
   return (
     <>
-      <Anchor href={canonicalPath(`/technology-map/search?category=${props.categoryId}`)} className={props.className}>
+      <Anchor href={canonicalPath(props.link)} className={props.className}>
         {props.value}
       </Anchor>
     </>
@@ -93,7 +93,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   >
                     <ElementLink
                       value={element.value}
-                      link={element.link === true}
+                      link={element.link}
                       categoryId={element.categoryId}
                       className="text-white"
                     />
@@ -128,7 +128,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                       >
                         <ElementLink
                           value={element.value}
-                          link={element.link === true}
+                          link={element.link}
                           categoryId={element.categoryId}
                           className={linkClassName}
                         />
@@ -184,7 +184,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                       >
                         <ElementLink
                           value={element.value}
-                          link={element.link === true}
+                          link={element.link}
                           categoryId={element.categoryId}
                           className={linkClassName}
                         />
