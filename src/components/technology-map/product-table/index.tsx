@@ -1,3 +1,4 @@
+import { Anchor } from '@/components/ui/Anchor';
 import { canonicalPath } from '@/libs/path';
 import { parseRelations, parseProduct } from '@/libs/technology-map';
 import { search } from '@/libs/technology-map';
@@ -80,13 +81,17 @@ const Wrapper: React.FC<{ relations: any }> = (props) => {
 };
 
 const Content: React.FC<{ data: any[] }> = (props) => {
-  const data = props.data;
-
+  const data = props.data.map((d: any) => {
+    if (typeof d.title === 'string') {
+      d.title = { title: d.title, id: d.id };
+    }
+    return d;
+  });
   const columnsDefinitions = [
     {
       accessorKey: 'title',
       header: '製品・サービス名',
-      Cell: renderCell,
+      Cell: renderTitleCell,
     },
   ];
 
@@ -119,7 +124,7 @@ const Content: React.FC<{ data: any[] }> = (props) => {
       data={data}
       initialState={{
         density: 'compact',
-        pagination: { pageIndex: 0, pageSize: 30 },
+        pagination: { pageIndex: 0, pageSize: 50 },
         columnVisibility: columnVisibility,
       }}
       localization={MRT_Localization_JA}
@@ -133,7 +138,15 @@ const Content: React.FC<{ data: any[] }> = (props) => {
   );
 };
 
-const renderCell = ({ renderedCellValue }: { renderedCellValue: any }) => {
+const renderTitleCell = ({ renderedCellValue, cell }: { renderedCellValue: any; cell: any }) => {
+  return (
+    <Anchor href={canonicalPath(`/technology-map/product/?id=${renderedCellValue.id}`)}>
+      {renderedCellValue.title}
+    </Anchor>
+  );
+};
+
+const renderCell = ({ renderedCellValue, cell }: { renderedCellValue: any; cell: any }) => {
   if (typeof renderedCellValue === 'string') {
     return <ReactMarkdown remarkPlugins={[remarkGfm]}>{renderedCellValue}</ReactMarkdown>;
   }

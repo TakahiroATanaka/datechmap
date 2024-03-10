@@ -4,6 +4,7 @@ import type {
   TechnologyMapCategoriesProps,
   TechnologyMapNewsProps,
   TechnologyMapOffersProps,
+  TechnologyMapProductProps,
 } from '@/libs/technology-map';
 
 export const technologyMapNewsFetcher = async (endpoint: string): Promise<TechnologyMapNewsProps> => {
@@ -29,4 +30,9 @@ export const technologyMapOffersFetcher = async (endpoint: string): Promise<Tech
 export const technologyMapRelationsFetcher = async (endpoint: string): Promise<TechnologyMapRelationsProps> => {
   const response = await fetch(endpoint);
   return (await response.json()) as TechnologyMapRelationsProps;
+};
+
+export const technologyMapProductFetcher = async (endpoint: string): Promise<TechnologyMapProductProps> => {
+  const response = await fetch(endpoint);
+  return (await response.json()) as TechnologyMapProductProps;
 };
