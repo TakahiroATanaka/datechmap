@@ -13,6 +13,7 @@ import useSWR from 'swr';
 type TechnologyMapProductTableProps = {
   categoryId: number;
   qualification?: boolean;
+  children: React.ReactNode;
 };
 
 type productsProps = {
@@ -28,16 +29,20 @@ export const TechnologyMapProductTable: React.FC<TechnologyMapProductTableProps>
     return <></>;
   }
   const relations = search(parseRelations(relationsData), props.categoryId, props.qualification, '');
+  if (relations.length === 0) {
+    return <p>現時点では該当する製品・サービスはありません。</p>;
+  }
 
   return (
     <>
       <style>{`
-      p {
+      td > p {
         font-weight: normal;
         font-size: 14px;
         margin: 0px;
         padding: 0px;
       }`}</style>
+      {props.children}
       <Wrapper relations={relations} />
     </>
   );
@@ -87,6 +92,9 @@ const Content: React.FC<{ data: any[] }> = (props) => {
 
   const columnVisibility: any = {};
   for (const c of data[0].keys) {
+    if (c[c.length - 1] === '製品・サービス名') {
+      continue;
+    }
     const key = 'body.' + c.join('.');
     const header = c[c.length - 1];
     columnsDefinitions.push({

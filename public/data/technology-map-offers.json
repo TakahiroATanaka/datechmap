@@ -4,13 +4,44 @@
     "title",
     "closed",
     "overview",
-    "offer"
+    "offer",
+    "product-qualified",
+    "product-not-qualified"
   ],
   [
     "10001",
     "講習・試験のデジタル化を実現する製品・サービス一覧",
     "1",
     "受講者が各自のコンピュータ等を利用して在宅受講可能なオンライン型の講習を可能とし、対面講習のデジタル化を実現するための製品・サービスを掲載しています。以下のコンテンツ利用上の注意をご確認いただいたうえで、ご活用をお願いします。\n\n* [コンテンツ利用上の注意](https://www.digital.go.jp/experimental/technology-map/#tos)\n\nまた、テクノロジーマップ・技術カタログを活用し、業務のデジタル化を進めるにあたって、サイバーセキュリティ確保の観点から、本技術カタログに掲載されているデジタル技術の導入に当たって留意すべき点を整理しました。以下の資料を参考にデジタル技術の導入検討にご活用ください。\n\n* [講習・試験のデジタル化を実現する製品・サービスの調達時におけるサイバーセキュリティ上の留意点（PDF/217KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/6b90f8eb-afe8-42b9-859f-e5a994ab869c/fb9f7aca/20240222_policies_technology-catalog_outline_01.pdf)",
-    "* [募集要領（PDF/290KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/988a6bc8/20220930_policies_digital-extraordinary-administrative-research-committee_guideline_01.pdf)（2022年10月7日更新）\n* [参考資料（PDF/717KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/430c5316/20220930_policies_digital-extraordinary-administrative-research-committee_reference_02.pdf)\n* [（参考）応募フォームの質問事項一覧（PDF/622KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/396c1339/20220930_policies_digital-extraordinary-administrative-research-committee_list_03.pdf)"
+    "* [募集要領（PDF/290KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/988a6bc8/20220930_policies_digital-extraordinary-administrative-research-committee_guideline_01.pdf)（2022年10月7日更新）\n* [参考資料（PDF/717KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/430c5316/20220930_policies_digital-extraordinary-administrative-research-committee_reference_02.pdf)\n* [（参考）応募フォームの質問事項一覧（PDF/622KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34a225ed-03be-4408-b00d-f9b88a5a2543/396c1339/20220930_policies_digital-extraordinary-administrative-research-committee_list_03.pdf)",
+    "受講申込み・受講者管理機能を有し、オンラインで講習が実現可能である製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/6b90f8eb-afe8-42b9-859f-e5a994ab869c/4d410a0e/20240222_policies_technology-catalog_table_01.xlsx))。",
+    "要素技術として講習・試験の各プロセスで活用可能性のある製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/6b90f8eb-afe8-42b9-859f-e5a994ab869c/00e4ddea/20240222_policies_technology-catalog_table_02.xlsx))。"
+  ],
+  [
+    "10002",
+    "往訪閲覧・縦覧のデジタル化を実現する製品・サービス一覧",
+    "1",
+    "申請者が規制所管省庁等で管理している情報をオンラインで閲覧・縦覧することを可能とする、往訪閲覧・縦覧のデジタル化を実現するための製品・サービスを掲載しています。以下のコンテンツ利用上の注意をご確認いただいたうえで、ご活用をお願いします。\n\n* [コンテンツ利用上の注意](https://www.digital.go.jp/experimental/technology-map/#tos)\n\nまた、テクノロジーマップ・技術カタログを活用し、業務のデジタル化を進めるにあたって、サイバーセキュリティ確保の観点から、本技術カタログに掲載されているデジタル技術の導入に当たって留意すべき点を整理しました。以下の資料を参考にデジタル技術の導入検討にご活用ください。\n\n* [往訪閲覧・縦覧のデジタル化を実現するための製品サイバーセキュリティ上の留意点（PDF/225KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/f5f319a8-022a-4774-adcc-fd6ba4b4287d/63e6deb0/20240222_policies_technology-catalog_outline_02.pdf)",
+    "* [往訪閲覧・縦覧のデジタル化を実現する製品・サービスの公募（2023年11月6日募集終了）](https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechmap/technology-catalog/#visitbrowsing)",
+    "閲覧・縦覧開始時の本人認証機能や個人情報の保護機能、のぞき見防止機能、複写抑止・防止機能を有している製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/f5f319a8-022a-4774-adcc-fd6ba4b4287d/ce44c3e6/20240301_policies_technology-catalog_table_01.xlsx))。",
+    "必須機能はないものの、紙媒体を電子媒体として変換する機能、申請者以外からのアクセスを制限する機能などを備え、往訪閲覧・縦覧の各プロセスで活用可能性のある製品・サービスの一覧を掲載します。\n"
+  ],
+  [
+    "10003",
+    "事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービス一覧",
+    "1",
+    "事業場における施設・物品等の管理状況や業務等の記録に対して、遠隔地の検査員が現地の検査員や調査先の受け入れ担当者等とオンラインで接続し遠隔で調査・監査業務を行うことを可能とする、事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスを掲載しています。以下のコンテンツ利用上の注意をご確認いただいたうえで、ご活用をお願いします。\n\n* [コンテンツ利用上の注意](https://www.digital.go.jp/experimental/technology-map/#tos)\n\nまた、テクノロジーマップ・技術カタログを活用し、業務のデジタル化を進めるにあたって、サイバーセキュリティ確保の観点から、本技術カタログに掲載されているデジタル技術の導入に当たって留意すべき点を整理しました。以下の資料を参考にデジタル技術の導入検討にご活用ください。\n\n* [事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスの調達時におけるサイバーセキュリティ上の留意点（PDF/205KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34932560-26fc-4e7f-b5ae-3b172d502487/0c0cc9d0/20240308_policies_technology-catalog_field-audit_outline_01.pdf)",
+    "* [事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）](https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechmap/technology-catalog#recruitment-information_02)",
+    "映像や音声によるリアルタイムなコミュニケーションを実現可能とする機能を有している製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34932560-26fc-4e7f-b5ae-3b172d502487/3d7923c5/20240308_policies_technology-catalog_field-audit_table_02.xlsx))。",
+    "必須機能はないものの、事業場の管理・業務状況等の確認（実地調査）の各プロセスで活用可能性のある製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/34932560-26fc-4e7f-b5ae-3b172d502487/6eaf40dc/20240308_policies_technology-catalog_field-audit_table_03.xlsx))。"
+  ],
+  [
+    "10004",
+    "広域な利用状況・被害等の把握のデジタル化を実現する製品・サービス一覧",
+    "1",
+    "地形等の形状、土地の利用状況、等を対象とした広域な状況把握や、災害時における被害状況把握を可能とする、広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスを掲載しています。以下のコンテンツ利用上の注意をご確認いただいたうえで、ご活用をお願いします。\n\n* [コンテンツ利用上の注意](https://www.digital.go.jp/experimental/technology-map/#tos)\n\nまた、テクノロジーマップ・技術カタログを活用し、業務のデジタル化を進めるにあたって、サイバーセキュリティ確保の観点から、本技術カタログに掲載されているデジタル技術の導入に当たって留意すべき点を整理しました。以下の資料を参考にデジタル技術の導入検討にご活用ください。\n\n* [広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスの調達時におけるサイバーセキュリティ上の留意点（PDF/204KB）](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/60fc2427-3adb-4938-9d81-12bddcc1beb0/dd35c05b/20240308_policies_technology-catalog_wide-area-inspection_outline_01.pdf)",
+    "* [広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）](https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/regtechmap/technology-catalog#recruitment-information_01)",
+    "調査対象の情報を取得する機能及び分析・判断機能を有している製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/60fc2427-3adb-4938-9d81-12bddcc1beb0/4ebf793c/20240308_policies_technology-catalog_wide-area-inspection_table_02.xlsx))。",
+    "必須機能はないものの、広域な利用状況・被害等の把握の各プロセスで活用可能性のある製品・サービスの一覧を以下に掲載しています (xlsx形式のデータは[こちら](https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/60fc2427-3adb-4938-9d81-12bddcc1beb0/9c803261/20240308_policies_technology-catalog_wide-area-inspection_table_03.xlsx))。"
   ]
 ]

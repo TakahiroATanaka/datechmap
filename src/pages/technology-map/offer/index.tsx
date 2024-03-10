@@ -70,10 +70,14 @@ const Page = () => {
         <h3>全一覧</h3>
 
         <h4>必須事項を備える製品・サービス一覧</h4>
-
-        <TechnologyMapProductTable categoryId={offer.id} qualification={true} />
+        <TechnologyMapProductTable categoryId={offer.id} qualification={true}>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.qualifiedDescription}</ReactMarkdown>
+        </TechnologyMapProductTable>
 
         <h4>必須事項を備えない製品・サービス一覧</h4>
+        <TechnologyMapProductTable categoryId={offer.id} qualification={false}>
+          <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.notQualifiedDescription}</ReactMarkdown>
+        </TechnologyMapProductTable>
 
         <h2 id="offer">公募{offer.closed ? '（締切済）' : ''}に関する資料</h2>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.offer}</ReactMarkdown>

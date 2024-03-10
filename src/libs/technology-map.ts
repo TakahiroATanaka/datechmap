@@ -23,6 +23,8 @@ type OfferProps = {
   title: string;
   overview: string;
   offer: string;
+  qualifiedDescription: string;
+  notQualifiedDescription: string;
 };
 
 type RelationsProps = RelationProps[];
@@ -140,6 +142,8 @@ export const parseOffers = (data: TechnologyMapOffersProps): OffersProps => {
       closed: data[i][2] != '' ? true : false,
       overview: data[i][3],
       offer: data[i][4],
+      qualifiedDescription: data[i][5],
+      notQualifiedDescription: data[i][6],
     };
 
     offers[offer.id] = offer;
@@ -157,7 +161,7 @@ export const parseRelations = (data: TechnologyMapRelationsProps): RelationsProp
       categoryId: parseInt(data[i][0]),
       productId: parseInt(data[i][1]),
       productName: data[i][2],
-      qualification: data[i][3] != '' ? true : false,
+      qualification: data[i][3] == '1' ? true : false,
       mainCategory: parseInt(data[i][4]),
     };
 
