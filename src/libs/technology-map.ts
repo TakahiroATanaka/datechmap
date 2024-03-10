@@ -10,7 +10,7 @@ type RelationProps = {
   productId: number;
   mainCategory: number;
   productName: string;
-  productDescription: string;
+  qualification: boolean;
 };
 
 type OffersProps = {
@@ -32,8 +32,10 @@ type ProductSummaryKeyProps = [number, string, number, string];
 type ProductProps = {
   id: number;
   title: string;
+  qualification: boolean;
   mainCategory: number;
   body: any[];
+  keys: ProductSummaryKeyProps[];
   summaryKeys: ProductSummaryKeyProps[];
 };
 
@@ -79,11 +81,16 @@ type DataProps = {
 const MERGE_PREFIX = 'merged:';
 const MERGE_PREFIX_LEN = MERGE_PREFIX.length;
 
-export const search = (data: RelationsProps, categoryId: number | null, freetext: string): RelationsProps => {
+export const search = (
+  data: RelationsProps,
+  categoryId: number | undefined,
+  qualification: boolean | undefined,
+  freetext: string,
+): RelationsProps => {
   const tmp: { [key: number]: RelationProps } = {};
 
   // filter by categoryId
-  if (categoryId !== null) {
+  if (categoryId !== undefined) {
     for (let i = 0; i < data.length; i++) {
       if (data[i].categoryId === categoryId) {
         tmp[data[i].productId] = data[i];
@@ -95,15 +102,21 @@ export const search = (data: RelationsProps, categoryId: number | null, freetext
     }
   }
 
+  // filter by qualification
+  if (qualification !== undefined) {
+    for (const key in tmp) {
+      if (tmp[key].qualification !== qualification) {
+        delete tmp[key];
+      }
+    }
+  }
+
   // filter by freetext
   const result: RelationsProps = [];
   if (freetext !== '') {
     const freetextLower = freetext.toLowerCase();
     for (const key in tmp) {
-      if (
-        tmp[key].productName.toLowerCase().includes(freetextLower) == false &&
-        tmp[key].productDescription.toLowerCase().includes(freetextLower) == false
-      ) {
+      if (tmp[key].productName.toLowerCase().includes(freetextLower) == false) {
         delete tmp[key];
       }
     }
@@ -144,8 +157,8 @@ export const parseRelations = (data: TechnologyMapRelationsProps): RelationsProp
       categoryId: parseInt(data[i][0]),
       productId: parseInt(data[i][1]),
       productName: data[i][2],
-      mainCategory: parseInt(data[i][3]),
-      productDescription: data[i][4],
+      qualification: data[i][3] != '' ? true : false,
+      mainCategory: parseInt(data[i][4]),
     };
 
     relations.push(relation);
@@ -160,8 +173,10 @@ export const parseProduct = (data: TechnologyMapProductProps): ProductProps => {
   const product: ProductProps = {
     id: 0,
     title: '',
+    qualification: false,
     mainCategory: 0,
     body: [],
+    keys: [],
     summaryKeys: [],
   };
 
@@ -175,6 +190,8 @@ export const parseProduct = (data: TechnologyMapProductProps): ProductProps => {
         // just 1 level of header, and specific case
         if (key === 'id') {
           product.id = parseInt(body[i]);
+        } else if (key === 'qualification') {
+          product.qualification = body[i] != '' ? true : false;
         } else if (key === 'main-category') {
           product.mainCategory = parseInt(body[i]);
         } else if (key === 'title') {
@@ -198,6 +215,7 @@ export const parseProduct = (data: TechnologyMapProductProps): ProductProps => {
       tmpKey = tmpKey.slice(1);
       product.summaryKeys.push([n, key, currentElement[key].length, tmpKey]);
     }
+    product.keys.push([n, key, currentElement[key].length, tmpKey]);
     tmpObj[tmpKey] = body[i];
     currentElement[key].push(tmpObj);
   }

@@ -1,5 +1,6 @@
 import type {
   TechnologyMapDataProps,
+  TechnologyMapRelationsProps,
   TechnologyMapCategoriesProps,
   TechnologyMapNewsProps,
   TechnologyMapOffersProps,
@@ -23,4 +24,9 @@ export const technologyMapCategoriesFetcher = async (endpoint: string): Promise<
 export const technologyMapOffersFetcher = async (endpoint: string): Promise<TechnologyMapOffersProps> => {
   const response = await fetch(endpoint);
   return (await response.json()) as TechnologyMapOffersProps;
+};
+
+export const technologyMapRelationsFetcher = async (endpoint: string): Promise<TechnologyMapRelationsProps> => {
+  const response = await fetch(endpoint);
+  return (await response.json()) as TechnologyMapRelationsProps;
 };

@@ -2,6 +2,7 @@
 
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrumbs';
+import { TechnologyMapProductTable } from '@/components/technology-map/product-table';
 import { TechnologyMapReference } from '@/components/technology-map/reference';
 import { Anchor } from '@/components/ui/Anchor';
 import { canonicalPath } from '@/libs/path';
@@ -67,6 +68,12 @@ const Page = () => {
         </blockquote>
 
         <h3>全一覧</h3>
+
+        <h4>必須事項を備える製品・サービス一覧</h4>
+
+        <TechnologyMapProductTable categoryId={offer.id} qualification={true} />
+
+        <h4>必須事項を備えない製品・サービス一覧</h4>
 
         <h2 id="offer">公募{offer.closed ? '（締切済）' : ''}に関する資料</h2>
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.offer}</ReactMarkdown>
