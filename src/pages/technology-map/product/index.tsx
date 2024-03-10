@@ -2,9 +2,6 @@
 
 import { BaseLayout } from '@/components/common/BaseLayout';
 import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrumbs';
-import { TechnologyMapProductTable } from '@/components/technology-map/product-table';
-import { TechnologyMapReference } from '@/components/technology-map/reference';
-import { Anchor } from '@/components/ui/Anchor';
 import { canonicalPath } from '@/libs/path';
 import { parseOffers, parseProduct } from '@/libs/technology-map';
 import { technologyMapProductFetcher, technologyMapOffersFetcher } from '@/libs/technology-map-fetcher';
