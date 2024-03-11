@@ -1,27 +1,51 @@
-# website-top
+# テクノロジーマップ (PoC)
 
-庁ウェブ新トップのお試し場。
+## 開発環境
 
-- https://www.figma.com/file/GpYKc0R1ngq8ahrC6B34Nn/2nd-Gen?type=design&node-id=902-2629&t=LkXViqSx8TGuoEV4-0
+### 必須
 
-## Env
+- Node.js v18.x (w/ npm)
 
-- Node.js v18.13.0
+### 推奨
 
-## Setup
+- Visual Studio Code (w/ [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers))
+- Docker
+
+## 開発環境構築
+
+- (vscode/docker環境の場合)
+    - `Remote-Containers: Reopen in Container` を実行してコンテナ環境を構築します
+
+### node moduleインストール
 
 ```
 $ npm install
 ```
 
-## Run
+### 開発サーバ実行
 
 ```
 $ npm run dev
 ```
 
-## Build
+- http://localhost:3000/technology-map/ にアクセスします
+
+### アセット生成
 
 ```
 $ npm run build
 ```
+
+- `out/` 以下にアセットが生成されます
+
+## デプロイ
+
+- デプロイは、github actionsにより自動的に行われます
+    - 詳細は、`.github/workflows/deploy-prod.yml` `.github/workflows/deploy-stg.yml` を参照してください
+
+- プロダクションURL: https://www.digital.go.jp/experimental/technology-map/
+- ステージングURL: https://www.daw-stg.gov-web.com/experimental/technology-map/
+
+## xlsxデータ
+
+(TBD)
