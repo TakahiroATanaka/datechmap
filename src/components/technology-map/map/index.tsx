@@ -74,7 +74,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
           writing-mode: horizontal-tb;
         }
       `}</style>
-      <table className="text-dns-14N-2 border-separate border-spacing-1 bg-sumi-50">
+      <table className="border-separate border-spacing-1 bg-sumi-50 text-dns-14N-2">
         <tbody>
           <tr>
             <td colSpan={table.yHeaderLength} rowSpan={table.xHeaderLength}></td>
@@ -153,7 +153,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   if (element.type === 'yheader') {
                     className += 'font-bold ';
                     if (element.level === 0) {
-                      className += 'bg-green-1000 text-white';
+                      className += 'bg-green-1000 text-white vertical-element';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 1) {
