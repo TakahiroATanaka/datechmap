@@ -92,6 +92,12 @@ const Content: React.FC<{ data: any[] }> = (props) => {
       accessorKey: 'title',
       header: '製品・サービス名',
       Cell: renderTitleCell,
+      sortingFn: (a: any, b: any, columnId: any): number => {
+        const valueA = a.getValue(columnId).title;
+        const valueB = b.getValue(columnId).title;
+
+        return valueA < valueB ? -1 : valueA > valueB ? 1 : 0;
+      },
     },
   ];
 
@@ -106,6 +112,11 @@ const Content: React.FC<{ data: any[] }> = (props) => {
       accessorKey: key,
       header: header,
       Cell: renderCell,
+      sortingFn: (a: any, b: any, columnId: any): number => {
+        const valueA = a.getValue(columnId);
+        const valueB = b.getValue(columnId);
+        return valueA < valueB ? -1 : valueA > valueB ? 1 : 0;
+      },
     });
     columnVisibility[key] = false;
   }
