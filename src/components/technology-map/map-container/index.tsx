@@ -1,7 +1,17 @@
+import { TechnologyMap } from '@/components/technology-map/map';
 import { Anchor } from '@/components/ui/Anchor';
 import { canonicalPath } from '@/libs/path';
+import { technologyMapDataFetcher, technologyMapCategoriesFetcher } from '@/libs/technology-map-fetcher';
+import useSWR from 'swr';
 
 export const TechnologyMapContainer: React.FC = () => {
+  const { data: technologyMap3 } = useSWR(canonicalPath(`/data/technology-map-3.json`), technologyMapDataFetcher);
+  const { data: technologyMap4 } = useSWR(canonicalPath(`/data/technology-map-4.json`), technologyMapDataFetcher);
+  const { data: technologyMapCategories } = useSWR(
+    canonicalPath(`/data/technology-map-categories.json`),
+    technologyMapCategoriesFetcher,
+  );
+
   return (
     <section className="flex flex-col gap-4">
       <h2>テクノロジーマップ</h2>
@@ -31,20 +41,24 @@ export const TechnologyMapContainer: React.FC = () => {
       <p>テクノロジーマップ概要版をご覧いただく場合は、以下をクリックして下さい。</p>
       <ul>
         <li>
-          テクノロジーマップ パターン1 概要版（規制の判断・対応内容に着目）（PDF/407KB）
+          テクノロジーマップ パターン1 概要版（規制の判断・対応内容に着目）
           <br />
-          <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/5b8165e7-1763-4a5f-bf4f-169f48131a1d/5239c064/20231006_policies_regtechmap_detail_01.pdf">
-            <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/9488672a/20231006_policies_regtechmap_detail_01.png" />
-          </Anchor>
+          <TechnologyMap
+            data={technologyMap3 === undefined ? [] : technologyMap3}
+            categories={technologyMapCategories === undefined ? [] : technologyMapCategories}
+            id={'3'}
+          />
         </li>
       </ul>
       <ul>
         <li>
-          テクノロジーマップ パターン2 概要版（規制に基づき実施する業務内容に着目）（PDF/402KB）
+          テクノロジーマップ パターン2 概要版（規制に基づき実施する業務内容に着目）
           <br />
-          <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/5b8165e7-1763-4a5f-bf4f-169f48131a1d/5f8343f2/20231006_policies_regtechmap_detail_02.pdf">
-            <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/53825a1e/20231006_policies_regtechmap_detail_02.png" />
-          </Anchor>
+          <TechnologyMap
+            data={technologyMap4 === undefined ? [] : technologyMap4}
+            categories={technologyMapCategories === undefined ? [] : technologyMapCategories}
+            id={'4'}
+          />
         </li>
       </ul>
       <p>
