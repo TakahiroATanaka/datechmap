@@ -37,7 +37,7 @@ export const Nav = () => {
         </li>
       </NavUl>
 
-      <NavUl className="flex items-center gap-2 text-label-lg md:gap-3">
+      <NavUl className="hidden items-center gap-2 text-label-lg md:gap-3 lg:flex">
         <li>
           <UnstyledAnchor className="px-4 text-pc-nav-default hover:underline" href="https://www.digital.go.jp/press/">
             プレスルーム
@@ -48,6 +48,9 @@ export const Nav = () => {
             Global Site
           </UnstyledAnchor>
         </li>
+      </NavUl>
+
+      <NavUl className="flex items-center gap-2 text-label-lg md:gap-3">
         <li>
           <UnstyledAnchor
             className="flex items-center gap-2 px-2 text-pc-nav-default hover:underline md:px-4"
