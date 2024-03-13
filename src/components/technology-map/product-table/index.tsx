@@ -98,6 +98,10 @@ const Content: React.FC<{ data: any[] }> = (props) => {
 
         return valueA < valueB ? -1 : valueA > valueB ? 1 : 0;
       },
+      filterFn: (row: any, id: any, filterValue: any) => {
+        const value = row.getValue(id).title;
+        return value.includes(filterValue);
+      },
     },
   ];
 
@@ -116,6 +120,9 @@ const Content: React.FC<{ data: any[] }> = (props) => {
         const valueA = a.getValue(columnId);
         const valueB = b.getValue(columnId);
         return valueA < valueB ? -1 : valueA > valueB ? 1 : 0;
+      },
+      filterFn: (row: any, id: any, filterValue: any) => {
+        return row.getValue(id).includes(filterValue);
       },
     });
     columnVisibility[key] = false;
