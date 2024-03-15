@@ -8,7 +8,6 @@ import { Anchor } from '@/components/ui/Anchor';
 import { canonicalPath, urlTransform } from '@/libs/path';
 import { parseOffers } from '@/libs/technology-map';
 import { technologyMapOffersFetcher } from '@/libs/technology-map-fetcher';
-import { url } from 'inspector';
 import { useSearchParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
