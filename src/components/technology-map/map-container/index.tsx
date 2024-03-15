@@ -5,13 +5,6 @@ import { technologyMapDataFetcher, technologyMapCategoriesFetcher } from '@/libs
 import useSWR from 'swr';
 
 export const TechnologyMapContainer: React.FC = () => {
-  const { data: technologyMap3 } = useSWR(canonicalPath(`/data/technology-map-3.json`), technologyMapDataFetcher);
-  const { data: technologyMap4 } = useSWR(canonicalPath(`/data/technology-map-4.json`), technologyMapDataFetcher);
-  const { data: technologyMapCategories } = useSWR(
-    canonicalPath(`/data/technology-map-categories.json`),
-    technologyMapCategoriesFetcher,
-  );
-
   return (
     <section className="flex flex-col gap-4">
       <h2>テクノロジーマップ</h2>
@@ -24,7 +17,7 @@ export const TechnologyMapContainer: React.FC = () => {
           テクノロジーマップ パターン1（規制の判断・対応内容に着目）
           <br />
           <Anchor href={canonicalPath('/technology-map/map-data?pattern=1')}>
-            <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/fba7ede2/20240222_policies_regtechmap_01.png" />
+            <img src="/technology-map/technology-map-1.png" />
           </Anchor>
         </li>
       </ul>
@@ -33,10 +26,31 @@ export const TechnologyMapContainer: React.FC = () => {
           テクノロジーマップ パターン2（規制に基づき実施する業務内容に着目）
           <br />
           <Anchor href={canonicalPath('/technology-map/map-data?pattern=2')}>
-            <img src="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_images/5b8165e7-1763-4a5f-bf4f-169f48131a1d/f0603fd6/20240222_policies_regtechmap_02.png" />
+            <img src="/technology-map/technology-map-2.png" />
           </Anchor>
         </li>
       </ul>
+      <p>
+        横軸は、データをどのように取得し（Input）、取得データをどのように解析・判断し（Process）、どのように対応するのか（Output）、データフローに沿ったIPO（Input-Process-Output）モデルに基づき整理しています（2パターン共通）。
+      </p>
+      <p>
+        縦軸は、規制の目的を達成するために必要な機能に基づき整理しています。
+        規制の判断・対応内容（例：適格性判断）に着目したパターン1、規制に基づき実施する業務内容（例：点検業務）に着目したパターン2の2種類で整理しています。目的やご関心の規制の内容に応じて使い分けていただくことができます。
+      </p>
+    </section>
+  );
+};
+
+const TechnologyMapSummary: React.FC = () => {
+  const { data: technologyMap3 } = useSWR(canonicalPath(`/data/technology-map-3.json`), technologyMapDataFetcher);
+  const { data: technologyMap4 } = useSWR(canonicalPath(`/data/technology-map-4.json`), technologyMapDataFetcher);
+  const { data: technologyMapCategories } = useSWR(
+    canonicalPath(`/data/technology-map-categories.json`),
+    technologyMapCategoriesFetcher,
+  );
+
+  return (
+    <>
       <h3>テクノロジーマップ概要版</h3>
       <ul>
         <li>
@@ -60,13 +74,6 @@ export const TechnologyMapContainer: React.FC = () => {
           />
         </li>
       </ul>
-      <p>
-        横軸は、データをどのように取得し（Input）、取得データをどのように解析・判断し（Process）、どのように対応するのか（Output）、データフローに沿ったIPO（Input-Process-Output）モデルに基づき整理しています（2パターン共通）。
-      </p>
-      <p>
-        縦軸は、規制の目的を達成するために必要な機能に基づき整理しています。
-        規制の判断・対応内容（例：適格性判断）に着目したパターン1、規制に基づき実施する業務内容（例：点検業務）に着目したパターン2の2種類で整理しています。目的やご関心の規制の内容に応じて使い分けていただくことができます。
-      </p>
-    </section>
+    </>
   );
 };
