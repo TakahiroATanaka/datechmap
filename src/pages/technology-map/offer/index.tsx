@@ -5,9 +5,10 @@ import { Breadcrumbs, breadcrumbsItemStyle } from '@/components/common/Breadcrum
 import { TechnologyMapProductTable } from '@/components/technology-map/product-table';
 import { TechnologyMapReference } from '@/components/technology-map/reference';
 import { Anchor } from '@/components/ui/Anchor';
-import { canonicalPath } from '@/libs/path';
+import { canonicalPath, urlTransform } from '@/libs/path';
 import { parseOffers } from '@/libs/technology-map';
 import { technologyMapOffersFetcher } from '@/libs/technology-map-fetcher';
+import { url } from 'inspector';
 import { useSearchParams } from 'next/navigation';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
@@ -50,7 +51,9 @@ const Page = () => {
           ]}
         />
         <h1>{offer.title}</h1>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.overview}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
+          {offer.overview}
+        </ReactMarkdown>
         <h2>製品・サービス一覧</h2>
         <p>
           留意事項（以下<Anchor href="#offer">募集要領</Anchor>より引用）
@@ -71,16 +74,22 @@ const Page = () => {
 
         <h4>必須事項を備える製品・サービス一覧</h4>
         <TechnologyMapProductTable categoryId={offer.id} qualification={true}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.qualifiedDescription}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
+            {offer.qualifiedDescription}
+          </ReactMarkdown>
         </TechnologyMapProductTable>
 
         <h4>必須事項を備えない製品・サービス一覧</h4>
         <TechnologyMapProductTable categoryId={offer.id} qualification={false}>
-          <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.notQualifiedDescription}</ReactMarkdown>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
+            {offer.notQualifiedDescription}
+          </ReactMarkdown>
         </TechnologyMapProductTable>
 
         <h2 id="offer">公募{offer.closed ? '（締切済）' : ''}に関する資料</h2>
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{offer.offer}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
+          {offer.offer}
+        </ReactMarkdown>
         <TechnologyMapReference />
       </main>
     </BaseLayout>
