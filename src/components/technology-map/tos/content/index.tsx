@@ -1,4 +1,5 @@
 import { Anchor } from '@/components/ui/Anchor';
+import { canonicalPath } from '@/libs/path';
 
 export const TosContent = () => {
   return (
@@ -9,7 +10,7 @@ export const TosContent = () => {
         詳細は
         <Anchor
           className="text-link underline"
-          href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/82c43a20/20231225_policies_technology-catalog_outline_03.pdf"
+          href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_03.pdf')}
           target="_blank"
         >
           テクノロジーマップ及び技術カタログ利用規約（PDF/280KB）

@@ -1,4 +1,4 @@
-import { canonicalPath } from '@/libs/path';
+import { canonicalPath, urlTransform } from '@/libs/path';
 import { technologyMapNewsFetcher } from '@/libs/technology-map-fetcher';
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
@@ -17,7 +17,7 @@ export const TechnologyMapNews: React.FC = () => {
     <section className="flex flex-col gap-4">
       <h2>お知らせ</h2>
 
-      <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={canonicalPath}>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
         {news}
       </ReactMarkdown>
     </section>
