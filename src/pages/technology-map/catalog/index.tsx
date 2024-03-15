@@ -56,7 +56,7 @@ const Page = () => {
             測定・分析のデジタル化を実現する製品・サービスの公募（2024年2月26日募集終了）
             <ul>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/ef16785e/20240126_policies_technology-catalog_outline_01.pdf">
+                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_01.pdf')}>
                   募集要領（PDF/557KB）
                 </Anchor>
               </li>
@@ -66,18 +66,18 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/e812fd80/20240126_policies_technology-catalog_outline_02.pdf">
+                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_02.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/940KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/45967caa/20240126_policies_technology-catalog_outline_03.pdf">
+                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_03.pdf')}>
                   （参考資料）測定・分析のデジタル化後の業務と求められる機能（PDF/450KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/7d97676f/20240126_policies_technology-catalog_outline_04.pdf">
-                  （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF／406KB）
+                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_04.pdf')}>
+                  （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/406KB）
                 </Anchor>
               </li>
             </ul>
@@ -88,7 +88,7 @@ const Page = () => {
             目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービスの公募（2024年1月29日募集終了）
             <ul>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/7bf64d08/20231225_policies_technology-catalog_outline_06.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_06.pdf')}>
                   募集要領（PDF/598KB）
                 </Anchor>
               </li>
@@ -98,17 +98,17 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/a9435203/20231225_policies_technology-catalog_outline_07.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_07.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/1,059KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/da5b788e/20231225_policies_technology-catalog_outline_08.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_08.pdf')}>
                   （参考資料）目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化後の業務と求められる機能（PDF/479KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/304c1724/20231225_policies_technology-catalog_outline_02.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_02.pdf')}>
                   （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/629KB）
                 </Anchor>
               </li>
@@ -120,7 +120,7 @@ const Page = () => {
             侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービスの公募（2024年1月29日募集終了）
             <ul>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/ee2fe615/20231225_policies_technology-catalog_outline_09.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_09.pdf')}>
                   募集要領（PDF/580KB）
                 </Anchor>
               </li>
@@ -130,17 +130,17 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/bf784faf/20231225_policies_technology-catalog_outline_10.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_10.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/1,064KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/5187dc3d/20231225_policies_technology-catalog_outline_11.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_11.pdf')}>
                   （参考資料）侵入痕跡・状況異変を検知する見張りのデジタル化後の業務と求められる機能（PDF／461KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/304c1724/20231225_policies_technology-catalog_outline_02.pdf">
+                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_02.pdf')}>
                   （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/629KB）
                 </Anchor>
               </li>
@@ -152,7 +152,7 @@ const Page = () => {
             事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）
             <ul>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/d455fcec/20231117_policies_technology-catalog_outline_06.pdf">
+                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_06.pdf')}>
                   募集要領（PDF/584KB）
                 </Anchor>
               </li>
@@ -162,12 +162,12 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/e8b5f17c/20231117_policies_technology-catalog_outline_07.pdf">
+                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_07.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/984KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/bef720ae/20231117_policies_technology-catalog_outline_08.pdf">
+                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_08.pdf')}>
                   （参考資料）事業場の管理・業務状況等の確認（実地調査）のデジタル化後の業務と求められる機能（PDF/467KB）
                 </Anchor>
               </li>
@@ -179,7 +179,7 @@ const Page = () => {
             往訪閲覧・縦覧のデジタル化を実現する製品・サービスの公募（2023年11月6日募集終了）
             <ul>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/c8305500/20231013_policies_technology-catalog_outline_01.pdf">
+                <Anchor href={canonicalPath('/pdf/20231013_policies_technology-catalog_outline_01.pdf')}>
                   募集要領（PDF/782KB）（2023年10月13日更新）
                 </Anchor>
               </li>
@@ -189,7 +189,7 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/226a60da/20240222_policies_technology-catalog_outline_03.pdf">
+                <Anchor href={canonicalPath('/pdf/20240222_policies_technology-catalog_outline_03.pdf')}>
                   （参考資料）応募フォームにおける質問事項⼀覧（PDF/1,176KB）
                 </Anchor>
                 （2024年2月22日更新）
@@ -197,7 +197,7 @@ const Page = () => {
                 ※往訪閲覧・縦覧のデジタル化を実現するための技術の公募（登録フォーム）の内容に変更はありません。
               </li>
               <li>
-                <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/fc2fba79/20231006_policies_technology-catalog_outline_03.pdf">
+                <Anchor href={canonicalPath('/pdf/20231006_policies_technology-catalog_outline_03.pdf')}>
                   （参考資料）往訪閲覧・縦覧のデジタル化後の業務と求められる機能（PDF/488KB）
                 </Anchor>
               </li>
@@ -207,22 +207,22 @@ const Page = () => {
         <h3>各公募における共通資料</h3>
         <ul>
           <li>
-            <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/7ce5ea9f/20231225_policies_technology-catalog_outline_01.pdf">
+            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_01.pdf')}>
               （参考資料）要素技術の解説（PDF/1,070KB）
             </Anchor>
           </li>
           <li>
-            <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/82c43a20/20231225_policies_technology-catalog_outline_03.pdf">
+            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_03.pdf')}>
               テクノロジーマップ及び技術カタログ利用規約（2023年11月17日改訂）（PDF/280KB）
             </Anchor>
           </li>
           <li>
-            <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/8ea080e9/20231225_policies_technology-catalog_outline_04.pdf">
+            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_04.pdf')}>
               技術カタログへの登録における個人情報の取扱いについて（PDF/478KB）
             </Anchor>
           </li>
           <li>
-            <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/00c25eda-7951-4b14-8f83-5388d10818fe/246988fa/20231225_policies_technology-catalog_outline_05.pdf">
+            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_05.pdf')}>
               著作権について（PDF/729KB）
             </Anchor>
           </li>

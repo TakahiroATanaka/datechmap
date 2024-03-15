@@ -24,7 +24,7 @@ export const TechnologyMapCatalog: React.FC = () => {
       </p>
       <ul>
         <li>
-          <Anchor href="https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/01e284e9-5875-42e1-9dc3-8a5701bdb09c/b2561117/20230209_meeting_technology_based_regulatory_reform_outline_04.pdf">
+          <Anchor href={canonicalPath('/pdf/20230209_meeting_technology_based_regulatory_reform_outline_04.pdf')}>
             デジタル技術解説記事のサンプル記事執筆結果について（オンライン受験システム（CBT）技術の検証と評価方法）（テクノロジーベースの規制改革推進委員会構成員
             登 大遊氏）（PDF/2,175KB）
           </Anchor>
