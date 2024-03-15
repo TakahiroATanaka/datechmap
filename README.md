@@ -88,3 +88,24 @@ $ node src/cli/xlsx-to-json.js -i src/data/technology-map-data.xlsx -o public/da
     - 製品とカテゴリの関連付けを定義します
 - news
     - お知らせとして表示されるデータを定義します
+
+### マークダウン記法
+
+- news, offersシート等に記載するコンテンツデータは、マークダウン記法で記述することができます
+    - マークダウン記法については、各種リファレンス (e.g. https://qiita.com/tbpgr/items/989c6badefff69377da7) を参照してください
+
+### リンク記載方法
+
+開発環境のベースとなるURL (http://localhost:3000/technology-map/) と、本番環境のベースとなるURL (https://www.digital.go.jp/experimental/technology-map/) が異なるため、xlsxに記載されたリンクは以下のように自動的に変換されます
+
+従って、**デジタル庁ウェブサイトの他のコンテンツへのリンクを記載する場合は、https://www.digital.go.jp/path/to/page のように、絶対URLで記載してください**
+
+| xlsxに記載されたリンク | 開発環境でのリンク | 本番環境でのリンク |
+| --- | --- | --- |
+| /path/to/page | /technology-map/path/to/page | /experimental/technology-map/path/to/page |
+| https://example.com/path/to/page | https://example.com/path/to/page | https://example.com/path/to/page |
+
+### アセット等の配置とリンク先
+
+- アセット等は、ソースコードリポジトリの public/ 以下に配置することでアクセス可能です
+    - public/pdf/example.pdf を配置した場合、xlsxでのリンク先は /pdf/example.pdf となります (前述の通り、本番環境ではリンク先が自動的に /experimental/pdf/example.pdf へ変換されます)
