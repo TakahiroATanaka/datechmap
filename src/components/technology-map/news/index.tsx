@@ -17,7 +17,9 @@ export const TechnologyMapNews: React.FC = () => {
     <section className="flex flex-col gap-4">
       <h2>お知らせ</h2>
 
-      <ReactMarkdown remarkPlugins={[remarkGfm]}>{news}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={canonicalPath}>
+        {news}
+      </ReactMarkdown>
     </section>
   );
 };
