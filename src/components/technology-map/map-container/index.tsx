@@ -17,7 +17,7 @@ export const TechnologyMapContainer: React.FC = () => {
           テクノロジーマップ パターン1（規制の判断・対応内容に着目）
           <br />
           <Anchor href={canonicalPath('/technology-map/map-data?pattern=1')}>
-            <img src="/technology-map/technology-map-1.png" />
+            <img src={canonicalPath('/technology-map/technology-map-1.png')} />
           </Anchor>
         </li>
       </ul>
@@ -26,7 +26,7 @@ export const TechnologyMapContainer: React.FC = () => {
           テクノロジーマップ パターン2（規制に基づき実施する業務内容に着目）
           <br />
           <Anchor href={canonicalPath('/technology-map/map-data?pattern=2')}>
-            <img src="/technology-map/technology-map-2.png" />
+            <img src={canonicalPath('/technology-map/technology-map-2.png')} />
           </Anchor>
         </li>
       </ul>
