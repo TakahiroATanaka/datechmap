@@ -52,7 +52,7 @@ const Page = () => {
         <p>現在公募している案件はありません。</p>
         <h3>終了案件</h3>
         <ul>
-          <li id="offer-05">
+          <li id="offer-07">
             測定・分析のデジタル化を実現する製品・サービスの公募（2024年2月26日募集終了）
             <ul>
               <li>
@@ -84,7 +84,7 @@ const Page = () => {
           </li>
         </ul>
         <ul>
-          <li>
+          <li id="offer-06">
             目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービスの公募（2024年1月29日募集終了）
             <ul>
               <li>
@@ -116,7 +116,7 @@ const Page = () => {
           </li>
         </ul>
         <ul>
-          <li>
+          <li id="offer-05">
             侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービスの公募（2024年1月29日募集終了）
             <ul>
               <li>
@@ -148,7 +148,34 @@ const Page = () => {
           </li>
         </ul>
         <ul>
-          <li>
+          <li id="offer-04">
+            広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）
+            <ul>
+              <li>
+                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_06.pdf')}>
+                  募集要領（PDF/587KB）
+                </Anchor>
+              </li>
+              <li>
+                <Anchor href="https://forms.office.com/e/secb7tFAMG">
+                  広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスの公募（登録フォーム）
+                </Anchor>
+              </li>
+              <li>
+                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_07.pdf')}>
+                  （参考資料）応募フォームにおける質問事項一覧（PDF/996KB）
+                </Anchor>
+              </li>
+              <li>
+                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_08.pdf')}>
+                  （参考資料）広域な利用状況・被害等の把握のデジタル化後の業務と求められる機能（PDF/493KB）
+                </Anchor>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li id="offer-03">
             事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）
             <ul>
               <li>
@@ -175,7 +202,7 @@ const Page = () => {
           </li>
         </ul>
         <ul>
-          <li>
+          <li id="offer-02">
             往訪閲覧・縦覧のデジタル化を実現する製品・サービスの公募（2023年11月6日募集終了）
             <ul>
               <li>
