@@ -39,7 +39,7 @@ export const TosAlert = () => {
 
   return (
     <Modal isOpen={showModal} style={styles}>
-      <div className="ml-4 mt-3 text-left">
+      <div className="mt-3 text-left sm:ml-4 sm:mt-0">
         <h4>コンテンツ利用上の注意</h4>
         <div className="mt-2">
           <TosContent />
