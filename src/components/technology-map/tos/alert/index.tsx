@@ -7,14 +7,17 @@ const localStorageKey = 'technology-map.tos.agreement';
 
 const styles = {
   content: {
-    top: '50%',
-    left: '50%',
-    right: 'auto',
-    bottom: 'auto',
-    maxWidth: '48rem',
-    marginRight: '-50%',
-    transform: 'translate(-50%, -50%)',
-    rounded: 'md',
+    top: '5rem',
+    left: '5rem',
+    right: '5rem',
+    bottom: '5rem',
+    borderRadius: '1rem',
+    padding: '1.5rem',
+  },
+  overlay: {
+    top: 0,
+    left: 0,
+    zIndex: 1000,
   },
 };
 
@@ -36,13 +39,13 @@ export const TosAlert = () => {
 
   return (
     <Modal isOpen={showModal} style={styles}>
-      <div className="mt-3 text-center sm:ml-4 sm:mt-0 sm:text-left">
+      <div className="ml-4 mt-3 text-left">
         <h4>コンテンツ利用上の注意</h4>
         <div className="mt-2">
           <TosContent />
         </div>
       </div>
-      <div className="px-4 py-3 sm:flex sm:justify-center sm:px-6">
+      <div className="flex justify-center px-4 py-8">
         <Button onClick={handleAgreementAction} size="md" variant="primary">
           確認
         </Button>
