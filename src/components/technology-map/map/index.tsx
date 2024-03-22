@@ -78,7 +78,6 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
         <tbody>
           <tr>
             {table.yTitle[0].map((element, i) => {
-              console.log(element);
               let className = 'border bg-white text-center font-bold';
               let linkClassName = '';
               if (element.level == 0) {
