@@ -30,7 +30,10 @@ export const TechnologyMapGuide: React.FC = () => {
           テクノロジーマップ縦軸項目の解説（PDF/700KB） テクノロジーマップ縦軸項目の解説
           <br />
           <Anchor href={canonicalPath('/pdf/20231006_policies_regtechmap_03.pdf')}>
-            <img src={canonicalPath('/technology-map/20231006_policies_regtechmap_03.png')} />
+            <img
+              alt="テクノロジーマップ縦軸項目の解説"
+              src={canonicalPath('/technology-map/20231006_policies_regtechmap_03.png')}
+            />
           </Anchor>
         </li>
       </ul>
@@ -40,7 +43,10 @@ export const TechnologyMapGuide: React.FC = () => {
           マッピングした要素技術の解説（PDF/917KB） マッピングした要素技術の解説
           <br />
           <Anchor href={canonicalPath('/pdf/20231006_policies_regtechmap_04.pdf')}>
-            <img src={canonicalPath('/technology-map/20231006_policies_regtechmap_04.png')} />
+            <img
+              alt="テクノロジーマップ要素技術の解説"
+              src={canonicalPath('/technology-map/20231006_policies_regtechmap_04.png')}
+            />
           </Anchor>
         </li>
       </ul>

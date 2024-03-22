@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 export type TechnologyMapDataProps = string[][];
 export type TechnologyMapCategoriesProps = string[][];
 export type TechnologyMapProductProps = string[][];
@@ -73,12 +74,16 @@ type ElementsProps = ElementProps[][];
 type DataProps = {
   xHeaderLength: number;
   yHeaderLength: number;
+  yTitle: ElementsProps;
   xHeader: ElementsProps;
   yHeader: ElementsProps;
   xDataLength: number;
   yDataLength: number;
   body: ElementsProps;
 };
+
+const X_HEADER_LENGTH = 4;
+const Y_HEADER_LENGTH = 5;
 
 const MERGE_PREFIX = 'merged:';
 const MERGE_PREFIX_LEN = MERGE_PREFIX.length;
@@ -266,6 +271,7 @@ export const parseData = (
   // determine x, y header lengths
   const table = parseStructure(data);
 
+  table.yTitle = parseYTitle(data, table);
   table.xHeader = parseXHeader(data, table);
   table.yHeader = parseYHeader(data, table);
   table.body = parseBody(data, table);
@@ -430,6 +436,40 @@ const mergeXElements = (
   return element;
 };
 
+const parseYTitle = (data: TechnologyMapDataProps, table: DataProps) => {
+  const yTitle: ElementsProps = [];
+
+  for (let i = 0; i < table.xHeaderLength; i++) {
+    const row: ElementProps[] = [];
+    let element: ElementProps | null = null;
+
+    for (let j = 0; j < table.yHeaderLength; j++) {
+      if (isElementMerged(data[i][j])) {
+        continue;
+      } else {
+        element = {
+          value: data[i][j],
+          colspan: 1,
+          rowspan: 1,
+          type: 'ytitle',
+          level: j,
+        };
+        if (element.value === '-') {
+          element.value = '';
+        }
+        if (element.value !== '') {
+          element = mergeYElements(element, data, j, table.yHeaderLength, i, data.length);
+        }
+        row.push(element);
+      }
+    }
+
+    yTitle.push(row);
+  }
+
+  return yTitle;
+};
+
 const parseYHeader = (data: TechnologyMapDataProps, table: DataProps) => {
   const yHeader: ElementsProps = [];
 
@@ -506,6 +546,10 @@ const parseStructure = (data: TechnologyMapDataProps): DataProps => {
   let xDataLength = 0;
   let yDataLength = 0;
 
+  // yHeaderのタイトルをxlsx上で記載するようになったため、空白セルを利用してx, yヘッダの長さを取得するのはいったん保留 → ハードコーディング
+  xHeaderLength = X_HEADER_LENGTH;
+  yHeaderLength = Y_HEADER_LENGTH;
+  /*
   for (let i = 0; i < data[0].length; i++) {
     if (data[0][i] === '') {
       yHeaderLength++;
@@ -521,6 +565,7 @@ const parseStructure = (data: TechnologyMapDataProps): DataProps => {
       break;
     }
   }
+  */
 
   xDataLength = data[0].length - yHeaderLength;
   yDataLength = data.length - xHeaderLength;
@@ -528,6 +573,7 @@ const parseStructure = (data: TechnologyMapDataProps): DataProps => {
   return {
     xHeaderLength: xHeaderLength,
     yHeaderLength: yHeaderLength,
+    yTitle: [],
     xHeader: [],
     yHeader: [],
     xDataLength: xDataLength,

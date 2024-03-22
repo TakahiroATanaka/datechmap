@@ -23,7 +23,7 @@ const ElementLink: React.FC<{ value: string; link?: string; categoryId?: number;
 
   return (
     <>
-      <Anchor href={canonicalPath(props.link)} className={props.className}>
+      <Anchor className={props.className} href={canonicalPath(props.link)}>
         {props.value}
       </Anchor>
     </>
@@ -34,7 +34,7 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
   if (props.data.length <= 0 || props.categories.length <= 0) {
     return <></>;
   }
-  const { categories, categoriesByDescription } = parseCategories(props.categories);
+  const { categoriesByDescription } = parseCategories(props.categories);
   const table = parseData(props.data, categoriesByDescription, props.id);
   if (table === null) {
     return <></>;
@@ -77,25 +77,48 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
       <table className="border-separate border-spacing-1 bg-sumi-50 text-dns-14N-2">
         <tbody>
           <tr>
-            <td colSpan={table.yHeaderLength} rowSpan={table.xHeaderLength}></td>
+            {table.yTitle[0].map((element, i) => {
+              console.log(element);
+              let className = 'border bg-white text-center font-bold';
+              let linkClassName = '';
+              if (element.level == 0) {
+                className += ' vertical-element';
+                linkClassName = 'text-black';
+              }
+              return (
+                <td className={className} colSpan={element.colspan} key={i} rowSpan={element.rowspan}>
+                  <span
+                    data-tooltip-html={nl2br(element.categoryDescription ?? '')}
+                    data-tooltip-id={'tooltip-' + element.categoryId}
+                  >
+                    <ElementLink
+                      categoryId={element.categoryId}
+                      className={linkClassName}
+                      link={element.link}
+                      value={element.value}
+                    />
+                  </span>
+                </td>
+              );
+            })}
 
             {table.xHeader[0].map((element, i) => {
               return (
                 <td
-                  colSpan={element.colspan}
-                  rowSpan={element.rowspan}
-                  key={i}
                   className="border bg-blue-900 text-center font-bold text-white"
+                  colSpan={element.colspan}
+                  key={i}
+                  rowSpan={element.rowspan}
                 >
                   <span
                     data-tooltip-html={nl2br(element.categoryDescription ?? '')}
                     data-tooltip-id={'tooltip-' + element.categoryId}
                   >
                     <ElementLink
-                      value={element.value}
-                      link={element.link}
                       categoryId={element.categoryId}
                       className="text-white"
+                      link={element.link}
+                      value={element.value}
                     />
                   </span>
                 </td>
@@ -121,16 +144,16 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                     className += 'bg-blue-100';
                   }
                   return (
-                    <td colSpan={element.colspan} rowSpan={element.rowspan} key={j} className={className}>
+                    <td className={className} colSpan={element.colspan} key={j} rowSpan={element.rowspan}>
                       <span
                         data-tooltip-html={nl2br(element.categoryDescription ?? '')}
                         data-tooltip-id={'tooltip-' + element.categoryId}
                       >
                         <ElementLink
-                          value={element.value}
-                          link={element.link}
                           categoryId={element.categoryId}
                           className={linkClassName}
+                          link={element.link}
+                          value={element.value}
                         />
                       </span>
                     </td>
@@ -153,15 +176,15 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                   if (element.type === 'yheader') {
                     className += 'font-bold ';
                     if (element.level === 0) {
-                      className += 'bg-green-1000 text-white vertical-element';
+                      className += 'bg-green-950 text-white vertical-element';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 1) {
-                      className += 'bg-green-950 text-white';
+                      className += 'bg-green-900 text-white';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 2) {
-                      className += 'bg-green-900 text-white';
+                      className += 'bg-green-800 text-white';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 3) {
@@ -177,16 +200,16 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                     }
                   }
                   return (
-                    <td colSpan={element.colspan} rowSpan={element.rowspan} key={j} className={className}>
+                    <td className={className} colSpan={element.colspan} key={j} rowSpan={element.rowspan}>
                       <span
                         data-tooltip-html={nl2br(element.categoryDescription ?? '')}
                         data-tooltip-id={'tooltip-' + element.categoryId}
                       >
                         <ElementLink
-                          value={element.value}
-                          link={element.link}
                           categoryId={element.categoryId}
                           className={linkClassName}
+                          link={element.link}
+                          value={element.value}
                         />
                       </span>
                     </td>
@@ -198,24 +221,24 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
         </tbody>
       </table>
 
-      {table.xHeader.map((row, i) => {
-        return row.map((element, j) => {
+      {table.xHeader.map((row) => {
+        return row.map((element) => {
           return (
             <Tooltip
-              key={element.categoryId}
               id={'tooltip-' + element.categoryId}
+              key={element.categoryId}
               style={{ backgroundColor: 'rgb(0, 255, 30)', color: '#222' }}
             />
           );
         });
       })}
 
-      {data.map((row, i) => {
-        return row.map((element, j) => {
+      {data.map((row) => {
+        return row.map((element) => {
           return (
             <Tooltip
-              key={element.categoryId}
               id={'tooltip-' + element.categoryId}
+              key={element.categoryId}
               style={{ backgroundColor: '#e5e5e5', color: '#0f0f0f' }}
             />
           );
