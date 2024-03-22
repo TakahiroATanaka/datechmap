@@ -17,7 +17,7 @@ export const TechnologyMapContainer: React.FC = () => {
           テクノロジーマップ パターン1（規制の判断・対応内容に着目）
           <br />
           <Anchor href={canonicalPath('/technology-map/map-data?pattern=1')}>
-            <img src={canonicalPath('/technology-map/technology-map-1.png')} />
+            <img alt="テクノロジーマップ パターン1" src={canonicalPath('/technology-map/technology-map-1.png')} />
           </Anchor>
         </li>
       </ul>
@@ -26,7 +26,7 @@ export const TechnologyMapContainer: React.FC = () => {
           テクノロジーマップ パターン2（規制に基づき実施する業務内容に着目）
           <br />
           <Anchor href={canonicalPath('/technology-map/map-data?pattern=2')}>
-            <img src={canonicalPath('/technology-map/technology-map-2.png')} />
+            <img alt="テクノロジーマップ パターン2" src={canonicalPath('/technology-map/technology-map-2.png')} />
           </Anchor>
         </li>
       </ul>
@@ -41,6 +41,7 @@ export const TechnologyMapContainer: React.FC = () => {
   );
 };
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const TechnologyMapSummary: React.FC = () => {
   const { data: technologyMap3 } = useSWR(canonicalPath(`/data/technology-map-3.json`), technologyMapDataFetcher);
   const { data: technologyMap4 } = useSWR(canonicalPath(`/data/technology-map-4.json`), technologyMapDataFetcher);
@@ -57,8 +58,8 @@ const TechnologyMapSummary: React.FC = () => {
           テクノロジーマップ パターン1 概要版（規制の判断・対応内容に着目）
           <br />
           <TechnologyMap
-            data={technologyMap3 === undefined ? [] : technologyMap3}
             categories={technologyMapCategories === undefined ? [] : technologyMapCategories}
+            data={technologyMap3 === undefined ? [] : technologyMap3}
             id={'3'}
           />
         </li>
@@ -68,8 +69,8 @@ const TechnologyMapSummary: React.FC = () => {
           テクノロジーマップ パターン2 概要版（規制に基づき実施する業務内容に着目）
           <br />
           <TechnologyMap
-            data={technologyMap4 === undefined ? [] : technologyMap4}
             categories={technologyMapCategories === undefined ? [] : technologyMapCategories}
+            data={technologyMap4 === undefined ? [] : technologyMap4}
             id={'4'}
           />
         </li>
