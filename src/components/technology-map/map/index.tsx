@@ -110,15 +110,15 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                 {row.map((element, j) => {
                   let className = 'border text-center font-bold ';
                   if (element.level === 1) {
-                    className += 'bg-blue-700 text-white';
+                    className += 'bg-blue-800 text-white';
                     linkClassName = 'text-white';
                   }
                   if (element.level === 2) {
-                    className += 'bg-blue-500 text-white';
+                    className += 'bg-blue-700 text-white';
                     linkClassName = 'text-white';
                   }
                   if (element.level === 3) {
-                    className += 'bg-blue-200';
+                    className += 'bg-blue-100';
                   }
                   return (
                     <td colSpan={element.colspan} rowSpan={element.rowspan} key={j} className={className}>
@@ -157,23 +157,23 @@ export const TechnologyMap: React.FC<TechnologyMapProps> = (props) => {
                       linkClassName = 'text-white';
                     }
                     if (element.level === 1) {
-                      className += 'bg-green-800 text-white';
+                      className += 'bg-green-950 text-white';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 2) {
-                      className += 'bg-green-600 text-white';
+                      className += 'bg-green-900 text-white';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 3) {
                       if (element.value === '') {
-                        className += 'bg-green-600 text-white';
+                        className += 'bg-green-800 text-white';
                         linkClassName = 'text-white';
                       }
-                      className += 'bg-green-400 text-white';
+                      className += 'bg-green-800';
                       linkClassName = 'text-white';
                     }
                     if (element.level === 4) {
-                      className += 'bg-green-200';
+                      className += 'bg-green-100';
                     }
                   }
                   return (
