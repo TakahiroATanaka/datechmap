@@ -24,32 +24,9 @@ export const TechnologyMapGuide: React.FC = () => {
           テクノロジーマップ利用の仕方について説明しています。
         </li>
       </ul>
-      <p>テクノロジーマップ縦軸項目の解説をご覧いただく場合は、以下の画像をクリックして下さい。</p>
-      <ul>
-        <li>
-          テクノロジーマップ縦軸項目の解説（PDF/700KB） テクノロジーマップ縦軸項目の解説
-          <br />
-          <Anchor href={canonicalPath('/pdf/20231006_policies_regtechmap_03.pdf')}>
-            <img
-              alt="テクノロジーマップ縦軸項目の解説"
-              src={canonicalPath('/technology-map/20231006_policies_regtechmap_03.png')}
-            />
-          </Anchor>
-        </li>
-      </ul>
-      <p>マッピングした要素技術の解説をご覧いただく場合は、以下の画像をクリックして下さい。</p>
-      <ul>
-        <li>
-          マッピングした要素技術の解説（PDF/917KB） マッピングした要素技術の解説
-          <br />
-          <Anchor href={canonicalPath('/pdf/20231006_policies_regtechmap_04.pdf')}>
-            <img
-              alt="テクノロジーマップ要素技術の解説"
-              src={canonicalPath('/technology-map/20231006_policies_regtechmap_04.png')}
-            />
-          </Anchor>
-        </li>
-      </ul>
+      <p>
+        テクノロジーマップの縦軸項目には、規制目的（規制により達成したい目的は何か）、機能（規制の目的を達成するために必要となる機能は何か）等を記載しています。
+      </p>
     </section>
   );
 };

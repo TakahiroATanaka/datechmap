@@ -9,34 +9,21 @@ export const TechnologyMapContainer: React.FC = () => {
     <section className="flex flex-col gap-4">
       <h2>テクノロジーマップ</h2>
       <p>
-        規制の見直しに活用しうる技術を把握できるよう、規制を類型化し、規制の類型と技術の対応関係を整理したテクノロジーマップを提供しています。規制の判断・対応内容（例：適格性判断）に着目したパターン1、規制に基づき実施する業務内容（例：点検業務）に着目したパターン2の2種類を用意しています。
+        テクノロジーマップは、デジタル庁が整備・公表する、デジタル技術の進展等を踏まえた自律的・継続的な規制の見直しを支援するためのツールです。アナログ規制の見直しに活用しうる技術を把握できるよう、規制を類型化し、規制の類型と技術の対応関係を整理したテクノロジーマップを提供しています。規制の判断・対応内容（例：適格性判断）に着目したパターン1、規制に基づき実施する業務内容（例：点検業務）に着目したパターン2の2種類を用意しています。
       </p>
-      <p>テクノロジーマップをご覧いただく場合は、以下の画像をクリックして下さい。</p>
+      <p>テクノロジーマップをご覧いただく場合は、以下のURLをクリックして下さい。ウェブページが起動します。</p>
       <ul>
         <li>
-          テクノロジーマップ パターン1（規制の判断・対応内容に着目）
-          <br />
-          <Anchor href={canonicalPath('/technology-map/map-data?pattern=1')}>
-            <img alt="テクノロジーマップ パターン1" src={canonicalPath('/technology-map/technology-map-1.png')} />
+          <Anchor href={canonicalPath('/technology-map/map-data?pattern=1')} target="_blank">
+            テクノロジーマップ パターン１（規制の判断・対応内容に着目）
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href={canonicalPath('/technology-map/map-data?pattern=2')} target="_blank">
+            テクノロジーマップ パターン2（規制に基づき実施する業務内容に着目）
           </Anchor>
         </li>
       </ul>
-      <ul>
-        <li>
-          テクノロジーマップ パターン2（規制に基づき実施する業務内容に着目）
-          <br />
-          <Anchor href={canonicalPath('/technology-map/map-data?pattern=2')}>
-            <img alt="テクノロジーマップ パターン2" src={canonicalPath('/technology-map/technology-map-2.png')} />
-          </Anchor>
-        </li>
-      </ul>
-      <p>
-        横軸は、データをどのように取得し（Input）、取得データをどのように解析・判断し（Process）、どのように対応するのか（Output）、データフローに沿ったIPO（Input-Process-Output）モデルに基づき整理しています（2パターン共通）。
-      </p>
-      <p>
-        縦軸は、規制の目的を達成するために必要な機能に基づき整理しています。
-        規制の判断・対応内容（例：適格性判断）に着目したパターン1、規制に基づき実施する業務内容（例：点検業務）に着目したパターン2の2種類で整理しています。目的やご関心の規制の内容に応じて使い分けていただくことができます。
-      </p>
     </section>
   );
 };

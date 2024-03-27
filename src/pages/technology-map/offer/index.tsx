@@ -71,6 +71,15 @@ const Page = () => {
 
         <h3>全一覧</h3>
 
+        <ul>
+          <li>
+            一覧上の操作説明
+            <br />
+            「製品・サービス名」をクリック：各製品・サービスに関する詳細情報を参照することができます。 <br />
+            右上のアイコンを操作：一覧上での情報検索を行ったり一覧上の表示条件を変更することができます。
+          </li>
+        </ul>
+
         <h4>必須事項を備える製品・サービス一覧</h4>
         <TechnologyMapProductTable categoryId={offer.id} qualification={true}>
           <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
