@@ -4,8 +4,21 @@ import { canonicalPath } from '@/libs/path';
 export const TechnologyMapCatalogList: React.FC = () => {
   return (
     <ul>
-      <li>目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービス一覧（掲載準備中）</li>
-      <li>侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービス一覧（掲載準備中）</li>
+      <li>
+        <Anchor href={canonicalPath('/technology-map/offer/?id=10007')}>
+          測定・分析のデジタル化を実現する製品・サービス一覧
+        </Anchor>
+      </li>
+      <li>
+        <Anchor href={canonicalPath('/technology-map/offer/?id=10006')}>
+          目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービス一覧
+        </Anchor>
+      </li>
+      <li>
+        <Anchor href={canonicalPath('/technology-map/offer/?id=10005')}>
+          侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービス一覧（掲載準備中）
+        </Anchor>
+      </li>
       <li>
         <Anchor href={canonicalPath('/technology-map/offer/?id=10004')}>
           広域な利用状況把握・被害等の把握のデジタル化を実現する製品・サービス一覧

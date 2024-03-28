@@ -34,6 +34,7 @@ const Page = () => {
           ]}
         />
         <h1>技術カタログの整備</h1>
+        <p>本ページは試行版です。今後機能拡充を予定しております。</p>
         <h2>概要</h2>
         <p>
           技術保有機関からの応募により、アナログ規制の見直しに活用可能性がある製品・サービス情報を整理した技術カタログを提供しています。
@@ -45,9 +46,6 @@ const Page = () => {
         <TechnologyMapCatalogList />
 
         <h2>公募情報</h2>
-        <p>
-          技術カタログに掲載いただく製品・サービスの公募を実施しています。なお、本事業に係る事務を株式会社三菱総合研究所へ委託しています。公募情報は、以下のリンク先をご確認ください。
-        </p>
         <h3>現在公募している案件</h3>
         <p>現在公募している案件はありません。</p>
         <h3>終了案件</h3>
@@ -56,28 +54,23 @@ const Page = () => {
             測定・分析のデジタル化を実現する製品・サービスの公募（2024年2月26日募集終了）
             <ul>
               <li>
-                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_01.pdf')}>
-                  募集要領（PDF/557KB）
+                <Anchor href={canonicalPath('/pdf/10007_policies_technology-catalog_outline_01_20240126.pdf')}>
+                  募集要領（PDF/326KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://forms.office.com/pages/responsepage.aspx?id=uyT_3okgAESMjvceaAN4srn0hHGn57VGrF9GWPkcHcVURjBTMk1MNUJPNVdSRUQ1NDZOTEZDV0VVWiQlQCN0PWcu">
+                <Anchor href="https://forms.office.com/r/AJwtfKzCVi">
                   測定・分析のデジタル化を実現する製品・サービスの公募（登録フォーム）
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_02.pdf')}>
+                <Anchor href={canonicalPath('/pdf/10007_policies_technology-catalog_outline_02_20240126.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/940KB）
                 </Anchor>
               </li>
               <li>
                 <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_03.pdf')}>
                   （参考資料）測定・分析のデジタル化後の業務と求められる機能（PDF/450KB）
-                </Anchor>
-              </li>
-              <li>
-                <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_04.pdf')}>
-                  （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/406KB）
                 </Anchor>
               </li>
             </ul>
@@ -88,28 +81,23 @@ const Page = () => {
             目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービスの公募（2024年1月29日募集終了）
             <ul>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_06.pdf')}>
-                  募集要領（PDF/598KB）
+                <Anchor href={canonicalPath('/pdf/10006_policies_technology-catalog_outline_06_20231225.pdf')}>
+                  募集要領（PDF/324KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://forms.office.com/e/9W377k1pUy">
+                <Anchor href="https://forms.office.com/r/kLgWkCdBsX">
                   目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化を実現する製品・サービスの公募（登録フォーム）
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_07.pdf')}>
+                <Anchor href={canonicalPath('/pdf/10006_policies_technology-catalog_outline_07_20231225.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/1,059KB）
                 </Anchor>
               </li>
               <li>
                 <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_08.pdf')}>
                   （参考資料）目視等による施工・経年劣化・安全措置対策状況等確認のデジタル化後の業務と求められる機能（PDF/479KB）
-                </Anchor>
-              </li>
-              <li>
-                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_02.pdf')}>
-                  （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/629KB）
                 </Anchor>
               </li>
             </ul>
@@ -120,28 +108,23 @@ const Page = () => {
             侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービスの公募（2024年1月29日募集終了）
             <ul>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_09.pdf')}>
-                  募集要領（PDF/580KB）
+                <Anchor href={canonicalPath('/pdf/10005_policies_technology-catalog_outline_09_20231225.pdf')}>
+                  募集要領（PDF/310KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://forms.office.com/e/m1GAhB95ac">
+                <Anchor href="https://forms.office.com/r/XFtHgNARmv">
                   侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービスの公募（登録フォーム）
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_10.pdf')}>
+                <Anchor href={canonicalPath('/pdf/10005_policies_technology-catalog_outline_10_20231225.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/1,064KB）
                 </Anchor>
               </li>
               <li>
                 <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_11.pdf')}>
-                  （参考資料）侵入痕跡・状況異変を検知する見張りのデジタル化後の業務と求められる機能（PDF／461KB）
-                </Anchor>
-              </li>
-              <li>
-                <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_02.pdf')}>
-                  （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/629KB）
+                  （参考資料）侵入痕跡・状況異変を検知する見張りのデジタル化後の業務と求められる機能（PDF/461KB）
                 </Anchor>
               </li>
             </ul>
@@ -152,23 +135,23 @@ const Page = () => {
             広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）
             <ul>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_06.pdf')}>
-                  募集要領（PDF/587KB）
+                <Anchor href={canonicalPath('/pdf/10004_policies_technology-catalog_outline_06_20231117.pdf')}>
+                  募集要領（PDF/312KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://forms.office.com/e/secb7tFAMG">
+                <Anchor href="https://forms.office.com/r/4Q2mfe9DZe">
                   広域な利用状況・被害等の把握のデジタル化を実現する製品・サービスの公募（登録フォーム）
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_07.pdf')}>
-                  （参考資料）応募フォームにおける質問事項一覧（PDF/996KB）
+                <Anchor href={canonicalPath('/pdf/10003_policies_technology-catalog_outline_07_20231117.pdf')}>
+                  （参考資料）応募フォームにおける質問事項一覧（PDF/984KB）
                 </Anchor>
               </li>
               <li>
                 <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_08.pdf')}>
-                  （参考資料）広域な利用状況・被害等の把握のデジタル化後の業務と求められる機能（PDF/493KB）
+                  （参考資料）事業場の管理・業務状況等の確認（実地調査）のデジタル化後の業務と求められる機能（PDF/467KB）
                 </Anchor>
               </li>
             </ul>
@@ -179,17 +162,17 @@ const Page = () => {
             事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスの公募（2023年12月22日募集終了）
             <ul>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_06.pdf')}>
-                  募集要領（PDF/584KB）
+                <Anchor href={canonicalPath('/pdf/10003_policies_technology-catalog_outline_06_20231117.pdf')}>
+                  募集要領（PDF/318KB）
                 </Anchor>
               </li>
               <li>
-                <Anchor href="https://forms.office.com/e/secb7tFAMG">
+                <Anchor href="https://forms.office.com/r/Rr3GB6zwr2">
                   事業場の管理・業務状況等の確認（実地調査）のデジタル化を実現する製品・サービスの公募（登録フォーム）
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_07.pdf')}>
+                <Anchor href={canonicalPath('/pdf/10003_policies_technology-catalog_outline_07_20231117.pdf')}>
                   （参考資料）応募フォームにおける質問事項一覧（PDF/984KB）
                 </Anchor>
               </li>
@@ -206,17 +189,18 @@ const Page = () => {
             往訪閲覧・縦覧のデジタル化を実現する製品・サービスの公募（2023年11月6日募集終了）
             <ul>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231013_policies_technology-catalog_outline_01.pdf')}>
-                  募集要領（PDF/782KB）（2023年10月13日更新）
+                <Anchor href={canonicalPath('/pdf/10002_policies_technology-catalog_outline_01_20231013.pdf')}>
+                  募集要領（PDF/328KB）
                 </Anchor>
+                （2023年10月13日更新）
               </li>
               <li>
-                <Anchor href="https://forms.office.com/e/1A3E7qZjA3">
+                <Anchor href="https://forms.office.com/r/87SfgDnCGi">
                   往訪閲覧・縦覧のデジタル化を実現するための技術の公募（登録フォーム）
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20240222_policies_technology-catalog_outline_03.pdf')}>
+                <Anchor href={canonicalPath('/pdf/10002_policies_technology-catalog_outline_03_20240222.pdf')}>
                   （参考資料）応募フォームにおける質問事項⼀覧（PDF/1,176KB）
                 </Anchor>
                 （2024年2月22日更新）
@@ -226,6 +210,34 @@ const Page = () => {
               <li>
                 <Anchor href={canonicalPath('/pdf/20231006_policies_technology-catalog_outline_03.pdf')}>
                   （参考資料）往訪閲覧・縦覧のデジタル化後の業務と求められる機能（PDF/488KB）
+                </Anchor>
+              </li>
+            </ul>
+          </li>
+        </ul>
+        <ul>
+          <li id="offer-01">
+            講習・試験のデジタル化を実現する製品・サービスの公募（2022年10月22日募集終了）
+            <ul>
+              <li>
+                <Anchor href={canonicalPath('/pdf/10001_policies_technology-catalog_outline_01_20231013.pdf')}>
+                  募集要領（PDF/307KB）
+                </Anchor>
+                （2022年10月7日更新）
+              </li>
+              <li>
+                <Anchor href="https://forms.office.com/r/fJRSavhRyB">
+                  講習・試験のデジタル化を実現するための技術の公募（登録フォーム）
+                </Anchor>
+              </li>
+              <li>（参考資料）応募フォームにおける質問事項一覧　（整備中）</li>
+              <li>
+                <Anchor
+                  href={canonicalPath(
+                    '/pdf/20220930_policies_digital-extraordinary-administrative-research-committee_reference_02.pdf',
+                  )}
+                >
+                  （参考資料）講習・試験のデジタル化後の業務と求められる機能
                 </Anchor>
               </li>
             </ul>
@@ -244,12 +256,21 @@ const Page = () => {
             </Anchor>
           </li>
           <li>
-            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_04.pdf')}>
-              技術カタログへの登録における個人情報の取扱いについて（PDF/478KB）
+            <Anchor
+              href={canonicalPath(
+                'https://www.digital.go.jp/policies/digital-extraordinary-administrative-research-committee/privacy-policy/',
+              )}
+            >
+              技術カタログへの登録における個人情報の取扱いについて
             </Anchor>
           </li>
           <li>
-            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_05.pdf')}>
+            <Anchor href={canonicalPath('/pdf/20240126_policies_technology-catalog_outline_04.pdf')}>
+              （参考資料）サイバーセキュリティに関する設問の趣旨と概要（PDF/406KB）
+            </Anchor>
+          </li>
+          <li>
+            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_12_著作権について.pdf')}>
               著作権について（PDF/729KB）
             </Anchor>
           </li>

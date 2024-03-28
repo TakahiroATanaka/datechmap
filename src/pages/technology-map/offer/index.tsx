@@ -49,6 +49,7 @@ const Page = () => {
             <>{offer.title}</>,
           ]}
         />
+        <p>本ページは試行版です。今後機能拡充を予定しております。</p>
         <h1>{offer.title}</h1>
         <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
           {offer.overview}

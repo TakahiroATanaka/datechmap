@@ -18,6 +18,7 @@ export const TechnologyMapCatalog: React.FC = () => {
         <Anchor href={canonicalPath('/technology-map/catalog')}>技術カタログの整備</Anchor>
         をご確認ください。
       </p>
+
       <h2 id="commentary">技術解説記事</h2>
       <p>
         デジタル庁では、アナログ規制の見直しを推進するため、アナログ規制に活用可能性のある技術に関する情報を幅広く提供しています。
@@ -30,14 +31,26 @@ export const TechnologyMapCatalog: React.FC = () => {
           </Anchor>
         </li>
         <li>
-          <Anchor href="https://digital-gov.note.jp/n/na55e821ad7e4" target="_blank">
-            技術検証事業に関する取り組み①: ドローン、3D点群データ等を活用した構造物等の検査の実証
+          <Anchor
+            href={canonicalPath(
+              'https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/5b8165e7-1763-4a5f-bf4f-169f48131a1d/c03ea53f/20240329_meeting_technology_based_regulatory_reform_outline_01.pdf',
+            )}
+            target="_blank"
+          >
+            テクノロジーマップと技術解説記事の体系図（PDF/572KB）
           </Anchor>
-        </li>
-        <li>
-          <Anchor href="https://digital-gov.note.jp/n/nd01a99581b4a" target="_blank">
-            技術検証事業に関する取り組み②：カメラ・センサー技術によるDXと将来像
-          </Anchor>
+          <ul>
+            <li>
+              <Anchor href="https://digital-gov.note.jp/n/na55e821ad7e4" target="_blank">
+                技術検証事業に関する取り組み①: ドローン、3D点群データ等を活用した構造物等の検査の実証
+              </Anchor>
+            </li>
+            <li>
+              <Anchor href="https://digital-gov.note.jp/n/nd01a99581b4a" target="_blank">
+                技術検証事業に関する取り組み②：カメラ・センサー技術によるDXと将来像
+              </Anchor>
+            </li>
+          </ul>
         </li>
       </ul>
       <h2>技術検証事業に関する取組</h2>
