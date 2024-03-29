@@ -243,7 +243,7 @@ const Page = () => {
                     '/pdf/20220930_policies_digital-extraordinary-administrative-research-committee_reference_02.pdf',
                   )}
                 >
-                  （参考資料）講習・試験のデジタル化後の業務と求められる機能
+                  （参考資料）講習・試験のデジタル化後の業務と求められる機能（PDF/734KB）
                 </Anchor>
               </li>
             </ul>
@@ -252,8 +252,8 @@ const Page = () => {
         <h3>各公募における共通資料</h3>
         <ul>
           <li>
-            <Anchor href={canonicalPath('/pdf/20231225_policies_technology-catalog_outline_01.pdf')}>
-              （参考資料）要素技術の解説（PDF/1,070KB）
+            <Anchor href={canonicalPath('/pdf/21_参考資料_要素技術の解説_20240329.pdf')}>
+              （参考資料）要素技術の解説（PDF/604KB）
             </Anchor>
           </li>
           <li>
