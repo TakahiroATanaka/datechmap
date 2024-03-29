@@ -145,8 +145,8 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/10003_policies_technology-catalog_outline_07_20231117.pdf')}>
-                  （参考資料）応募フォームにおける質問事項一覧（PDF/984KB）
+                <Anchor href={canonicalPath('/pdf/10004_policies_technology-catalog_outline_07_20231117.pdf')}>
+                  （参考資料）応募フォームにおける質問事項一覧（PDF/996KB）
                 </Anchor>
               </li>
               <li>
@@ -177,7 +177,7 @@ const Page = () => {
                 </Anchor>
               </li>
               <li>
-                <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_08.pdf')}>
+                <Anchor href={canonicalPath('/pdf/10003_policies_technology-catalog_outline_11_20231117.pdf')}>
                   （参考資料）事業場の管理・業務状況等の確認（実地調査）のデジタル化後の業務と求められる機能（PDF/467KB）
                 </Anchor>
               </li>
@@ -204,8 +204,6 @@ const Page = () => {
                   （参考資料）応募フォームにおける質問事項⼀覧（PDF/1,176KB）
                 </Anchor>
                 （2024年2月22日更新）
-                <br />
-                ※往訪閲覧・縦覧のデジタル化を実現するための技術の公募（登録フォーム）の内容に変更はありません。
               </li>
               <li>
                 <Anchor href={canonicalPath('/pdf/20231006_policies_technology-catalog_outline_03.pdf')}>
@@ -230,7 +228,15 @@ const Page = () => {
                   講習・試験のデジタル化を実現するための技術の公募（登録フォーム）
                 </Anchor>
               </li>
-              <li>（参考資料）応募フォームにおける質問事項一覧（整備中）</li>
+              <li>
+                <Anchor
+                  href={canonicalPath(
+                    '/pdf/10001_policies_digital-extraordinary-administrative-research-committee_list_03_20220930.pdf',
+                  )}
+                >
+                  （参考資料）応募フォームにおける質問事項一覧（PDF/996KB）
+                </Anchor>
+              </li>
               <li>
                 <Anchor
                   href={canonicalPath(

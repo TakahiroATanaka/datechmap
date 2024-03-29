@@ -25,32 +25,38 @@ export const TechnologyMapCatalog: React.FC = () => {
       </p>
       <ul>
         <li>
+          <Anchor
+            href={canonicalPath('/pdf/20240329_meeting_technology_based_regulatory_reform_outline_01.pdf')}
+            target="_blank"
+          >
+            テクノロジーマップと技術解説記事の体系図（PDF/572KB）
+          </Anchor>
+        </li>
+        <li>
           <Anchor href={canonicalPath('/pdf/20230209_meeting_technology_based_regulatory_reform_outline_04.pdf')}>
             デジタル技術解説記事のサンプル記事執筆結果について（オンライン受験システム（CBT）技術の検証と評価方法）（テクノロジーベースの規制改革推進委員会構成員
             登 大遊氏）（PDF/2,175KB）
           </Anchor>
         </li>
         <li>
-          <Anchor
-            href={canonicalPath(
-              'https://www.digital.go.jp/assets/contents/node/basic_page/field_ref_resources/5b8165e7-1763-4a5f-bf4f-169f48131a1d/c03ea53f/20240329_meeting_technology_based_regulatory_reform_outline_01.pdf',
-            )}
-            target="_blank"
-          >
-            テクノロジーマップと技術解説記事の体系図（PDF/572KB）
+          <Anchor href="https://digital-gov.note.jp/n/na55e821ad7e4" target="_blank">
+            技術検証事業に関する取り組み①: ドローン、3D点群データ等を活用した構造物等の検査の実証
           </Anchor>
-          <ul>
-            <li>
-              <Anchor href="https://digital-gov.note.jp/n/na55e821ad7e4" target="_blank">
-                技術検証事業に関する取り組み①: ドローン、3D点群データ等を活用した構造物等の検査の実証
-              </Anchor>
-            </li>
-            <li>
-              <Anchor href="https://digital-gov.note.jp/n/nd01a99581b4a" target="_blank">
-                技術検証事業に関する取り組み②：カメラ・センサー技術によるDXと将来像
-              </Anchor>
-            </li>
-          </ul>
+        </li>
+        <li>
+          <Anchor href="https://digital-gov.note.jp/n/nd01a99581b4a" target="_blank">
+            技術検証事業に関する取り組み②：カメラ・センサー技術によるDXと将来像
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href="https://digital-gov.note.jp/n/na05192a2e4a1" target="_blank">
+            技術検証事業に関する取り組み③ ：文章認識・不正利用防止技術の実証
+          </Anchor>
+        </li>
+        <li>
+          <Anchor href="https://digital-gov.note.jp/n/n8fcdbe2b5fff" target="_blank">
+            技術検証事業に関する取り組み④：モニタリング技術の実証
+          </Anchor>
         </li>
       </ul>
       <h2>技術検証事業に関する取組</h2>
