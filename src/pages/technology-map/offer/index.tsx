@@ -81,15 +81,22 @@ const Page = () => {
           </li>
         </ul>
 
+        <h4>令和５年度デジタル庁技術検証事業にて活用した製品・サービス一覧</h4>
+        <TechnologyMapProductTable categoryId={offer.id} qualification={2}>
+          <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
+            {offer.qualifiedDescription}
+          </ReactMarkdown>
+        </TechnologyMapProductTable>
+
         <h4>必須事項を備える製品・サービス一覧</h4>
-        <TechnologyMapProductTable categoryId={offer.id} qualification={true}>
+        <TechnologyMapProductTable categoryId={offer.id} qualification={1}>
           <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
             {offer.qualifiedDescription}
           </ReactMarkdown>
         </TechnologyMapProductTable>
 
         <h4>必須事項を備えない製品・サービス一覧</h4>
-        <TechnologyMapProductTable categoryId={offer.id} qualification={false}>
+        <TechnologyMapProductTable categoryId={offer.id} qualification={0}>
           <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
             {offer.notQualifiedDescription}
           </ReactMarkdown>

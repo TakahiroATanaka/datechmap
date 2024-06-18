@@ -11,7 +11,7 @@ type RelationProps = {
   productId: number;
   mainCategory: number;
   productName: string;
-  qualification: boolean;
+  qualification: number;
 };
 
 type OffersProps = {
@@ -35,7 +35,7 @@ type ProductSummaryKeyProps = [number, string, number, string];
 type ProductProps = {
   id: number;
   title: string;
-  qualification: boolean;
+  qualification: number;
   mainCategory: number;
   body: any[];
   keys: ProductSummaryKeyProps[];
@@ -91,7 +91,7 @@ const MERGE_PREFIX_LEN = MERGE_PREFIX.length;
 export const search = (
   data: RelationsProps,
   categoryId: number | undefined,
-  qualification: boolean | undefined,
+  qualification: number | undefined,
   freetext: string,
 ): RelationsProps => {
   const tmp: { [key: number]: RelationProps } = {};
@@ -166,7 +166,7 @@ export const parseRelations = (data: TechnologyMapRelationsProps): RelationsProp
       categoryId: parseInt(data[i][0]),
       productId: parseInt(data[i][1]),
       productName: data[i][2],
-      qualification: data[i][3] == '1' ? true : false,
+      qualification: parseInt(data[i][3]),
       mainCategory: parseInt(data[i][4]),
     };
 
@@ -182,7 +182,7 @@ export const parseProduct = (data: TechnologyMapProductProps): ProductProps => {
   const product: ProductProps = {
     id: 0,
     title: '',
-    qualification: false,
+    qualification: 0,
     mainCategory: 0,
     body: [],
     keys: [],
@@ -200,7 +200,7 @@ export const parseProduct = (data: TechnologyMapProductProps): ProductProps => {
         if (key === 'id') {
           product.id = parseInt(body[i]);
         } else if (key === 'qualification') {
-          product.qualification = body[i] != '' ? true : false;
+          product.qualification = parseInt(body[i]);
         } else if (key === 'main-category') {
           product.mainCategory = parseInt(body[i]);
         } else if (key === 'title') {
