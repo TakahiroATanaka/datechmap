@@ -26,6 +26,7 @@ type OfferProps = {
   offer: string;
   qualifiedDescription: string;
   notQualifiedDescription: string;
+  reiwa5Description: string;
 };
 
 type RelationsProps = RelationProps[];
@@ -149,6 +150,7 @@ export const parseOffers = (data: TechnologyMapOffersProps): OffersProps => {
       offer: data[i][4],
       qualifiedDescription: data[i][5],
       notQualifiedDescription: data[i][6],
+      reiwa5Description: data[i][7],
     };
 
     offers[offer.id] = offer;

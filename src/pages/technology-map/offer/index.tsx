@@ -84,7 +84,7 @@ const Page = () => {
         <h4>令和５年度デジタル庁技術検証事業にて活用した製品・サービス一覧</h4>
         <TechnologyMapProductTable categoryId={offer.id} qualification={2}>
           <ReactMarkdown remarkPlugins={[remarkGfm]} urlTransform={urlTransform}>
-            {offer.qualifiedDescription}
+            {offer.reiwa5Description}
           </ReactMarkdown>
         </TechnologyMapProductTable>
 
