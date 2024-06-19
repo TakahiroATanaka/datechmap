@@ -13,7 +13,7 @@ import useSWR from 'swr';
 
 type TechnologyMapProductTableProps = {
   categoryId: number;
-  qualification?: boolean;
+  qualification: number;
   children: React.ReactNode;
 };
 

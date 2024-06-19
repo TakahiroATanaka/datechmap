@@ -38,6 +38,7 @@
 
   p {
     @apply text-std-17M-7 py-2;
+    @apply whitespace-pre-wrap;
   }
 
   ul {
