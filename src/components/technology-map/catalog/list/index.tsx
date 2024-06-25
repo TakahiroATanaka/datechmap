@@ -16,7 +16,7 @@ export const TechnologyMapCatalogList: React.FC = () => {
       </li>
       <li>
         <Anchor href={canonicalPath('/technology-map/offer/?id=10005')}>
-          侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービス一覧（掲載準備中）
+          侵入痕跡・状況異変を検知する見張りのデジタル化を実現する製品・サービス一覧
         </Anchor>
       </li>
       <li>
