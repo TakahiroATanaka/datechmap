@@ -151,7 +151,7 @@ const Page = () => {
               </li>
               <li>
                 <Anchor href={canonicalPath('/pdf/20231117_policies_technology-catalog_outline_08.pdf')}>
-                  （参考資料）事業場の管理・業務状況等の確認（実地調査）のデジタル化後の業務と求められる機能（PDF/467KB）
+                  （参考資料）広域な利用状況・被害等の把握のデジタル化後の業務と求められる機能（PDF/493KB）
                 </Anchor>
               </li>
             </ul>
